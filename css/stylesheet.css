@@ -1,0 +1,459 @@
+:root {
+	--tt1-font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+body {
+	font-family: "Teletext Type 1";
+	background-color: black;
+	color: white;
+	margin: 0;
+	font-size: var(--tt1-font-size);
+}
+p {
+	font-size: var(--tt1-font-size);
+	line-height: 120%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+main {
+	padding: 0px 30px;
+}
+/* NAVIGATION */
+
+.navbar-header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	background-color: black;
+	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: white 2px solid;
+}
+.navbar-left{
+	display: flex;
+	align-items: center;
+}
+
+.navbar-left * {
+	margin-right: 20px;
+}
+
+input, label {
+	margin: 0 !important;
+}
+
+.navbar-right {
+	display: flex;
+}
+
+#dateDisplay{
+	margin-right: 40px;
+	color: yellow;
+}
+
+.nav-buttons {
+	font-family:  'Teletext Type 1';
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.indexInput {
+	background-color: black;
+	border: none;
+	appearance: none;
+
+	background: black;
+	font-size: var(--tt1-font-size);
+	font-family: "Teletext Type 1";
+	color: yellow;
+	width: 65px;
+	outline: none;
+	border-bottom: red 4px solid;
+}
+.indexInput::placeholder {
+	color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width:1400px) {
+	:root {
+		--tt1-font-size: 18px;
+	}
+}
+
+
+/* NAVIGATION */
+
+
+.flex-breakline{
+	margin: 35px 0px ;
+	display: flex;
+	justify-content: space-around;
+	background-color: blue;
+}
+
+.flex-breakline h4 {
+	font-size: var(--tt1-font-size);
+	padding: 0px 30px;
+	background-color: black;
+}
+
+
+/* HOME FONT SHOWCASE */
+
+.font-showcase {
+	display: flex;
+	flex-flow: column;
+}
+
+.font-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "div div div";
+	grid-gap: 40px;
+}
+
+@media (max-width: 1285px) {
+	.font-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "div div";
+	}
+}
+
+@media (max-width: 768px) {
+	.font-grid {
+		grid-template-columns: 1fr;
+		grid-template-areas: "div";
+	}
+}
+
+
+.fontPreview {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 250px;
+	font-size: 2.5vw;
+	cursor: pointer;
+	user-select: none;
+	transition:  0.1s ease-in-out;
+	border: solid 0px transparent;
+
+}
+.fontPreview:hover {
+	border: solid 5px red;
+
+}
+
+div h3 {
+	font-weight: normal;
+	align-items: center;
+	
+}
+
+
+
+
+
+
+/* <fonts> */
+
+.candybox {
+	font-family: "Candybox";
+	font-size: 5vw;
+}
+
+
+.secret{
+	font-family: "Odiosis" ;
+}
+
+.bootshaus {
+	font-family: "Bootshaus";
+	font-size: 5vw;
+}
+
+.fractured {
+	font-family: "Fractured";
+	text-transform: uppercase;
+	font-size: 4vw;
+}
+.inuetero {
+	font-family: "invetero";
+
+}
+.frontierpursuits {
+	font-family: "Frontier Pursuits";
+	line-height: 120%;
+	font-size: 3vw;
+
+}
+.ubermacht {
+	font-family: "Ubermacht";
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.viceversa {
+	font-family: "Vice Versa";
+	font-size: 4vw;
+	
+}
+.viceversa:hover {
+	font-family: "Vice Versa Medium";
+
+	
+}
+.freisinger{
+	font-family: "Freisinger Sans";
+	font-weight: 100;
+	font-size: 3vw;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+#fonts {
+	background-color: red;
+	color: yellow;
+}
+#projects {
+	background-color: lime;
+	color: blue;
+}
+#custom {
+	background-color: yellow;
+	color: red;
+}
+#about {
+	background-color: blue;
+	color: lime;
+}
+#index {
+	color: red;
+	text-decoration: none;
+}
+
+
+.container{
+	margin:  0 auto;
+	overflow: auto;
+  }
+
+
+.showcase {
+	margin: 15px 0px;
+}
+
+
+
+
+.flex{
+	display: flex;
+}
+
+#logoText {
+	padding-left: 20px;
+	line-height: 1.2;
+
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pageLogo{
+	height: 100px;
+}
+
+.newsfeed p {
+	padding: 10px;
+}
+.newsfeed {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: blue;
+	height: 100%;
+	color: white;
+
+}
+.sales {
+	background-color: red;
+}
+
+.grid {
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	align-items: center;
+}
+
+
+.text-center {
+	text-align: center;
+}
+.my-4 {
+	margin: 3rem 0;
+}
+
+/* FOOTER */
+footer {
+	background-color: blue;
+}
+.advert {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	height: 80px;
+	background-color: cyan;
+	font-family: "TeleText Type 2";
+	font-size: 50px;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "div div div";	
+	gap: 20px;			
+}
+
+
+.advert div{
+	padding: 0px 20px;
+}
+.footer-list {
+	font-family: "Teletext Type 1";
+	color: white;
+	padding: 0 20px;
+}
+
+.copyright {
+	background-color: black;
+	height: 50px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.copyright p{
+	text-align: center;
+	user-select: none;
+}
+
+ul{
+	max-width: 100%;
+	padding: 0;
+	overflow-x: hidden;
+	list-style: none;
+}
+	li:before {
+	  float: left;
+	  width: 0;
+	  white-space: nowrap;
+	  color: white;
+	  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+	}
+	
+	span:first-child {
+		background: blue;
+	}
+	
+	span + span {
+	  float: right;
+	  background: blue;
+
+	}
+li {
+	padding: 10px 0;
+}
+	
+
+/*
+ul{
+	display: table;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+li {
+	display: table-row;
+}
+.footer-link, span{
+	display: table-cell;
+	vertical-align: bottom;
+	padding-bottom: 10px;
+}
+.footer-link {
+	text-align: left;
+}
+span {
+	text-align: right;
+}
+*/
+
+.mtop {
+	margin-top: 100px;
+}
+
+.grid-index {
+
+	display: grid;
+	grid-template-areas: ".grid-index-headline .index-headline"
+						 ".grid-index-headline .index-filler";
+	grid-template-columns: 30% 60%;
+}
+.grid-index-headline{
+	background-color: rgb(96, 96, 224);
+	color: white;
+
+	height:100%;
+	height: 150px;
+}
+
+.index-filler{
+	background-color: blue;
+
+
+}
+.index-heafidline {
+
+	background-color: white;
+	color: blue;
+
+}

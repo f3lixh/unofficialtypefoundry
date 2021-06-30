@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="lib/jquery.fittext.js"></script>
+    <link rel="icon" src="img/logo_icon.png">
+    <title>unofficial type foundry</title>
+</head>
+
+<body onresize="fitMyFonts()">
+
+    <!-- Navbar -->
+
+    <header class="navbar-header">
+
+        <div class="navbar-left">
+            <form action="">
+                <label for="">P/</label><input name="index" type="number" id="index" class="indexInput"
+                    placeholder="100" oninput="checkIndex()">
+            </form>
+            <a class="nav-buttons" id="fonts">Fonts</a>
+            <a class="nav-buttons" id="projects">Projects</a>
+            <a class="nav-buttons" id="custom">Custom</a>
+            <a class="nav-buttons" id="about">About</a>
+        </div>
+
+        <div class="navbar-right">
+            <p id="dateDisplay"></p>
+            <p id="timeDisplay"></p>
+        </div>
+
+
+    </header>
+
+    <!-- Header -->
+    <section class="mtop">
+        <div class="grid-index">
+            <div class="grid-index-headline"> 
+                <h4>Index</h4>
+            </div>
+            <div class="index-headline">
+            </div>
+            <div class="index-filler">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="advert">
+            <h4 style="font-weight: normal;" id="advert">You can also support my work on Patreon!</h4>
+        </div>
+        <div class="footer-grid">
+
+            <div class="footer-list">
+                <ul>
+                    <li>
+                        <span>Imprint</span>
+                        <span>548</span>
+                    </li>
+                    <li>
+                        <span>Privacy</span>
+                        <span>782</span>
+                    </li>
+                    <li>
+                        <span>Legal</span>
+                        <span>875</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li>
+                        <span>Fonts</span>
+                        <span>200</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span>Projects</span>
+                        <span>300</span>
+                    </li>
+                    <li>
+                        <span>Custom</span>
+                        <span>400</span>
+                    </li>
+                    <li>
+                        <span>About</span>
+                        <span>500</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li>
+                        <span>Index</span>
+                        <span>548</span>
+                    </li>
+                    <li>
+                        <span>About</span>
+                        <span>782</span>
+                    </li>
+                    <li>
+                        <span>Legal</span>
+                        <span>875</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2021 unofficial type foundry</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="lib/jquery.fittext.js"></script>
+  <link rel="icon" src="img/logo_icon.png">
+  <title>unofficial type foundry</title>
+</head>
+
+<body onresize="fitMyFonts()">
+
+  <!-- Navbar -->
+
+  <header class="navbar-header">
+
+    <div class="navbar-left">
+      <form action="">
+        <label for="">P/</label><input name="index" type="number" id="index" class="indexInput" placeholder="100" oninput="checkIndex()">
+      </form>
+      <a class="nav-buttons" href="fonts.html" id="fonts">Fonts</a>
+      <a class="nav-buttons" id="projects">Projects</a>
+      <a class="nav-buttons" id="custom">Custom</a>
+      <a class="nav-buttons" id="about">About</a>
+    </div>
+
+    <div class="navbar-right">
+      <p id="dateDisplay"></p>
+      <p id="timeDisplay"></p>
+      
+    </div>
+
+
+  </header>
+
+  <!-- Header -->
+  <main>
+    <section class="showcase" style="margin-top: 100px;">
+      <div class="container grid">
+        <div class="logo-container"> <img src="img/utf_logo.svg" alt="UTF Logo" class="pageLogo">
+          <p id="logoText">unofficial <br>
+            type <br>
+            foundry</p>
+        </div>
+        <div class="newsfeed">
+          <p>NEW TYPEFACE: "San Lorca" now available!</p>
+          <p>&#42; &#42; 457 &#42; &#42;</p>
+        </div>
+        <div class="newsfeed sales">
+          <p>SAVE 20% on the latest APEX Typeface!</p>
+          <p>&#42; &#42; 437 &#42; &#42;</p>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="flex-breakline">
+
+      <h4 style="font-weight: normal;">Newest Typefaces</h4>
+
+    </div>
+
+    <!-- FontShowcase -->
+
+    <section class="font-showcase" style="margin-top: 40px;">
+
+      <div class="font-grid">
+
+        <div class="fontPreview candybox">
+          <h3>Candybox</h3>
+        </div>
+        <div class="fontPreview secret">
+          <h3 id="secret">Secret</h3>
+        </div>
+        <div class="fontPreview bootshaus">
+          <h3>Bootshaus</h3>
+        </div>
+        <div class="fontPreview fractured">
+          <h3>Fractured</h3>
+        </div>
+        <div class="fontPreview inuetero">
+          <h3>inuetero</h3>
+        </div>
+        <div class="fontPreview frontierpursuits">
+          <h3>Frontier <br>Pursuits</h3>
+        </div>
+        <div class="fontPreview ubermacht">
+          <h3>Übermacht</h3>
+        </div>
+        <div class="fontPreview viceversa">
+          <h3>Vice Versa</h3>
+        </div>
+        <div class="fontPreview freisinger">
+          <h3>Freisinger<br>Sans</h3>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class="advert">
+        <h4 style="font-weight: normal;" id="advert">You can also support my work on Patreon!</h4>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-list">
+        <ul>
+            <li>
+                <span>Fonts</span>
+                <span>200</span>
+                </a>
+            </li>
+            <li>
+                <span>Projects</span>
+                <span>300</span>
+            </li>
+            <li>
+                <span>Custom</span>
+                <span>400</span>
+            </li>
+            <li>
+                <span>About</span>
+                <span>500</span>
+            </li>
+        </ul>
+    </div>
+        <div class="footer-list">
+            <ul>
+                <li>
+                    <span>Imprint</span>
+                    <span>548</span>
+                </li>
+                <li>
+                    <span>Privacy</span>
+                    <span>782</span>
+                </li>
+                <li>
+                    <span>Legal</span>
+                    <span>875</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-list">
+            <ul>
+                <li>
+                    <span>Index</span>
+                    <span>548</span>
+                </li>
+                <li>
+                    <span>About</span>
+                    <span>782</span>
+                </li>
+                <li>
+                    <span>Legal</span>
+                    <span>875</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2021 unofficial type foundry</p>
+    </div>
+</footer>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

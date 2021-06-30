@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Teletext Type 1';
+    src: url('../fonts/TeletextType1/TeletextType1-Regular.woff2') format('woff2'),
+        url('../fonts/TeletextType1/TeletextType1-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "TeleText Type 2";
+    src: url("../fonts/TeletextType2/dehinted-TeleTextType2-Regular.eot");
+    src: url("../fonts/TeletextType2/dehinted-TeleTextType2-Regular.eot?#iefix") format('embedded-opentype'),
+        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.woff2') format('woff2'),
+        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.woff') format('woff'),
+        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.ttf') format('truetype'),
+        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.svg#TeleTextType2-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
