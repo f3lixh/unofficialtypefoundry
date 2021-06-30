@@ -61,7 +61,7 @@ input, label {
 
 #dateDisplay{
 	margin-right: 40px;
-	color: yellow;
+
 }
 
 .nav-buttons {
@@ -239,32 +239,6 @@ div h3 {
 }
 
 
-
-
-
-
-#fonts {
-	background-color: red;
-	color: yellow;
-}
-#projects {
-	background-color: lime;
-	color: blue;
-}
-#custom {
-	background-color: yellow;
-	color: red;
-}
-#about {
-	background-color: blue;
-	color: lime;
-}
-#index {
-	color: red;
-	text-decoration: none;
-}
-
-
 .container{
 	margin:  0 auto;
 	overflow: auto;
@@ -278,9 +252,6 @@ div h3 {
 
 
 
-.flex{
-	display: flex;
-}
 
 #logoText {
 	padding-left: 20px;
@@ -311,9 +282,7 @@ div h3 {
 	color: white;
 
 }
-.sales {
-	background-color: red;
-}
+
 
 .grid {
 
@@ -327,10 +296,6 @@ div h3 {
 .text-center {
 	text-align: center;
 }
-.my-4 {
-	margin: 3rem 0;
-}
-
 /* FOOTER */
 footer {
 	background-color: blue;

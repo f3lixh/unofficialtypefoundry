@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link href="css/stylesheet.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/util.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="lib/jquery.fittext.js"></script>
   <link rel="icon" src="img/logo_icon.png">
@@ -21,14 +22,14 @@
       <form action="">
         <label for="">P/</label><input name="index" type="number" id="index" class="indexInput" placeholder="100" oninput="checkIndex()">
       </form>
-      <a class="nav-buttons" href="fonts.html" id="fonts">Fonts</a>
-      <a class="nav-buttons" id="projects">Projects</a>
-      <a class="nav-buttons" id="custom">Custom</a>
-      <a class="nav-buttons" id="about">About</a>
+      <a class="nav-buttons text-yellow bg-red" href="fonts.html">Fonts</a>
+      <a class="nav-buttons text-blue bg-green">Projects</a>
+      <a class="nav-buttons text-red bg-yellow">Custom</a>
+      <a class="nav-buttons text-green bg-blue">About</a>
     </div>
 
     <div class="navbar-right">
-      <p id="dateDisplay"></p>
+      <p id="dateDisplay" class="text-yellow"></p>
       <p id="timeDisplay"></p>
       
     </div>
@@ -49,7 +50,7 @@
           <p>NEW TYPEFACE: "San Lorca" now available!</p>
           <p>&#42; &#42; 457 &#42; &#42;</p>
         </div>
-        <div class="newsfeed sales">
+        <div class="newsfeed sales bg-red">
           <p>SAVE 20% on the latest APEX Typeface!</p>
           <p>&#42; &#42; 437 &#42; &#42;</p>
         </div>
