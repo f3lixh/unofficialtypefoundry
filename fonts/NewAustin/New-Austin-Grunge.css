@@ -1,0 +1,9 @@
+/* Webfont: NewAustin-Grunge */@font-face {
+    font-family: 'NewAustin';
+    src: url('New Austin Grunge.woff2') format('woff2'), /* Modern Browsers */
+         url('New Austin Grunge.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

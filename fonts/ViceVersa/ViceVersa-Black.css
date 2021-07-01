@@ -1,0 +1,12 @@
+/* Webfont: ViceVersa-Black */@font-face {
+    font-family: 'ViceVersaBlack';
+    src: url('ViceVersa-Black.eot'); /* IE9 Compat Modes */
+    src: url('ViceVersa-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('ViceVersa-Black.woff') format('woff'), /* Modern Browsers */
+         url('ViceVersa-Black.woff2') format('woff2'), /* Modern Browsers */
+         url('ViceVersa-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -188,7 +188,7 @@ div h3 {
 }
 
 .fractured {
-	font-family: "Fractured";
+	font-family: "New Austin";
 	text-transform: uppercase;
 	font-size: 4vw;
 }
@@ -208,12 +208,12 @@ div h3 {
 	font-size: 3vw;
 }
 .viceversa {
-	font-family: "Vice Versa";
+	font-family: "ViceVersa-Regular";
 	font-size: 4vw;
 	
 }
 .viceversa:hover {
-	font-family: "Vice Versa Medium";
+	font-family: "ViceVersa-Regular";
 
 	
 }

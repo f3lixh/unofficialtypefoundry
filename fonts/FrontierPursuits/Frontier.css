@@ -1,0 +1,9 @@
+/* Webfont: FrontierPursuits-Regular */@font-face {
+    font-family: 'FrontierPursuits';
+    src: url('Frontier.woff2') format('woff2'), /* Modern Browsers */
+         url('Frontier.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
