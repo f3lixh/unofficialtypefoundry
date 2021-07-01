@@ -35,9 +35,8 @@ main {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	height: 70px;
+	height: 8vh;
 	background-color: black;
-	padding: 20px;
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: white 2px solid;
@@ -55,13 +54,9 @@ input, label {
 	margin: 0 !important;
 }
 
-.navbar-right {
-	display: flex;
-}
 
 #dateDisplay{
 	margin-right: 40px;
-
 }
 
 .nav-buttons {
@@ -73,6 +68,13 @@ input, label {
     cursor: pointer;
 }
 
+.burger-menu {
+	display: none;
+}
+
+
+
+/* Programm Input */
 .indexInput {
 	background-color: black;
 	border: none;
@@ -97,16 +99,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+
 input[type=number] {
   -moz-appearance: textfield;
 }
 
-@media (max-width:1400px) {
-	:root {
-		--tt1-font-size: 18px;
-	}
-}
 
 
 /* NAVIGATION */
@@ -139,21 +136,6 @@ input[type=number] {
 	grid-template-areas: "div div div";
 	grid-gap: 40px;
 }
-
-@media (max-width: 1285px) {
-	.font-grid {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div div";
-	}
-}
-
-@media (max-width: 768px) {
-	.font-grid {
-		grid-template-columns: 1fr;
-		grid-template-areas: "div";
-	}
-}
-
 
 .fontPreview {
 	display: flex;
@@ -422,3 +404,34 @@ span {
 	color: blue;
 
 }
+
+@media (max-width:1400px) {
+	:root {
+		--tt1-font-size: 18px;
+	}
+}
+
+@media (max-width: 1285px) {
+	.font-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "div div";
+	}
+	/*
+	.navbar-header, .navbar-left, .navbar-right {
+		flex-direction: column;
+	}*/
+
+	#dateDisplay {
+		display: none;
+	}
+	
+
+}
+
+@media (max-width: 768px) {
+	.font-grid {
+		grid-template-columns: 1fr;
+		grid-template-areas: "div";
+	}
+}
+
