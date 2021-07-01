@@ -1,0 +1,12 @@
+/* Webfont: FreedomPals-Thin2 */@font-face {
+    font-family: 'FreedomPalsThin';
+    src: url('FreedomPals-Regular.eot'); /* IE9 Compat Modes */
+    src: url('FreedomPals-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FreedomPals-Regular.woff') format('woff'), /* Modern Browsers */
+         url('FreedomPals-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('FreedomPals-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

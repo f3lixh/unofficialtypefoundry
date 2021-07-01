@@ -188,7 +188,7 @@ div h3 {
 }
 
 .fractured {
-	font-family: "New Austin";
+	font-family: "Fractured Regular";
 	text-transform: uppercase;
 	font-size: 4vw;
 }
@@ -203,7 +203,7 @@ div h3 {
 
 }
 .ubermacht {
-	font-family: "Apex";
+	font-family: "Ubermacht";
 	text-transform: uppercase;
 	font-size: 3vw;
 }
@@ -226,6 +226,42 @@ div h3 {
 	font-size: 4vw;
 	font-feature-settings: "calt" 0;
 }
+
+.declasse {
+	font-family: "Declasse";
+	text-transform: lowercase;
+	font-size: 6vw;
+}
+
+.apex {
+	font-family: "Apex";
+	font-size: 4vw;
+	text-transform: uppercase;
+}
+
+.captain-loggins {
+	font-family: "CaptainLoggins Rocks";
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+
+.bennys {
+	font-family: "Benny Regular";
+	font-size: 4vw;
+}
+
+.karolin {
+	font-family: "Karolin";
+	font-size: 5vw;
+	
+}
+
+.gouranga {
+	font-family: "Gouranga Pixel";
+	font-size: 4vw;
+	
+}
+
 
 .container{
 	margin:  0 auto;

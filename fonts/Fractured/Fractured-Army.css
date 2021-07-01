@@ -1,0 +1,12 @@
+/* Webfont: Fractured-Army */@font-face {
+    font-family: 'Fractured';
+    src: url('Fractured-Army.eot'); /* IE9 Compat Modes */
+    src: url('Fractured-Army.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Fractured-Army.woff') format('woff'), /* Modern Browsers */
+         url('Fractured-Army.woff2') format('woff2'), /* Modern Browsers */
+         url('Fractured-Army.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

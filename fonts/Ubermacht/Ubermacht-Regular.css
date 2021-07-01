@@ -1,0 +1,12 @@
+/* Webfont: Ubermacht-Regular */@font-face {
+    font-family: 'Ubermacht';
+    src: url('Ubermacht-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Ubermacht-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Ubermacht-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Ubermacht-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('Ubermacht-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

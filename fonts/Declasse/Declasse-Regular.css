@@ -1,0 +1,12 @@
+/* Webfont: Declasse-Regular */@font-face {
+    font-family: 'Declasse';
+    src: url('Declasse-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Declasse-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Declasse-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Declasse-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('Declasse-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

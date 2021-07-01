@@ -1,0 +1,12 @@
+/* Webfont: Fractured-3D */@font-face {
+    font-family: 'Fractured';
+    src: url('Fractured-3D.eot'); /* IE9 Compat Modes */
+    src: url('Fractured-3D.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Fractured-3D.woff') format('woff'), /* Modern Browsers */
+         url('Fractured-3D.woff2') format('woff2'), /* Modern Browsers */
+         url('Fractured-3D.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
