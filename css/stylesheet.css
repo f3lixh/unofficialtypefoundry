@@ -174,7 +174,7 @@ div h3 {
 
 .candybox {
 	font-family: "Candybox";
-	font-size: 5vw;
+	font-size: 8vh;
 }
 
 .secret{
@@ -184,13 +184,13 @@ div h3 {
 
 .bootshaus {
 	font-family: "Bootshaus";
-	font-size: 5vw;
+	font-size: 8vh;
 }
 
 .fractured {
 	font-family: "Fractured Regular";
 	text-transform: uppercase;
-	font-size: 4vw;
+	font-size: 7vh;
 }
 .inuetero {
 	font-family: "invetero";
@@ -199,17 +199,17 @@ div h3 {
 .frontierpursuits {
 	font-family: "Frontier Pursuits";
 	line-height: 120%;
-	font-size: 3vw;
+	font-size: 6vh;
 
 }
 .ubermacht {
 	font-family: "Ubermacht";
 	text-transform: uppercase;
-	font-size: 3vw;
+	font-size: 6vh;
 }
 .viceversa {
 	font-family: "ViceVersa-Regular";
-	font-size: 4vw;
+	font-size: 8vh;
 }
 .viceversa:hover {
 	font-family: "ViceVersa-Medium";
@@ -217,57 +217,50 @@ div h3 {
 .freisinger{
 	font-family: "Freisinger Sans";
 	font-weight: 100;
-	font-size: 3vw;
+	font-size: 5vh;
 	text-transform: uppercase;
 }
 
 .newaustin {
 	font-family: "New Austin";
-	font-size: 4vw;
+	font-size: 7vh;
 	font-feature-settings: "calt" 0;
 }
 
 .declasse {
 	font-family: "Declasse";
 	text-transform: lowercase;
-	font-size: 6vw;
+	font-size: 12vh;
 }
 
 .apex {
 	font-family: "Apex";
-	font-size: 4vw;
+	font-size: 8vh;
 	text-transform: uppercase;
 }
 
 .captain-loggins {
 	font-family: "CaptainLoggins Rocks";
 	text-transform: uppercase;
-	font-size: 3vw;
+	font-size: 6vh;
 }
 
 .bennys {
 	font-family: "Benny Regular";
-	font-size: 4vw;
+	font-size: 7vh;
 }
 
 .karolin {
 	font-family: "Karolin";
-	font-size: 5vw;
+	font-size: 9vh;
 	
 }
 
 .gouranga {
 	font-family: "Gouranga Pixel";
-	font-size: 4vw;
+	font-size: 7vh;
 	
 }
-
-
-.container{
-	margin:  0 auto;
-	overflow: auto;
-  }
-
 
 .showcase {
 	margin: 15px 0px;

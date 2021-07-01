@@ -350,11 +350,11 @@
 
 @font-face {
     font-family: 'Ubermacht';
-    src: url('../fonts/ubermacht/Ubermacht-Regular.eot');
-    src: url('../fonts/ubermacht/Ubermacht-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ubermacht/Ubermacht-Regular.woff') format('woff'),
-         url('../fonts/ubermacht/Ubermacht-Regular.woff2') format('woff2'),
-         url('../fonts/ubermacht/Ubermacht-Regular.ttf') format('truetype');
+    src: url('../fonts/Ubermacht/Ubermacht-Regular.eot');
+    src: url('../fonts/Ubermacht/Ubermacht-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubermacht/Ubermacht-Regular.woff') format('woff'),
+         url('../fonts/Ubermacht/Ubermacht-Regular.woff2') format('woff2'),
+         url('../fonts/Ubermacht/Ubermacht-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
