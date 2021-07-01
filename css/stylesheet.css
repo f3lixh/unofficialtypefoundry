@@ -39,13 +39,15 @@ a{
 	width: 100%;
 	position: fixed;
 	top: 0;
-	height: 70px;
+	height: 8vh;
 	background-color: black;
 	align-items: center;
-	justify-content: space-between;
 	border-bottom: white 2px solid;
+	justify-content: flex-start;
 }
+
 .navbar-left{
+
 	display: flex;
 	align-items: center;
 }
@@ -54,8 +56,10 @@ a{
 	margin-right: 20px;
 }
 
-input, label {
-	margin: 0 !important;
+.navbar-right {
+
+	position: absolute;
+	right: 20px;
 }
 
 
@@ -74,9 +78,18 @@ input, label {
 
 .burger-menu {
 	display: none;
+	position: absolute;
+	right: 20px;
+	align-items: center;
 }
 
-
+.burger-menu p{
+	font-size: 35px;
+	user-select: none;
+}
+.index {
+	padding: 12px 0px;
+}
 
 /* Programm Input */
 .indexInput {
@@ -180,6 +193,7 @@ div h3 {
 .secret{
 	font-family: "Secret-VF" ;
 	font-weight: 100;
+	font-size: 5vh;
 }
 
 .bootshaus {
@@ -194,7 +208,6 @@ div h3 {
 }
 .inuetero {
 	font-family: "invetero";
-
 }
 .frontierpursuits {
 	font-family: "Frontier Pursuits";
@@ -356,7 +369,7 @@ footer {
 	text-align: center;
 	user-select: none;
 }
-
+/*
 ul{
 	max-width: 100%;
 	padding: 0;
@@ -383,7 +396,7 @@ ul{
 li {
 	padding: 10px 0;
 }
-	
+*/	
 
 /*
 ul{
@@ -451,10 +464,6 @@ span {
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "div div";
 	}
-	/*
-	.navbar-header, .navbar-left, .navbar-right {
-		flex-direction: column;
-	}*/
 
 	#dateDisplay {
 		display: none;
@@ -463,10 +472,164 @@ span {
 
 }
 
+.nav-container {
+	padding: 0 20px;
+	background-color: turquoise;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+
+}
+
+.set-right{
+	margin-left: auto;
+}
+
+.nav-list-item {
+	margin: 0 10px;
+}
+
+.nav-logo {
+	margin-right:10px;
+}
+
+.nav-list-btn {
+	background-color: tomato;
+	padding: 12px 20px;
+	text-align: center;
+}
+
+.nav-burger {
+	display: none;
+}
+
+
 @media (max-width: 768px) {
 	.font-grid {
 		grid-template-columns: 1fr;
 		grid-template-areas: "div";
 	}
+
+	.nav-container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		transition: all .2s ease-in-out;
+	}
+	.nav-list {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.set-left li{
+		margin-top: 20px;
+	}
+	.nav-list-item {
+		width: 100%;
+	}
+
+
+
+	.set-left.active .nav-list-btn {
+		width: 100%;
+		display: block ;
+		padding: 20px 20px;
+		transition: all 0.5s ease-in-out;
+	}
+	.set-left .nav-list-btn {
+		display: none;
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.nav-container.active {
+		height: 400px;
+		transition: all .2s ease-in-out;
+	}
+
+	.set-right {
+		display: none;
+	}
+	.nav-burger {
+		display: unset;
+	}
+	
+	.user-interact {
+		margin-top: 26px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+
+
+
+
+
+
+
+/*
+	.burger-menu {
+		display: unset;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+
+	.navbar-header *{
+		margin: 0;
+	}
+	
+	#dateDisplay {
+		display: unset;
+	}
+
+	.nav-buttons {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.navbar-header {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		
+	}
+
+	.index {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+	}
+
+	.navbar-left, .navbar-right {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.navbar-right {
+		position: relative;
+	}
+
+	.navbar-left{
+		margin-top: 50px;
+	}
+
+	.navbar-header.active {
+		height: 50%;
+		transition: all 1s ease-in-out;
+	}
+
+*/
 }
 

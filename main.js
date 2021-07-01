@@ -100,23 +100,18 @@ function checkIndex() {
 	}
 }
 
-/*
+const tooggleButton = document.getElementById("toogle-button");
+const navbarHeight = document.getElementsByClassName("navbar-header")[0];
 
+tooggleButton.addEventListener("click", () => {
+	navbarHeight.classList.toggle("active")
+	$(".nav-buttons").css("display", "none !important");
+	$(".navbar-right").css("display", "none !important");
+});
 
-
-jQuery(".candybox").fitText(0.6);
-jQuery(".secret").fitText(1.2);
-jQuery(".bootshaus").fitText(0.7);
-jQuery(".fractured").fitText(0.8);
-jQuery(".inuetero").fitText(1.2);
-jQuery(".frontierpursuits").fitText(1.1);
-
-function fitMyFonts() {
-	jQuery(".candybox").fitText(0.6);
-jQuery(".secret").fitText(1.2);
-jQuery(".bootshaus").fitText(1.7);
-jQuery(".fractured").fitText(0.8);
-jQuery(".inuetero").fitText(1.2);
-jQuery(".frontierpursuits").fitText(1.1);
+function changeBurgerCharacter() {
+	const navbarContainer = document.getElementsByClassName("nav-container")[0];
+	const navButtons = document.getElementsByClassName("set-left")[0];
+	navbarContainer.classList.toggle("active");
+	navButtons.classList.toggle("active");
 }
-*/

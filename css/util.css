@@ -65,3 +65,6 @@
 .flex{
 	display: flex;
 }
+.non-select {
+    user-select: none;
+}
