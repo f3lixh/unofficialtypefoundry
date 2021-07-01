@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    text-rendering: optimizeLegibility;
 }
 @font-face {
     font-family: "TeleText Type 2";
@@ -35,20 +36,49 @@
 }
 @font-face {
     font-family: "Secret-VF";
-    src: url('../fonts/Odiosis/Secret-VF.woff2') format('woff2'),
-        url('../fonts/Odiosis/Secret-VF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    src: url('../fonts/Odiosis/Secret-VF-VF.ttf') format('truetype');
+    font-weight: 100 1000;
 }
+
 @font-face {
-    font-family: "ViceVersa-Regular";
+    font-family: "ViceVersa-Thin";
     src: url('../fonts/ViceVersa/ViceVersa-Thin.woff2') format('woff2'),
         url('../fonts/ViceVersa/ViceVersa-Thin.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "ViceVersa-Black";
+    src:
+        url('../fonts/ViceVersa/ViceVersa-Black.woff') format('woff'),
+        url('../fonts/ViceVersa/ViceVersa-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ViceVersa-Medium";
+    src:
+        url('../fonts/ViceVersa/ViceVersa-Medium.woff') format('woff'),
+        url('../fonts/ViceVersa/ViceVersa-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ViceVersa-Regular";
+    src:
+    url('../fonts/ViceVersa/ViceVersa-Regular.woff') format('woff'),
+        url('../fonts/ViceVersa/ViceVersa-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 @font-face {
     font-family: "Candybox";
@@ -58,4 +88,14 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Bootshaus";
+    src: url('../fonts/Bootshaus/Bootshaus-Regular.woff2') format('woff2'),
+        url('../fonts/Bootshaus/Bootshaus-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 

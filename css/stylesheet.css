@@ -177,9 +177,9 @@ div h3 {
 	font-size: 5vw;
 }
 
-
 .secret{
-	font-family: "Odiosis" ;
+	font-family: "Secret-VF" ;
+	font-weight: 100;
 }
 
 .bootshaus {
@@ -210,12 +210,9 @@ div h3 {
 .viceversa {
 	font-family: "ViceVersa-Regular";
 	font-size: 4vw;
-	
 }
 .viceversa:hover {
-	font-family: "ViceVersa-Regular";
-
-	
+	font-family: "ViceVersa-Medium";
 }
 .freisinger{
 	font-family: "Freisinger Sans";
@@ -224,6 +221,11 @@ div h3 {
 	text-transform: uppercase;
 }
 
+.newaustin {
+	font-family: "New Austin";
+	font-size: 4vw;
+	font-feature-settings: "calt" 0, "";
+}
 
 .container{
 	margin:  0 auto;
