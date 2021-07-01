@@ -1,0 +1,12 @@
+/* Webfont: Gouranga-Pixel */@font-face {
+    font-family: 'GourangaPixel';
+    src: url('Gouranga-Pixel.eot'); /* IE9 Compat Modes */
+    src: url('Gouranga-Pixel.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Gouranga-Pixel.woff') format('woff'), /* Modern Browsers */
+         url('Gouranga-Pixel.woff2') format('woff2'), /* Modern Browsers */
+         url('Gouranga-Pixel.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

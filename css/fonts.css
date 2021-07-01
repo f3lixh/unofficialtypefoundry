@@ -98,4 +98,179 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Frontier Pursuits";
+    src: url('../fonts/FrontierPursuits/Frontier.woff2') format('woff2'),
+        url('../fonts/FrontierPursuits/Frontier.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Karolin';
+    src: url('../fonts/Karolin/FelixKaro-Regular.eot');
+    src: url('../fonts/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Karolin/FelixKaro-Regular.woff') format('woff'),
+         url('../fonts/Karolin/FelixKaro-Regular.woff2') format('woff2'),
+         url('../fonts/Karolin/FelixKaro-Regular.ttf') format('truetype');
+     font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'CaptainLoggins Rocks';
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot');
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'CaptainLoggins Regular';
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Regular.eot');
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.woff') format('woff'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.woff2') format('woff2'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny Smooth';
+    src: url('../fonts/Benny/Benny-Smooth.eot');
+    src: url('../fonts/Benny/Benny-Smooth.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-Smooth.woff') format('woff'),
+         url('../fonts/Benny/Benny-Smooth.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-Smooth.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny Regular';
+    src: url('../fonts/Benny/Benny-Regular.eot');
+    src: url('../fonts/Benny/Benny-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-Regular.woff') format('woff'),
+         url('../fonts/Benny/Benny-Regular.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-Regular.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny Outlaw';
+    src: url('../fonts/Benny/Benny-Outlaw.eot');
+    src: url('../fonts/Benny/Benny-Outlaw.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-Outlaw.woff') format('woff'),
+         url('../fonts/Benny/Benny-Outlaw.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-Outlaw.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny Western';
+    src: url('../fonts/Benny/Benny-Western.eot');
+    src: url('../fonts/Benny/Benny-Western.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-Western.woff') format('woff'),
+         url('../fonts/Benny/Benny-Western.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-Western.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny College';
+    src: url('../fonts/Benny/Benny-College.eot');
+    src: url('../fonts/Benny/Benny-College.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-College.woff') format('woff'),
+         url('../fonts/Benny/Benny-College.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-College.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Benny Grunge';
+    src: url('../fonts/Benny/Benny-Grunge.eot');
+    src: url('../fonts/Benny/Benny-Grunge.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Benny/Benny-Grunge.woff') format('woff'),
+         url('../fonts/Benny/Benny-Grunge.woff2') format('woff2'),
+         url('../fonts/Benny/Benny-Grunge.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Gouranga Pixel';
+    src: url('../fonts/Gouranga/Gouranga-Pixel.eot');
+    src: url('../fonts/Gouranga/Gouranga-Pixel.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gouranga/Gouranga-Pixel.woff') format('woff'),
+         url('../fonts/Gouranga/Gouranga-Pixel.woff2') format('woff2'),
+         url('../fonts/Gouranga/Gouranga-Pixel.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Gouranga Line';
+    src: url('../fonts/Gouranga/Gouranga-Line.eot');
+    src: url('../fonts/Gouranga/Gouranga-Line.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gouranga/Gouranga-Line.woff') format('woff'),
+         url('../fonts/Gouranga/Gouranga-Line.woff2') format('woff2'),
+         url('../fonts/Gouranga/Gouranga-Line.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Gouranga Shadow';
+    src: url('../fonts/Gouranga/Gouranga-Shadow.eot');
+    src: url('../fonts/Gouranga/Gouranga-Shadow.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gouranga/Gouranga-Shadow.woff') format('woff'),
+         url('../fonts/Gouranga/Gouranga-Shadow.woff2') format('woff2'),
+         url('../fonts/Gouranga/Gouranga-Shadow.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Gouranga Outline';
+    src: url('../fonts/Gouranga/Gouranga-Outline.eot');
+    src: url('../fonts/Gouranga/Gouranga-Outline.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gouranga/Gouranga-Outline.woff') format('woff'),
+         url('../fonts/Gouranga/Gouranga-Outline.woff2') format('woff2'),
+         url('../fonts/Gouranga/Gouranga-Outline.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: ApexNeue-Black */@font-face {
+    font-family: 'Apex';
+    src: url('../fonts/ApexNeue/ApexLegends-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/ApexNeue/ApexLegends-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/ApexNeue/ApexLegends-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/ApexNeue/ApexLegends-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/ApexNeue/ApexLegends-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

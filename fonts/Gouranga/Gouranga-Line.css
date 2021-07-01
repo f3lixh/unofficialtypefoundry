@@ -1,0 +1,12 @@
+/* Webfont: Gouranga-Line */@font-face {
+    font-family: 'GourangaLine';
+    src: url('Gouranga-Line.eot'); /* IE9 Compat Modes */
+    src: url('Gouranga-Line.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Gouranga-Line.woff') format('woff'), /* Modern Browsers */
+         url('Gouranga-Line.woff2') format('woff2'), /* Modern Browsers */
+         url('Gouranga-Line.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

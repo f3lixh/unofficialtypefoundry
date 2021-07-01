@@ -1,0 +1,12 @@
+/* Webfont: Benny-Western */@font-face {
+    font-family: 'Benny';
+    src: url('Benny-Western.eot'); /* IE9 Compat Modes */
+    src: url('Benny-Western.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Benny-Western.woff') format('woff'), /* Modern Browsers */
+         url('Benny-Western.woff2') format('woff2'), /* Modern Browsers */
+         url('Benny-Western.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

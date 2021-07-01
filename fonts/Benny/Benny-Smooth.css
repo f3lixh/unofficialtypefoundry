@@ -1,0 +1,12 @@
+/* Webfont: Benny-Smooth */@font-face {
+    font-family: 'Benny';
+    src: url('Benny-Smooth.eot'); /* IE9 Compat Modes */
+    src: url('Benny-Smooth.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Benny-Smooth.woff') format('woff'), /* Modern Browsers */
+         url('Benny-Smooth.woff2') format('woff2'), /* Modern Browsers */
+         url('Benny-Smooth.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

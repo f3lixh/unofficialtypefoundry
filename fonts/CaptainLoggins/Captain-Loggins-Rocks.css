@@ -1,0 +1,12 @@
+/* Webfont: CaptainLoggins-Rocks */@font-face {
+    font-family: 'CaptainLoggins';
+    src: url('Rcoks.eot'); /* IE9 Compat Modes */
+    src: url('Rcoks.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Rcoks.woff') format('woff'), /* Modern Browsers */
+         url('Rcoks.woff2') format('woff2'), /* Modern Browsers */
+         url('Rcoks.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

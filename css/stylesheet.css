@@ -203,7 +203,7 @@ div h3 {
 
 }
 .ubermacht {
-	font-family: "Ubermacht";
+	font-family: "Apex";
 	text-transform: uppercase;
 	font-size: 3vw;
 }
@@ -224,7 +224,7 @@ div h3 {
 .newaustin {
 	font-family: "New Austin";
 	font-size: 4vw;
-	font-feature-settings: "calt" 0, "";
+	font-feature-settings: "calt" 0;
 }
 
 .container{

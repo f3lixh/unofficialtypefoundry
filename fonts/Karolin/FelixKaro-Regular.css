@@ -1,0 +1,12 @@
+/* Webfont: Karolin-Regular */@font-face {
+    font-family: 'Karolin';
+    src: url('FelixKaro-Regular.eot'); /* IE9 Compat Modes */
+    src: url('FelixKaro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FelixKaro-Regular.woff') format('woff'), /* Modern Browsers */
+         url('FelixKaro-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('FelixKaro-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
