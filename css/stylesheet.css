@@ -405,9 +405,7 @@ footer {
 
 	.footer-grid {
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div" 
-		"div"
-		"div";	
+		grid-template-areas: "div" "div";
 		gap: 20px;			
 	}
 	
@@ -471,6 +469,18 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	/* FOOTER */
+	.footer-grid {
+		grid-template-columns: 1fr;
+		grid-template-areas: "div";
+		gap: 20px;			
+	}
+
+	.advert {
+		font-size: 4vh;
+		text-align: center;
 	}
 
 }
