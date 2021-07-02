@@ -1,0 +1,108 @@
+
+.navbar-header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 8vh;
+	background-color: black;
+	align-items: center;
+	border-bottom: white 2px solid;
+	justify-content: flex-start;
+}
+
+.navbar-left{
+
+	display: flex;
+	align-items: center;
+}
+
+.navbar-left * {
+	margin-right: 20px;
+}
+
+.navbar-right {
+
+	position: absolute;
+	right: 20px;
+}
+
+
+#dateDisplay{
+	margin-right: 40px;
+}
+
+.nav-buttons {
+	font-family:  'Teletext Type 1';
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.burger-menu {
+	display: none;
+	position: absolute;
+	right: 20px;
+	align-items: center;
+}
+
+.burger-menu p{
+	font-size: 35px;
+	user-select: none;
+}
+.index {
+	padding: 12px 0px;
+}
+
+/* Programm Input */
+.indexInput {
+	background-color: black;
+	border: none;
+	appearance: none;
+
+	background: black;
+	font-size: var(--tt1-font-size);
+	font-family: "Teletext Type 1";
+	color: yellow;
+	width: 65px;
+	outline: none;
+	border-bottom: red 4px solid;
+}
+.indexInput::placeholder {
+	color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+ <!-- Navbar 
+
+  <nav class="navbar-header p-20">
+    <div class="navbar-left">
+      <a class="text-red non-select index">UTF/100</a>
+      <a class="nav-buttons text-yellow bg-red" href="fonts.html">Fonts</a>
+      <a class="nav-buttons text-blue bg-green">Projects</a>
+      <a class="nav-buttons text-red bg-yellow">Custom</a>
+      <a class="nav-buttons text-green bg-blue">About</a>
+      <a class="burger-menu">&#9776;</a>
+    </div>
+
+    <div class="navbar-right flex">
+      <a id="dateDisplay" class="text-yellow"></a>
+      <a id="timeDisplay"></a>
+    </div>
+  </nav>
+-->

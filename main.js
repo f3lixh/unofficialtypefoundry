@@ -100,18 +100,22 @@ function checkIndex() {
 	}
 }
 
-const tooggleButton = document.getElementById("toogle-button");
-const navbarHeight = document.getElementsByClassName("navbar-header")[0];
-
-tooggleButton.addEventListener("click", () => {
-	navbarHeight.classList.toggle("active")
-	$(".nav-buttons").css("display", "none !important");
-	$(".navbar-right").css("display", "none !important");
-});
 
 function changeBurgerCharacter() {
 	const navbarContainer = document.getElementsByClassName("nav-container")[0];
 	const navButtons = document.getElementsByClassName("set-left")[0];
 	navbarContainer.classList.toggle("active");
 	navButtons.classList.toggle("active");
+
+	const navIcon = document.getElementById("nav-button").innerHTML;
+	switch(navIcon) {
+		case '\u2630':
+			$("#nav-button").text('\u2612');
+			break;
+		case '\u2612':
+			$("#nav-button").text('\u2630');
+			break;
+		default:
+			$("#nav-button").text('\u2612');
+	}
 }

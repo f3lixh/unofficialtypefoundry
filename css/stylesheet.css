@@ -31,97 +31,9 @@ main {
 
 a{
 	text-decoration: none;
+	color: white;
 }
 /* NAVIGATION */
-
-.navbar-header {
-	display: flex;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	height: 8vh;
-	background-color: black;
-	align-items: center;
-	border-bottom: white 2px solid;
-	justify-content: flex-start;
-}
-
-.navbar-left{
-
-	display: flex;
-	align-items: center;
-}
-
-.navbar-left * {
-	margin-right: 20px;
-}
-
-.navbar-right {
-
-	position: absolute;
-	right: 20px;
-}
-
-
-#dateDisplay{
-	margin-right: 40px;
-}
-
-.nav-buttons {
-	font-family:  'Teletext Type 1';
-    border: none;
-    padding: 12px 20px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.burger-menu {
-	display: none;
-	position: absolute;
-	right: 20px;
-	align-items: center;
-}
-
-.burger-menu p{
-	font-size: 35px;
-	user-select: none;
-}
-.index {
-	padding: 12px 0px;
-}
-
-/* Programm Input */
-.indexInput {
-	background-color: black;
-	border: none;
-	appearance: none;
-
-	background: black;
-	font-size: var(--tt1-font-size);
-	font-family: "Teletext Type 1";
-	color: yellow;
-	width: 65px;
-	outline: none;
-	border-bottom: red 4px solid;
-}
-.indexInput::placeholder {
-	color: white;
-
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-
 
 /* NAVIGATION */
 
@@ -454,9 +366,7 @@ span {
 }
 
 @media (max-width:1400px) {
-	:root {
-		--tt1-font-size: 18px;
-	}
+	
 }
 
 @media (max-width: 1285px) {
@@ -472,10 +382,15 @@ span {
 
 }
 
+#dateDisplay {
+	color: yellow;
+	margin-right: 40px;
+}
+
 .nav-container {
 	padding: 0 20px;
-	background-color: turquoise;
-	height: 8vh;
+	background-color: black;
+	height: 70px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -506,6 +421,7 @@ span {
 	background-color: tomato;
 	padding: 12px 20px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .nav-burger {
@@ -514,6 +430,9 @@ span {
 
 
 @media (max-width: 768px) {
+
+	/* NAV BAR */
+
 	.font-grid {
 		grid-template-columns: 1fr;
 		grid-template-areas: "div";
@@ -523,7 +442,7 @@ span {
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		transition: all .2s ease-in-out;
+		/* transition: all .2s ease-in-out; */
 	}
 	.nav-list {
 		flex-direction: column;
@@ -536,23 +455,21 @@ span {
 	.nav-list-item {
 		width: 100%;
 	}
-
-
-
 	.set-left.active .nav-list-btn {
 		width: 100%;
 		display: block ;
 		padding: 20px 20px;
-		transition: all 0.5s ease-in-out;
+	
+
 	}
 	.set-left .nav-list-btn {
 		display: none;
-		transition: all 0.5s ease-in-out;
+		
 	}
 	
 	.nav-container.active {
 		height: 400px;
-		transition: all .2s ease-in-out;
+
 	}
 
 	.set-right {
@@ -570,66 +487,5 @@ span {
 		align-items: center;
 	}
 
-
-
-
-
-
-
-
-
-/*
-	.burger-menu {
-		display: unset;
-		position: absolute;
-		right: 20px;
-		top: 20px;
-	}
-
-	.navbar-header *{
-		margin: 0;
-	}
-	
-	#dateDisplay {
-		display: unset;
-	}
-
-	.nav-buttons {
-		margin-top: 20px;
-		width: 100%;
-	}
-
-	.navbar-header {
-		flex-direction: column;
-		align-items: flex-start;
-		width: 100%;
-		
-	}
-
-	.index {
-		position: absolute;
-		left: 20px;
-		top: 20px;
-	}
-
-	.navbar-left, .navbar-right {
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.navbar-right {
-		position: relative;
-	}
-
-	.navbar-left{
-		margin-top: 50px;
-	}
-
-	.navbar-header.active {
-		height: 50%;
-		transition: all 1s ease-in-out;
-	}
-
-*/
 }
 
