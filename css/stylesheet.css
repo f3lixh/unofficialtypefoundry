@@ -281,14 +281,14 @@ footer {
 	text-align: center;
 	user-select: none;
 }
-/*
-ul{
+
+.footer-ul{
 	max-width: 100%;
 	padding: 0;
 	overflow-x: hidden;
 	list-style: none;
 }
-	li:before {
+	.footer-li:before {
 	  float: left;
 	  width: 0;
 	  white-space: nowrap;
@@ -296,43 +296,19 @@ ul{
 	  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
 	}
 	
-	span:first-child {
+	.footer-span:first-child {
 		background: blue;
 	}
 	
-	span + span {
+	.footer-span + .footer-span {
 	  float: right;
 	  background: blue;
 
 	}
-li {
+.footer-li {
 	padding: 10px 0;
 }
-*/	
 
-/*
-ul{
-	display: table;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-}
-li {
-	display: table-row;
-}
-.footer-link, span{
-	display: table-cell;
-	vertical-align: bottom;
-	padding-bottom: 10px;
-}
-.footer-link {
-	text-align: left;
-}
-span {
-	text-align: right;
-}
-*/
 
 .mtop {
 	margin-top: 100px;
@@ -369,18 +345,7 @@ span {
 	
 }
 
-@media (max-width: 1285px) {
-	.font-grid {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div div";
-	}
 
-	#dateDisplay {
-		display: none;
-	}
-	
-
-}
 
 #dateDisplay {
 	color: yellow;
@@ -428,6 +393,27 @@ span {
 	display: none;
 }
 
+@media (max-width: 1285px) {
+	.font-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "div div";
+	}
+
+	#dateDisplay {
+		display: none;
+	}
+
+	.footer-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "div" 
+		"div"
+		"div";	
+		gap: 20px;			
+	}
+	
+	
+
+}
 
 @media (max-width: 768px) {
 
