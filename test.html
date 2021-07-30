@@ -1,72 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: stretch;
-        }
-   
-        body {
-            font-size: 72px;
-            font-family: "Candybox";
-            
-        }
-        h4 {
-            font-weight: normal;
-            text-align: center;
-        }
-        .flexitem {
+<!doctype html>
+<html>
 
-            width: 400px;
-            border: 1px solid black;
-            
-        }
-        @media only screen and (max-width: 1024px) {
-            .flexitem {
-                width: 300px;
-            }
-        }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/util.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="lib/jquery.fittext.js"></script>
+  <link rel="icon" src="img/logo_icon.png">
+  <title>unofficial type foundry</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-        <div class="flexitem">
-            <h4>Candybox</h4>
-        </div>
-    </div>
+  <nav class="nav-container">
+    <ul class="user-interact">
+      <a href="#" class="text-red nav-logo">P/100</a>
+      <a href="#" class="nav-burger" onclick="changeBurgerCharacter()" id="nav-button">&#9776;</a>
+    </ul>
+    <ul class="nav-list set-left">
+      <li class="nav-list-item"><a href="" class="nav-list-btn text-yellow bg-red">Fonts</a></li>
+      <li class="nav-list-item"><a href="" class="nav-list-btn text-blue bg-green">Projects</a></li>
+      <li class="nav-list-item"><a href="" class="nav-list-btn text-red bg-yellow">Custom</a></li>
+      <li class="nav-list-item"><a href="" class="nav-list-btn text-green bg-blue">About</a></li>
+    </ul>
+    <ul class="nav-list set-right">
+      <li class="nav-list-item"><a href="" id="dateDisplay"></a></li>
+      <li class="nav-list-item"><a href="" id="timeDisplay"></a></li>
+    </ul>
+
+  </nav>
+
+  <footer class="test-footer">
+
+        <ul class="flex">
+            <li>Imprint</li>
+            <li>Contact</li>
+            <li>Privat Policy</li>
+            <li>Datenschutz</li>
+            <li>Cookies</li>
+        </ul>
+
+  </footer>
+ 
+
+  <script src="main.js"></script>
+
 </body>
+
 </html>

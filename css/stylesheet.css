@@ -123,7 +123,7 @@ a{
 	user-select: none;
 	transition:  0.1s ease-in-out;
 	border: solid 0px transparent;
-
+	
 }
 .fontPreview:hover {
 	border: solid 5px red;
@@ -136,23 +136,26 @@ div h3 {
 	
 }
 
-
-
-
-
-
-/* <fonts> */
-
-.candybox {
-	font-family: "Candybox";
-	font-size: 8vh;
+.fontPreview img {
+	padding: 100px;
+	
 }
+
 
 .secret{
 	font-family: "Secret-VF" ;
 	font-weight: 100;
 	font-size: 5vh;
 }
+
+/* <fonts>
+
+.candybox {
+	font-family: "Candybox";
+	font-size: 8vh;
+}
+
+
 
 .bootshaus {
 	font-family: "Bootshaus";
@@ -231,7 +234,7 @@ div h3 {
 	font-family: "Gouranga Pixel";
 	font-size: 7vh;
 	
-}
+} */
 
 .showcase {
 	margin: 15px 0px;
@@ -532,3 +535,20 @@ footer {
 
 }
 
+.test-footer {
+	bottom: 0;
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	background-color: black;
+	border-top: white 2px solid;
+	display: flex;
+	align-items: center;
+}
+
+ul.flex {
+	width: 100%;
+	justify-content: space-around;
+	list-style: none;
+	align-items: center;
+}
