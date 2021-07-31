@@ -137,7 +137,7 @@ div h3 {
 }
 
 .fontPreview img {
-	height: 4rem;
+	width: fit-content;
 	
 }
 
