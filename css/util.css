@@ -59,12 +59,34 @@
 .p-20 {
     padding: 20px;
 }
+.p-10 {
+    padding: 10px;
+}
 .my-20 {
     margin: 0px 20px;
+}
+.m-20{
+    margin: 20px;
 }
 .flex{
 	display: flex;
 }
 .non-select {
     user-select: none;
+}
+a {
+    text-decoration: none;
+
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+.h2-header {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.top-nav{
+    margin-top: 50px;
 }

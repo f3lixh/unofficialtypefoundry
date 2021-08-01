@@ -1,0 +1,123 @@
+:root {
+	--tt1-font-size: 20px;
+}
+
+/* UTILITY */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+body {
+	font-family: "Teletext Type 1";
+	background-color: black;
+	
+	font-size: var(--tt1-font-size);
+
+}
+
+.utf-logo {
+    margin-top: 70px;
+    color: red;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+}
+.logo {
+    height: 100px;
+}
+
+/* Navigation */
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+
+}
+
+
+.nav-ul {
+    width: 100%;
+
+    align-items: center;
+
+    list-style: none;
+    display: flex;
+    
+    padding: 0px 50px;
+    justify-content: space-between;
+}
+
+/* Font Panel */
+
+.font-panel-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+}
+
+
+
+.font-panel-item {
+    width: 33.3333%;
+    height: 300px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+.font-panel-img-wrapper {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.font-panel-img-wrapper img {
+
+   height: auto;
+    width: auto;
+    margin: 50px;
+   
+}
+
+
+.font-panel-img{
+    height: 140px;
+}
+
+
+
+.font-panel-data{
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.font-panel-img-wrapper:hover {
+    background-color: black;
+    transition: ease-in-out .125s;
+}
+
+@media (max-width: 768px){
+    .font-panel-item {
+        width: 50%;
+        height: 300px;
+        color: white;
+        cursor: pointer;
+    
+    }
+    
+}

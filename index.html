@@ -4,193 +4,198 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/util.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="lib/jquery.fittext.js"></script>
   <link rel="icon" href="img/logo_icon.png">
   <title>unofficial type foundry</title>
 </head>
 
-<body onresize="fitMyFonts()">
+<body>
+    <nav class="nav-container">
+        <ul class="nav-ul bg-white">
+            <li class="nav-listitem"><a class="text-red" href="">UTF/100</a></li>
+            <li class="nav-listitem"><a class="text-black" href="">Fonts</a></li>
+            <li class="nav-listitem"><a class="text-black" href="">Project</a></li>
+            <li class="nav-listitem"><a class="text-black" href="">Custom</a></li>
+            <li class="nav-listitem"><p class="text-blue non-select" href="" id="dateDisplay"></p></li>
+            <li class="nav-listitem"><p class="text-blue non-select" href="" id="timeDisplay"></p></li>
+        </ul>
+
+    </nav>
+
+   <!--  <div class="flex utf-logo">
+        <img src="img/utf_logo.svg" alt="UTF Logo" class="logo">
+        <h2>unofficial type foundry</h2>
+    </div> -->
+    
+    <!-- <div class="h2-header bg-white m-20 top-nav">
+        <h2 class="text-black p-10 non-select">Font Index</h2>
+    </div> -->
+<!--    <section style="margin-top: 50px;">
+    <img src="img/header_1.svg" alt="">
+
+   </section> -->
 
 
-  <nav class="nav-container">
-    <ul class="user-interact">
-      <li style="list-style: none;"><a href="#" class="text-red nav-logo">P/100</a></li>
-      <li style="list-style: none;"><a href="#" class="nav-burger" onclick="changeBurgerCharacter()" id="nav-button">&#9776;</a></li>
-    </ul>
-    <ul class="nav-list set-left">
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-yellow bg-red">Fonts</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-blue bg-green">Projects</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-red bg-yellow">Custom</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-green bg-blue">About</a></li>
-    </ul>
-    <ul class="nav-list set-right">
-      <li class="nav-list-item"><a href="" id="dateDisplay"></a></li>
-      <li class="nav-list-item"><a href="" id="timeDisplay"></a></li>
-    </ul>
+    <section class="font-panel-container top-nav">
 
-  </nav>
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/invetero.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>invetero</span>
+               <span>250</span>
+            </div>
+        </a>
 
-  <!-- Header -->
-  <main>
-    <!--
-    <section class="showcase" style="margin-top: 100px;">
-      <div class="container grid">
-        <div class="logo-container"> <img src="img/utf_logo.svg" alt="UTF Logo" class="pageLogo">
-          <p id="logoText">unofficial <br>
-            type <br>
-            foundry</p>
-        </div>
-        <div class="newsfeed">
-          <p>NEW TYPEFACE: "San Lorca" now available!</p>
-          <p>&#42; &#42; 457 &#42; &#42;</p>
-        </div>
-        <div class="newsfeed sales bg-red">
-          <p>SAVE 20% on the latest APEX Typeface!</p>
-          <p>&#42; &#42; 437 &#42; &#42;</p>
-        </div>
-      </div>
-    </section> -->
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/candybox.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Candybox</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/frontierpursuits.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Frontier Pursuits</span>
+               <span>250</span>
+            </div>
+        </a>
 
 
-    <div class="flex-breakline">
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/coolbeans.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Cool Beans</span>
+               <span>250</span>
+            </div>
+        </a>
 
-      <h4 style="font-weight: normal;">Newest Typefaces</h4>
-
-    </div>
-
-    <!-- FontShowcase -->
-
-    <section class="font-showcase" style="margin-top: 40px;">
-
-      <div class="font-grid">
-
-        <div class="fontPreview candybox">
-         <img src="img/font_thumbnails/candybox.svg" alt="Candybox">
-        </div>
-        <div class="fontPreview secret">
-          <h3 id="secret">Secret</h3>
-        </div>
-        <div class="fontPreview bootshaus">
-         <img src="img/font_thumbnails/bootshaus.svg" alt="Bootshaus">
-        </div>
-        <div class="fontPreview fractured">
-          <img src="img/font_thumbnails/fracured.svg" alt="Fractured">
-        </div>
-        <div class="fontPreview inuetero">
-          <img src="img/font_thumbnails/invetero.svg" alt="invetero">
-        </div>
-        <div class="fontPreview frontierpursuits">
-          <img src="img/font_thumbnails/frontierpursuits.svg" alt="Frontier Pursuits">
-        </div>
-        <div class="fontPreview ubermacht">
-          <img src="img/font_thumbnails/ubermacht.svg" alt="Übermacht">
-        </div>
-        <div class="fontPreview viceversa">
-          <img src="img/font_thumbnails/viceversa.svg" alt="Vice Versa">
-        </div>
-        <div class="fontPreview freisinger">
-          <img src="img/font_thumbnails/freisingersans.svg" alt="Fresinger Sans">
-        </div>
-        <div class="fontPreview newaustin">
-          <img src="img/font_thumbnails/newaustin.svg" alt="New Austin">
-        </div>
-        <div class="fontPreview gouranga">
-          <img src="img/font_thumbnails/gouranga.svg" alt="Gouranga">
-        </div>
-        <div class="fontPreview bennys">
-          <img src="img/font_thumbnails/benny.svg" alt="Benny's">
-        </div>
-        <div class="fontPreview karolin">
-          <img src="img/font_thumbnails/karolin.svg" alt="Karolin">
-        </div>
-        <div class="fontPreview captain-loggins">
-          <img src="img/font_thumbnails/rockradio.svg" alt="Rock Radio">
-        </div>
-        <div class="fontPreview declasse">
-          <img src="img/font_thumbnails/declasse.svg" alt="Declasse">
-        </div>
-        <div class="fontPreview apex">
-          <img src="img/font_thumbnails/apex.svg" alt="Apex">
-        </div>
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/fracured.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Fractured</span>
+               <span>250</span>
+            </div>
+        </a>
 
 
-      </div>
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/newaustin.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>New Austin</span>
+               <span>250</span>
+            </div>
+        </a>
+
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/ubermacht.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Übermacht</span>
+               <span>250</span>
+            </div>
+        </a>
+
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/viceversa.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Vice Versa</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/numberplate.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Numberplate</span>
+               <span>250</span>
+            </div>
+        </a>
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/bootshaus.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Bootshaus</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img  class="font-panel-img-maxwidth" src="img/font_thumbnails/apex.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>APEX</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/benny.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Benny's</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/freisingersans.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Benny's</span>
+               <span>250</span>
+            </div>
+        </a>
+
+        <a class="font-panel-item">
+            <div class="font-panel-img-wrapper bg-red">
+                <img class="font-panel-img-maxwidth" src="img/font_thumbnails/gouranga.svg" alt="">
+            </div>
+            <div class="font-panel-data flex">
+               <span>Benny's</span>
+               <span>250</span>
+            </div>
+        </a>
+
+
+
+        
+       
+       
+
+    
+    
+     
+       
     </section>
 
-  </main>
-  <!-- FOOTER -->
-  <footer>
-    <div class="advert">
-        <h4 style="font-weight: normal;" id="advert">You can also support my work on Patreon!</h4>
-    </div>
-    <div class="footer-grid">
-      <div class="footer-list ul-1">
-        <ul class="footer-ul">
-            <li class="footer-li">
-              <a href="#">
-                  <span class="footer-span">Fonts</span>
-                  <span class="footer-span">200</span>
-                </a>
-            </li>
-            
-            <li class="footer-li">
-                <span class="footer-span">Projects</span>
-                <span class="footer-span">300</span>
-            </li>
-            <li class="footer-li">
-                <span class="footer-span">Custom</span>
-                <span class="footer-span">400</span>
-            </li>
-            <li class="footer-li">
-                <span class="footer-span">About</span>
-                <span class="footer-span">500</span>
-            </li>
-        </ul>
-    </div>
-        <div class="footer-list ul-2">
-            <ul class="footer-ul">
-                <li class="footer-li">
-                    <span class="footer-span">Imprint</span>
-                    <span class="footer-span">548</span>
-                </li>
-                <li class="footer-li">
-                    <span class="footer-span">Privacy</span>
-                    <span class="footer-span">782</span>
-                </li>
-                <li class="footer-li">
-                    <span class="footer-span">Legal</span>
-                    <span class="footer-span">875</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-list ul-3">
-            <ul class="footer-ul">
-                <li class="footer-li">
-                    <span class="footer-span">Index</span>
-                    <span class="footer-span">548</span>
-                </li>
-                <li class="footer-li">
-                    <span class="footer-span">About</span>
-                    <span class="footer-span">782</span>
-                </li>
-                <li class="footer-li">
-                    <span class="footer-span">Legal</span>
-                    <span class="footer-span">875</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>&copy; 2021 unofficial type foundry</p>
-    </div>
-</footer>
-  <script src="main.js"></script>
-
 </body>
-
+<script src="main.js"></script>
 </html>
