@@ -343,7 +343,7 @@ footer {
 
 .footer-li:before {
 	  float: left;
-	  width: 0;
+	  width: 100%;
 	  white-space: nowrap;
 	  color: yellow;
 	  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";

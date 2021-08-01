@@ -17,7 +17,7 @@
 body {
 	font-family: "Teletext Type 1";
 	background-color: black;
-	
+	color: white;
 	font-size: var(--tt1-font-size);
 
 }
@@ -69,46 +69,72 @@ body {
 
 
 .font-panel-item {
+
     width: 33.3333%;
     height: 300px;
     color: white;
     cursor: pointer;
-    
+  
+   justify-content: space-evenly;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* background-image: url(../img/grid.svg); */
 }
 
-
-.font-panel-img-wrapper {
+.font-panel-div{
+ 
     height: 250px;
     display: flex;
+
     justify-content: center;
     align-items: center;
-    margin: 10px;
+
+    width: 97%;
+    background-color: blue;
 }
-
-.font-panel-img-wrapper img {
-
-   height: auto;
-    width: auto;
-    margin: 50px;
-   
-}
-
 
 .font-panel-img{
-    height: 140px;
+    height: 70%;
+    width: 70%;
 }
-
-
 
 .font-panel-data{
+    display: flex;
+    width: 97%;
     justify-content: space-between;
-    margin: 10px;
-
+ 
 }
 
-.font-panel-img-wrapper:hover {
-    background-color: black;
-    transition: ease-in-out .125s;
+
+.custom {
+    display: flex;
+    height: 100vh;
+    
+}
+.custom-panel-1 {
+    background-color: blue;
+    height: auto;
+    width: 50%;
+    margin: 100px 25px 50px 50px; 
+}
+
+.custom-panel-2 {
+    
+    height: auto;
+    width: 50%;
+    margin: 100px 50px 50px 25px; 
+}
+
+h1{
+    font-family: "TeleText Type 2";
+    color: white;
+    font-size: 50px;
+}
+
+p {
+    text-align: justify;
+    line-height: 150%;
 }
 
 @media (max-width: 768px){
