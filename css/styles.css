@@ -77,7 +77,12 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
-    /* background-image: url(../img/grid.svg); */
+    
+}
+
+.font-panel-div:hover{
+    background-color: black;
+    transition: ease-in-out .2s;
 }
 
 .font-panel-div{
@@ -87,7 +92,35 @@ body {
     justify-content: center;
     align-items: center;
     width: 97%;
+ /*    border: 2px solid white;
+   background-image: url(../img/grid.svg);
+   background-size: 8%;
+   background-position: 20px; */
+}
+
+.font-panel-item:nth-child(-n+18) .font-panel-div{
+    background-color: cyan;
+}
+
+.font-panel-item:nth-child(-n+15) .font-panel-div{
+    background-color: yellow;
+}
+
+.font-panel-item:nth-child(-n+12) .font-panel-div{
+    background-color: #FF00FF;
+}
+
+.font-panel-item:nth-child(-n+9) .font-panel-div{
     background-color: blue;
+}
+
+
+.font-panel-item:nth-child(-n+6) .font-panel-div{
+    background-color: lime;
+}
+
+.font-panel-item:nth-child(-n+3) .font-panel-div{
+    background-color: red;
 }
 
 .font-panel-img{
@@ -123,14 +156,100 @@ body {
 
 h1{
     font-family: "TeleText Type 2";
-    color: white;
-    font-size: 50px;
+    color: blue;
+    font-size: 60px;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 1vw;
+    
 }
 
 p {
     text-align: justify;
     line-height: 150%;
 }
+
+.seperator {
+    display: flex;
+}
+
+.seperator div {
+    height: 8px;
+    width: 25%;
+}
+
+
+/*#region projects.html */
+
+
+
+
+/* Header */
+
+.projects div{
+    display: flex;
+    width: 100%;
+}
+hr {
+    margin: 10px 0px;
+    border: blue 5px solid;
+}
+
+/* Project Panel */
+
+.font-project-panel {
+    display: flex;
+    height: 320px;
+    background-color: blue;
+/*     border: 2px solid white; 
+   background-image: url(../img/grid.svg);
+   background-size: 5%;
+   background-position: 20px;*/
+}
+
+
+
+.font-project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    width: 25%;
+}
+
+.font-project-img img{
+   height: 80%;
+   width: 80%;
+   
+}
+
+.font-project-list{
+    padding: 20px;
+    width: 50%;
+}
+
+.font-project-list ul li span{
+    left: 10px;
+    position: relative;
+}
+.font-project-list ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.font-project-list ul{
+    list-style-type: '*';
+    list-style-position: inside;
+}
+
+
+
+
+
+/*#endregion projects.html */
+
+
+
 
 @media (max-width: 1024px){
     .font-panel-item {
@@ -147,8 +266,6 @@ p {
     .font-panel-item {
         width: 100%;
         height: 200px;
-
-    
     }
 
     .font-panel-div{
