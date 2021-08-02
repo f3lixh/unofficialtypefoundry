@@ -192,19 +192,20 @@ p {
 }
 hr {
     margin: 10px 0px;
-    border: blue 5px solid;
+    border: red 5px solid;
 }
 
 /* Project Panel */
 
 .font-project-panel {
+    margin-bottom: 10px;
     display: flex;
-    height: 320px;
+    height: 280px;
     background-color: blue;
-/*     border: 2px solid white; 
+  /*    border: 2px solid white; 
    background-image: url(../img/grid.svg);
-   background-size: 5%;
-   background-position: 20px;*/
+   background-size: 3%;
+   background-position: 20px; */
 }
 
 
@@ -226,7 +227,8 @@ hr {
 
 .font-project-list{
     padding: 20px;
-    width: 50%;
+    width: 50%
+    
 }
 
 .font-project-list ul li span{
@@ -239,9 +241,27 @@ hr {
 
 .font-project-list ul{
     list-style-type: '*';
+    
     list-style-position: inside;
 }
 
+.font-project-progress{
+   
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.font-project-progress div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 100px;
+    
+}
 
 
 
