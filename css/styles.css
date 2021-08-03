@@ -244,6 +244,16 @@ hr {
     :root{
         --project-margin: 1.5%;
     }
+    
+    h1{
+        font-family: "TeleText Type 2";
+        color: blue;
+        font-size: 48px;
+        text-align: center;
+        background-color: white;
+        letter-spacing: 1vw;
+    }
+
     .font-panel-item {
         width: 100%;
         height: 200px;
@@ -257,6 +267,10 @@ hr {
     }
     /* projects.html */
     .font-panel-interact {
-        grid-template-columns: 58.5% 40%;
+        grid-template-columns: 38.5% 60%;
+    }
+
+    .font-project-progress div{
+        font-size: 60px;
     }
 }
