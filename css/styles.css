@@ -106,6 +106,7 @@ body {
     height: 100vh;
 }
 .custom-panel-1 {
+    display: flex;
     background-color: blue;
     height: auto;
     width: 50%;
