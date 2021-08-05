@@ -1,6 +1,8 @@
 :root {
 	--tt1-font-size: 20px;
-    --project-margin: .5%;
+    --project-margin: 2%;
+    --navbar-height: 50px;
+    --hr-margin: .5%;
 }
 /* UTILITY */
 *{
@@ -31,7 +33,7 @@ body {
 .nav-container {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: var(--navbar-height);
     position: fixed;
     top: 0;
 }
@@ -42,6 +44,7 @@ body {
     display: flex; 
     padding: 0px 50px;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 /* Font Panel */
 .font-panel-container{
@@ -68,7 +71,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 97%;
+    width: 98%;
  /*    border: 2px solid white;
    background-image: url(../img/grid.svg);
    background-size: 8%;
@@ -101,22 +104,7 @@ body {
     width: 97%;
     justify-content: space-between;
 }
-.custom {
-    display: flex;
-    height: 100vh;
-}
-.custom-panel-1 {
-    display: flex;
-    background-color: blue;
-    height: auto;
-    width: 50%;
-    margin: 100px 25px 50px 50px; 
-}
-.custom-panel-2 {
-    height: auto;
-    width: 50%;
-    margin: 100px 50px 50px 25px; 
-}
+
 h1{
     font-family: "TeleText Type 2";
     color: blue;
@@ -126,7 +114,7 @@ h1{
     letter-spacing: 1vw;
 }
 p {
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 150%;
 }
 .seperator {
@@ -143,12 +131,12 @@ p {
     width: 100%;
 }
 hr {
-    margin: var(--project-margin) 0px;
+    margin: var(--hr-margin) 0px;
     border: red 5px solid;
 }
 /* Project Panel */
 .font-project-panel {
-    margin-bottom: var(--project-margin) ;
+    margin-bottom: var(--hr-margin) ;
     display: grid;
     min-height: 280px;
     grid-template-columns: 25% 55% 20%;
@@ -176,6 +164,7 @@ hr {
     margin-bottom: 10px;
 }
 .font-project-list ul{
+    
     list-style-type: '*';
     padding: 0px 20px; 
 }
@@ -196,7 +185,7 @@ hr {
     margin-bottom: var(--project-margin);
     display: grid;
     grid-template-columns: 79.5% 20%;
-    grid-gap:  var(--project-margin);
+    grid-gap:  var(--hr-margin);
 }
 .font-panel-interact div:first-child {
    height: 100%;
@@ -216,6 +205,69 @@ hr {
     background-color: white;
 }
 /*#endregion projects.html */
+
+/*#region custom.html */
+
+.custom {
+    margin: var(--project-margin) 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--project-margin);
+   
+    
+}
+
+.custom-headline h1{
+    background-color: yellow;
+    color: blue;
+}
+
+.custom-headline hr{
+   border-color: blue;
+   border-width: 10px;
+}
+
+.btn div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+   height: var(--navbar-height);
+    
+}
+.custom-contact-btn{
+  
+    color: blue;
+  
+    
+}
+
+
+.custom-icon-panel {
+   
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.custom-icon-panel img {
+    height: 50vh;
+   
+}
+
+/* .custom-description {
+
+} */
+
+/*#endregion custom.html */
+
+@media (max-width: 1200px){
+   
+
+}
+
+
 @media (max-width: 1024px){
     :root{
         --project-margin: 1%;
@@ -240,7 +292,18 @@ hr {
     .font-panel-interact {
         grid-template-columns: 59% 40%;
     }
+    /* custom.html */
+    .custom {
+        grid-template-columns: 1fr;
+    }
+
 }
+
+@media (max-width: 768){
+    
+
+}
+
 @media (max-width: 540px){
     :root{
         --project-margin: 1.5%;
