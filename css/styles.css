@@ -288,9 +288,8 @@ hr {
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 55;
-    top: 42%;
-    left: 25%;
+   
+    margin: auto;
     width: 50%;
     background-color: black;
     padding: 50px;
