@@ -14,7 +14,8 @@
     box-sizing: inherit;
 }
 body {
-	font-family: "Teletext Type 1";
+	font-family: "Teletext Type 1", monospace;
+    /* letter-spacing: 3px; */
 	background-color: black;
 	color: white;
 	font-size: var(--tt1-font-size);
@@ -36,6 +37,7 @@ body {
     height: var(--navbar-height);
     position: fixed;
     top: 0;
+    z-index: 99;
 }
 .nav-ul {
     width: 100%;
@@ -53,7 +55,7 @@ body {
     flex-flow: row wrap;
 }
 .font-panel-item {
-    width: 33.3333%;
+    width: 25%;
     height: 300px;
     color: white;
     cursor: pointer;
@@ -71,13 +73,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: blue;
     width: 98%;
  /*    border: 2px solid white;
    background-image: url(../img/grid.svg);
    background-size: 8%;
    background-position: 20px; */
 }
-.font-panel-item:nth-child(-n+18) .font-panel-div{
+/* .font-panel-item:nth-child(-n+18) .font-panel-div{
     background-color: cyan;
 }
 .font-panel-item:nth-child(-n+15) .font-panel-div{
@@ -94,7 +97,9 @@ body {
 }
 .font-panel-item:nth-child(-n+3) .font-panel-div{
     background-color: red;
-}
+} */
+
+
 .font-panel-img{
     height: 70%;
     width: 70%;
@@ -109,6 +114,7 @@ h1{
     font-family: "TeleText Type 2";
     color: blue;
     font-size: 60px;
+    line-height: 140%;
     text-align: center;
     background-color: white;
     letter-spacing: 1vw;
@@ -210,10 +216,12 @@ hr {
 
 .custom {
     margin: var(--project-margin) 0px;
-    display: grid;
+   /*  display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--project-margin);
-   
+    grid-gap: var(--project-margin); */
+   display: flex;
+   justify-content: center;
+   align-items: center;
     
 }
 
@@ -249,11 +257,12 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: var(--project-margin);
    
 }
 .custom-icon-panel img {
-    height: 50vh;
-   
+    height: 500px;
+    width: 600px;
 }
 
 /* .custom-description {
@@ -261,6 +270,37 @@ hr {
 } */
 
 /*#endregion custom.html */
+
+
+
+.error{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2%;
+    height: 86vh;
+    margin-top: 9.5vh;
+    margin-bottom: 4.5vh ;
+}
+
+#overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 55;
+    top: 42%;
+    left: 25%;
+    width: 50%;
+    background-color: black;
+    padding: 50px;
+}
+
+#overlay h1{
+    background-color: transparent;
+    color: white;
+    letter-spacing: normal;
+}
 
 @media (max-width: 1200px){
    

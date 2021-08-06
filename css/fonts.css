@@ -5,19 +5,33 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeSpeed;
+    
 }
+
 @font-face {
-    font-family: "TeleText Type 2";
-    src: url("../fonts/TeletextType2/dehinted-TeleTextType2-Regular.eot");
-    src: url("../fonts/TeletextType2/dehinted-TeleTextType2-Regular.eot?#iefix") format('embedded-opentype'),
-        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.woff2') format('woff2'),
-        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.woff') format('woff'),
-        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.ttf') format('truetype'),
-        url('../fonts/TeletextType2/dehinted-TeleTextType2-Regular.svg#TeleTextType2-Regular') format('svg');
+    font-family: 'Teletext Type 3';
+    src: url('../fonts/TeletextType3/TeletextType3-Regular.woff2') format('woff2'),
+        url('../fonts/TeletextType3/TeletextType3-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+    text-rendering: optimizeSpeed;
+    
 }
+
+
+/* Webfont: TeleTextType2-Regular */@font-face {
+    font-family: 'TeleText Type 2';
+    src: url('../fonts/TeletextType2/TeleTextType2-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../fonts/TeletextType2/TeleTextType2-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+}
+
+/*
 @font-face {
     font-family: "New Austin";
     src: url('../fonts/NewAustin/New-Austin-Grunge.woff2') format('woff2'),
@@ -372,3 +386,4 @@
     text-rendering: optimizeLegibility;
 }
 
+ */
