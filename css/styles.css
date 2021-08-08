@@ -1,5 +1,5 @@
 :root {
-	--tt1-font-size: 20px;
+	--tt1-font-size: 16px;
     --project-margin: 2%;
     --navbar-height: 50px;
     --hr-margin: .5%;
@@ -47,6 +47,7 @@ body {
     padding: 0px 50px;
     justify-content: space-between;
     text-transform: uppercase;
+    font-size: 18px;
 }
 /* Font Panel */
 .font-panel-container{
@@ -125,7 +126,7 @@ p {
 }
 .seperator {
     display: flex;
-    margin:var(--project-margin)  0px ;
+    margin: var(--project-margin)  0px ;
 }
 .seperator div {
     height: 8px;
@@ -295,15 +296,15 @@ footer {
 .footer-container div {
     margin: var(--project-margin);
 }
-.foooter-ul li {
+.footer-ul li {
     margin-bottom: 20px;
 }
-.foooter-ul {
+.footer-ul {
    /*  max-width: 40em; */
     padding: 0;
     overflow-x: hidden;
     list-style: none}
-.foooter-ul li:before {
+.footer-ul li:before {
     float: left;
     width: 0;
     white-space: nowrap;
@@ -312,18 +313,52 @@ footer {
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "}
-.foooter-ul span:first-child {
+.footer-ul span:first-child {
     padding-right: 0.33em;
     background: black}
-.foooter-ul span + span {
+.footer-ul span + span {
     float: right;
     padding-left: 0.33em;
     background: black
 }
-.foooter-ul li a {
+.footer-ul li a {
     color: white;
 }
+
+.footer-copyright {
+    text-align: center;
+    padding: var(--project-margin);
+}
+
+.footer-links {
+    justify-content: center;
     
+}
+
+.footer-links a{
+    margin: 0px 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+}
+
+.footer-twitter {
+    background-image: url(../img/social_media/twitter.svg);
+}
+
+.footer-instagram {
+    background-image: url(../img/social_media/instagram.svg);
+}
+
+.footer-behance {
+    background-image: url(../img/social_media/behance_1.svg);
+}
+
+.footer-dribbble {
+    background-image: url(../img/social_media/dribbble.svg);
+}
 
 /*#endregion footer */
 
@@ -372,7 +407,7 @@ footer {
          display: grid;
         grid-template-columns: 1fr;
         }
-        .foooter-ul li {
+        .footer-ul li {
             margin-bottom: 30px;
         }
 /*#endregion footer */
