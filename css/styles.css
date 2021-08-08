@@ -10,9 +10,9 @@
     margin: 0;
     padding: 0px;
 }
-*, :after, :before {
+/* *, :after, :before {
     box-sizing: inherit;
-}
+} */
 body {
 	font-family: "Teletext Type 1", monospace;
     /* letter-spacing: 3px; */
@@ -106,7 +106,7 @@ body {
 }
 .font-panel-data{
     display: flex;
-    width: 97%;
+    width: 98%;
     justify-content: space-between;
 }
 
@@ -125,6 +125,7 @@ p {
 }
 .seperator {
     display: flex;
+    margin:var(--project-margin)  0px ;
 }
 .seperator div {
     height: 8px;
@@ -271,28 +272,10 @@ hr {
 
 /*#endregion custom.html */
 
-
-
-.error{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 2%;
+.error {
     height: 100vh;
-   
 }
 
-#overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-   
-    margin: auto;
-    width: 50%;
-    background-color: black;
-    padding: 50px;
-}
 
 #overlay h1{
     background-color: transparent;
@@ -300,13 +283,62 @@ hr {
     letter-spacing: normal;
 }
 
-@media (max-width: 1200px){
-   
+/*#region footer */
 
+footer {
+    margin-top: var(--project-margin);
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-container div {
+    margin: var(--project-margin);
+}
+.foooter-ul li {
+    margin-bottom: 20px;
+}
+.foooter-ul {
+   /*  max-width: 40em; */
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+.foooter-ul li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+.foooter-ul span:first-child {
+    padding-right: 0.33em;
+    background: black}
+.foooter-ul span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: black
+}
+.foooter-ul li a {
+    color: white;
+}
+    
+
+/*#endregion footer */
+
+@media (max-width: 1200px){
+   /*#region footer */
+   .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+   
+    /*#endregion footer */
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 986px){
     :root{
         --project-margin: 1%;
     }
@@ -334,6 +366,16 @@ hr {
     .custom {
         grid-template-columns: 1fr;
     }
+
+     /*#region footer */
+        .footer-container {
+         display: grid;
+        grid-template-columns: 1fr;
+        }
+        .foooter-ul li {
+            margin-bottom: 30px;
+        }
+/*#endregion footer */
 
 }
 
