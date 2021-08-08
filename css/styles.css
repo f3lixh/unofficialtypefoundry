@@ -3,6 +3,7 @@
     --project-margin: 2%;
     --navbar-height: 50px;
     --hr-margin: .5%;
+    --basic-margin: 20px;
 }
 /* UTILITY */
 *{
@@ -287,14 +288,14 @@ hr {
 /*#region footer */
 
 footer {
-    margin-top: var(--project-margin);
+    margin-top: var(--basic-margin);
 }
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .footer-container div {
-    margin: var(--project-margin);
+    margin: var(--basic-margin);
 }
 .footer-ul li {
     margin-bottom: 20px;
@@ -327,12 +328,12 @@ footer {
 
 .footer-copyright {
     text-align: center;
-    padding: var(--project-margin);
+    padding: var(--basic-margin);
 }
 
 .footer-links {
     justify-content: center;
-    
+    margin: var(--basic-margin);
 }
 
 .footer-links a{
