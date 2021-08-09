@@ -1,9 +1,11 @@
 :root {
 	--tt1-font-size: 16px;
     --project-margin: 2%;
-    --navbar-height: 50px;
+    --navbar-height: 56px;
     --hr-margin: .5%;
     --basic-margin: 20px;
+    --homepage-var-font-width: 0;
+    --homepage-var-font-weight: 0;
 }
 /* UTILITY */
 *{
@@ -50,6 +52,37 @@ body {
     text-transform: uppercase;
     font-size: 18px;
 }
+/*#region Homepage */
+
+#homepage-cover {
+    width: 100%;
+    height: calc(100vh - 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: red; */
+}
+
+
+.homepage-var-display{
+    font-family: "Secret-VF";
+    font-size: 120px;
+    transition:  .2s;
+    
+ }
+
+
+/* .homepage-cover:hover span{
+    font-variation-settings: 'wght' --homepage-var-font-weight, 'wdth' --homepage-var-font-width;
+}
+ */
+
+/*#endregion Homepage */
+
+
+
+
+
 /* Font Panel */
 .font-panel-container{
     display: flex;
@@ -411,7 +444,7 @@ footer {
         .footer-ul li {
             margin-bottom: 30px;
         }
-/*#endregion footer */
+    /*#endregion footer */
 
 }
 

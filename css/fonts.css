@@ -31,6 +31,12 @@
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: "Secret-VF";
+    src: url('../fonts/Odiosis/Secret-VF.ttf') format('truetype');
+    font-weight: 100 1000;
+}
+
 /*
 @font-face {
     font-family: "New Austin";
@@ -48,11 +54,7 @@
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: "Secret-VF";
-    src: url('../fonts/Odiosis/Secret-VF-VF.ttf') format('truetype');
-    font-weight: 100 1000;
-}
+
 
 @font-face {
     font-family: "ViceVersa-Thin";

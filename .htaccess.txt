@@ -1,1 +1,1 @@
-ErrorDocument 404 /standby.html
+ErrorDocument 404 /error.html

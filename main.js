@@ -4,49 +4,54 @@
 showDate();
 clock();
 
-function clock() { 
-  var time = new Date(),
 
-    
-    hours = time.getHours(),
+document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
 
-    
-    minutes = time.getMinutes(),
+	var weight = ((800/(document.getElementById("homepage-cover").offsetWidth))*e.x +100);
+	var width = "'wdth' " + ((55/(document.getElementById("homepage-cover").offsetHeight))*e.y +70);
 
 
-    seconds = time.getSeconds();
 
-  document.getElementById("timeDisplay").innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+	$("#homepage-var-font").css("font-weight", weight)
+	$("#homepage-var-font").css("font-variation-settings", width)
 
 
+
+});
+
+function clock() {
+	var time = new Date(),
+		hours = time.getHours(),
+		minutes = time.getMinutes(),
+		seconds = time.getSeconds();
+	document.getElementById("timeDisplay").innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
 }
 
 function harold(standIn) {
-  if (standIn < 10) {
-    standIn = '0' + standIn
-  }
-  return standIn;
+	if (standIn < 10) {
+		standIn = '0' + standIn
+	}
+	return standIn;
 }
 
-setInterval(clock, 1000);
 
 function monthName(mon) {
-   return ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'][mon];
+	return ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'][mon];
 }
+
+
 
 
 function showDate() {
-  var currentDate = new Date(),
-    day = currentDate.getDate(),
-    month = currentDate.getMonth(),
-    year = currentDate.getFullYear();
-
- 
-  document.getElementById("dateDisplay").innerHTML = monthName(month) + " " + day + "th " + year;
+	var currentDate = new Date(),
+		day = currentDate.getDate(),
+		month = currentDate.getMonth(),
+		year = currentDate.getFullYear();
+	document.getElementById("dateDisplay").innerHTML = monthName(month) + " " + day + "th " + year;
 }
 
-$(document).ready(function(){
-	$(".fontPreview").hover(function(){
+$(document).ready(function () {
+	$(".fontPreview").hover(function () {
 		var tempColorID = Math.floor(Math.random() * 5);
 		switch (tempColorID) {
 			case 0:
@@ -64,27 +69,27 @@ $(document).ready(function(){
 			default:
 				$(this).css("border-color", "cyan");
 		}
-		
+
 	});
-	
+
 });
 
 $(".secret").hover(
-	function() {
-	  $("#secret").css("font-weight", "1000");
-	  $( "#secret" ).css("transition", "all .15s cubic-bezier(0.25, 0.46, 0.45, 0.94)",)
+	function () {
+		$("#secret").css("font-weight", "1000");
+		$("#secret").css("transition", "all .15s cubic-bezier(0.25, 0.46, 0.45, 0.94)",)
 
-	}, 
-	function() {
-	  $( "#secret" ).css("font-weight", "100",);
-	  $( "#secret" ).css("transition", "all .15s cubic-bezier(0.25, 0.46, 0.45, 0.94)",)
+	},
+	function () {
+		$("#secret").css("font-weight", "100",);
+		$("#secret").css("transition", "all .15s cubic-bezier(0.25, 0.46, 0.45, 0.94)",)
 	}
-  );
+);
 
 function checkIndex() {
 	var temp = document.getElementById("index").value + "";
-	if(temp.length === 3) {
-		switch(temp) {
+	if (temp.length === 3) {
+		switch (temp) {
 			case "100":
 				location.replace("http://127.0.0.1:5500/index.html")
 				break;
@@ -92,8 +97,8 @@ function checkIndex() {
 				location.replace("http://127.0.0.1:5500/fonts.html")
 				break;
 			case "900":
-					location.replace("http://127.0.0.1:5500/imprint.html")
-					break;	
+				location.replace("http://127.0.0.1:5500/imprint.html")
+				break;
 			default:
 				console.log("Dumb");
 		}
@@ -108,7 +113,7 @@ function changeBurgerCharacter() {
 	navButtons.classList.toggle("active");
 
 	const navIcon = document.getElementById("nav-button").innerHTML;
-	switch(navIcon) {
+	switch (navIcon) {
 		case '\u2630':
 			$("#nav-button").text('\u2612');
 			break;
