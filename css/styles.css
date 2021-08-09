@@ -398,6 +398,25 @@ footer {
 
 @media (max-width: 1200px){
    /*#region footer */
+
+   .font-panel-item {
+    width: 50%;
+    height: 300px;
+    color: white;
+    cursor: pointer;
+}
+.font-project-img {
+    padding: 20px;
+}
+.font-project-panel {
+    grid-template-areas: 
+    "div"
+    "div"
+    "div";
+    grid-template-columns: 100%;
+}
+
+
    .footer-container {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -411,22 +430,7 @@ footer {
     :root{
         --project-margin: 1%;
     }
-    .font-panel-item {
-        width: 50%;
-        height: 300px;
-        color: white;
-        cursor: pointer;
-    }
-    .font-project-img {
-        padding: 20px;
-    }
-    .font-project-panel {
-        grid-template-areas: 
-        "div"
-        "div"
-        "div";
-        grid-template-columns: 100%;
-    }
+    
     /* projects.html */
     .font-panel-interact {
         grid-template-columns: 59% 40%;
