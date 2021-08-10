@@ -63,7 +63,6 @@ body {
    /*  background-color: red; */
 }
 
-
 .homepage-var-display{
     font-family: "Secret-VF";
     font-size: 120px;
@@ -71,16 +70,66 @@ body {
     
  }
 
-
-/* .homepage-cover:hover span{
-    font-variation-settings: 'wght' --homepage-var-font-weight, 'wdth' --homepage-var-font-width;
-}
- */
-
 /*#endregion Homepage */
 
+/*
+  ______                   _         
+ |  ____|                 | |        
+ | |__      ___    _ __   | |_   ___ 
+ |  __|    / _ \  | '_ \  | __| / __|
+ | |      | (_) | | | | | | |_  \__ \
+ |_|       \___/  |_| |_|  \__| |___/
+                                     
+                                     
+ */
+/*#region fonts.html */
+
+.fonts-listview {
+    display: flex;
+    flex-direction: column; 
+   
+}
+
+.fonts-listitem{
+    background-color: red;
+    margin: 20px;  
+}
+
+.fonts-li-metadata {
+    display: flex;
+
+}
+
+.fonts-li-tester {
+    font-size: inherit;
+    line-height: 120%;
+    overflow: visible;
+    min-width: calc(100% + 5em);
+    outline: none;
+    height: 200px;
+    
+}
+
+.typeface-newaustin {
+
+}
 
 
+/*#endregion fonts.html */
+
+
+/* 
+
+  _____                     _                 _   
+ |  __ \                   (_)               | |  
+ | |__) |  _ __    ___      _    ___    ___  | |_ 
+ |  ___/  | '__|  / _ \    | |  / _ \  / __| | __|
+ | |      | |    | (_) |   | | |  __/ | (__  | |_ 
+ |_|      |_|     \___/    | |  \___|  \___|  \__|
+                          _/ |                    
+                         |__/  
+
+*/
 
 
 /* Font Panel */
@@ -115,24 +164,6 @@ body {
    background-size: 8%;
    background-position: 20px; */
 }
-/* .font-panel-item:nth-child(-n+18) .font-panel-div{
-    background-color: cyan;
-}
-.font-panel-item:nth-child(-n+15) .font-panel-div{
-    background-color: yellow;
-}
-.font-panel-item:nth-child(-n+12) .font-panel-div{
-    background-color: #FF00FF;
-}
-.font-panel-item:nth-child(-n+9) .font-panel-div{
-    background-color: blue;
-}
-.font-panel-item:nth-child(-n+6) .font-panel-div{
-    background-color: lime;
-}
-.font-panel-item:nth-child(-n+3) .font-panel-div{
-    background-color: red;
-} */
 
 
 .font-panel-img{
@@ -248,6 +279,17 @@ hr {
 }
 /*#endregion projects.html */
 
+
+/* 
+  _____                 _                       
+ / ____|               | |                      
+| |       _   _   ___  | |_    ___    _ __ ___  
+| |      | | | | / __| | __|  / _ \  | '_ ` _ \ 
+| |____  | |_| | \__ \ | |_  | (_) | | | | | | |
+ \_____|  \__,_| |___/  \__|  \___/  |_| |_| |_| 
+ 
+ */
+
 /*#region custom.html */
 
 .custom {
@@ -264,6 +306,9 @@ hr {
 .custom-headline h1{
     background-color: yellow;
     color: blue;
+    font-family: "New Austin";
+
+   letter-spacing: normal;
 }
 
 .custom-headline hr{
@@ -301,9 +346,9 @@ hr {
     width: 600px;
 }
 
-/* .custom-description {
 
-} */
+                                               
+                                               
 
 /*#endregion custom.html */
 
@@ -400,7 +445,7 @@ footer {
    /*#region footer */
 
    .font-panel-item {
-    width: 50%;
+    width: 33.333333%;
     height: 300px;
     color: white;
     cursor: pointer;
@@ -408,13 +453,7 @@ footer {
 .font-project-img {
     padding: 20px;
 }
-.font-project-panel {
-    grid-template-areas: 
-    "div"
-    "div"
-    "div";
-    grid-template-columns: 100%;
-}
+
 
 
    .footer-container {
@@ -429,6 +468,9 @@ footer {
 @media (max-width: 986px){
     :root{
         --project-margin: 1%;
+    }
+    .font-panel-item {
+        width: 50%;
     }
     
     /* projects.html */

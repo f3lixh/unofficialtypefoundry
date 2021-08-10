@@ -37,7 +37,7 @@
     font-weight: 100 1000;
 }
 
-/*
+
 @font-face {
     font-family: "New Austin";
     src: url('../fonts/NewAustin/New-Austin-Grunge.woff2') format('woff2'),
@@ -46,6 +46,7 @@
     font-style: normal;
     font-display: swap;
 }
+/*
 @font-face {
     font-family: "invetero";
     src: url('../fonts/invetero/invetero-Regular.woff2') format('woff2'),

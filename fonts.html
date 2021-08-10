@@ -1,119 +1,110 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/util.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="lib/jquery.fittext.js"></script>
-    <link rel="icon" src="img/logo_icon.png">
+    <link rel="icon" href="img/logo_icon.png">
     <title>unofficial type foundry</title>
 </head>
 
-<body onresize="fitMyFonts()">
+<body>
 
-    <!-- Navbar -->
+    <nav class="nav-container">
+        <ul class="nav-ul bg-white">
+            <li class="nav-listitem"><a class="text-red" href="index.html">UTF/100</a></li>
+            <li class="nav-listitem"><a class="text-black" href="">Fonts</a></li>
+            <li class="nav-listitem"><a class="text-black" href="custom.html">Custom</a></li>
+            <li class="nav-listitem"><a class="text-black" href="projects.html">Projects</a></li>
+            <li class="nav-listitem">
+                <p class="text-blue non-select" href="" id="dateDisplay"></p>
+            </li>
+            <li class="nav-listitem">
+                <p class="text-blue non-select" href="" id="timeDisplay"></p>
+            </li>
+        </ul>
 
-    <header class="navbar-header">
+    </nav>
 
-        <div class="navbar-left">
-            <form action="">
-                <label for="">P/</label><input name="index" type="number" id="index" class="indexInput"
-                    placeholder="100" oninput="checkIndex()">
-            </form>
-            <a class="nav-buttons" id="fonts">Fonts</a>
-            <a class="nav-buttons" id="projects">Projects</a>
-            <a class="nav-buttons" id="custom">Custom</a>
-            <a class="nav-buttons" id="about">About</a>
-        </div>
+    <main style="margin-top: var(--navbar-height);">
 
-        <div class="navbar-right">
-            <p id="dateDisplay"></p>
-            <p id="timeDisplay"></p>
-        </div>
+        <section class="fonts-listview">
+            <article class="fonts-listitem">
+                <div class="fonts-li-metadata">
+                    <div>New Austin</div>
+                    <input class="fonts-slider" type="range" min="16" max="160" value="140">
+                </div>
+                <div class="fonts-li-tester typeface-newaustin"  contenteditable="true">
+                    New Austin by Felix Huber based
+                </div>
+                
+            </article>
 
+            <article class="fonts-listitem">
+                <div class="fonts-li-metadata">
+                    <div>New Austin</div>
+                    <input class="fonts-slider" type="range" min="16" max="160" value="140">
+                </div>
+                <div class="fonts-li-tester typeface-newaustin" contenteditable="true">
+                    New Austin by Felix Huber based
+                </div>
+                
+            </article>
+        </section>
+        
+    </main>
 
-    </header>
-
-    <!-- Header -->
-    <section class="mtop">
-        <div class="grid-index">
-            <div class="grid-index-headline"> 
-                <h4>Index</h4>
-            </div>
-            <div class="index-headline">
-            </div>
-            <div class="index-filler">
-            </div>
-        </div>
-    </section>
     <footer>
-        <div class="advert">
-            <h4 style="font-weight: normal;" id="advert">You can also support my work on Patreon!</h4>
-        </div>
-        <div class="footer-grid">
 
-            <div class="footer-list">
-                <ul>
-                    <li>
-                        <span>Imprint</span>
-                        <span>548</span>
-                    </li>
-                    <li>
-                        <span>Privacy</span>
-                        <span>782</span>
-                    </li>
-                    <li>
-                        <span>Legal</span>
-                        <span>875</span>
-                    </li>
+        <div class="seperator">
+            <div class="bg-cyan"></div>
+            <div class="bg-red"></div>
+            <div class="bg-pink"></div>
+            <div class="bg-yellow"></div>
+            <div class="bg-green"></div>
+        </div>
+
+        <div class="footer-container">
+
+
+            <div>
+                <ul class="footer-ul">
+                    <li><a href="#"><span>Fonts</span><span>201</span></a></li>
+                    <li><a href="#"><span>Projects</span><span>301</span></a></li>
+                    <li><a href="#"><span>About</span><span>401</span></a></li>
+                    <li><a href="#"><span>Custom</span><span>501</span></a></li>
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul>
-                    <li>
-                        <span>Fonts</span>
-                        <span>200</span>
-                        </a>
-                    </li>
-                    <li>
-                        <span>Projects</span>
-                        <span>300</span>
-                    </li>
-                    <li>
-                        <span>Custom</span>
-                        <span>400</span>
-                    </li>
-                    <li>
-                        <span>About</span>
-                        <span>500</span>
-                    </li>
+            <div>
+                <ul class="footer-ul">
+                    <li><a href="#"><span>Imprint</span><span>601</span></a></li>
+                    <li><a href="#"><span>Contact</span><span>602</span></a></li>
+                    <li><a href="#"><span>Cookies</span><span>603</span></a></li>
                 </ul>
             </div>
-            <div class="footer-list">
-                <ul>
-                    <li>
-                        <span>Index</span>
-                        <span>548</span>
-                    </li>
-                    <li>
-                        <span>About</span>
-                        <span>782</span>
-                    </li>
-                    <li>
-                        <span>Legal</span>
-                        <span>875</span>
-                    </li>
+            <div>
+                <ul class="footer-ul">
+                    <li><a href="#"><span>License</span><span>602</span></a></li>
+                    <li><a href="#"><span>Information</span><span>402</span></a></li>
+                    <li><a href="#"><span>Social</span><span>901</span></a></li>
                 </ul>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2021 unofficial type foundry</p>
+        <div class="footer-links flex">
+            <a href="https://twitter.com/hubfex" target="_blank" class="footer-twitter"></a>
+            <a href="https://twitter.com/home" target="_blank" class="footer-instagram"></a>
+            <a href="https://www.behance.net/felixsfoundry" target="_blank" class="footer-behance"></a>
+            <a href="https://twitter.com/home" target="_blank" class="footer-dribbble"></a>
         </div>
+        <p class="footer-copyright non-select">&#169; 2021 unofficial type foundry</p>
     </footer>
-    <script src="main.js"></script>
 
 </body>
+
+<script src="main.js"></script>
 
 </html>

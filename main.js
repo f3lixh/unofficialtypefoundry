@@ -4,20 +4,21 @@
 showDate();
 clock();
 
+var sliders = document.getElementsByClassName("fonts-slider");
+sliders[0].oninput = function() {
+	$(".fonts-li-tester").css("font-size", this.value + "px");
+}
 
 document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
 
 	var weight = ((800/(document.getElementById("homepage-cover").offsetWidth))*e.x +100);
 	var width = "'wdth' " + ((55/(document.getElementById("homepage-cover").offsetHeight))*e.y +70);
-
-
-
 	$("#homepage-var-font").css("font-weight", weight)
 	$("#homepage-var-font").css("font-variation-settings", width)
 
-
-
 });
+
+
 
 function clock() {
 	var time = new Date(),
