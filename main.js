@@ -8,7 +8,7 @@ clock();
 
 $('.fonts-slider').each(function(){	
 	this.oninput = function( ) {
-		$(this).parent().next("div").css("font-size", this.value +"px");	
+		$(this).parent().parent().next("div").css("font-size", this.value +"px");	
 	}});
 
 document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {

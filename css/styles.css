@@ -87,27 +87,62 @@ body {
 .fonts-listview {
     display: flex;
     flex-direction: column; 
-   
 }
 
-.fonts-listitem{
-    background-color: red;
+.fonts-listitem{ 
     margin: 20px;  
 }
 
 .fonts-li-metadata {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
 }
+
+.fonts-li-metadata h3{
+    padding: 16px;
+   margin-right: auto;
+}
+
+.fonts-li-metadata div {
+    width: 80%;
+}
+
+.fonts-slider {
+    -webkit-appearance: none;
+    margin-left: auto;
+    appearance: none;
+    height: 8px;
+    outline: none;
+    background-color: red;
+    width: 20%;
+}
+
+.fonts-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 0;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+}
+.fonts-slider::-moz-range-thumb {
+    border-radius: 0;
+    border: 0;
+    background-color: red;
+    height: 18px;
+    width: 18px;
+  }
 
 .fonts-li-tester {
-    font-size: 140px;
-  min-height: 300px;
+    font-size: 100px;
+    padding: 16px;
+    outline: none;
+   overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+  text-overflow: ellipsis; 
     
-}
-
-.typeface-newaustin {
-
 }
 
 
