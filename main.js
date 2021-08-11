@@ -4,10 +4,12 @@
 showDate();
 clock();
 
-var sliders = document.getElementsByClassName("fonts-slider");
-sliders[0].oninput = function() {
-	$(".fonts-li-tester").css("font-size", this.value + "px");
-}
+/* Silders */
+
+$('.fonts-slider').each(function(){	
+	this.oninput = function( ) {
+		$(this).parent().next("div").css("font-size", this.value +"px");	
+	}});
 
 document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
 

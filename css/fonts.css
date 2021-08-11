@@ -46,7 +46,7 @@
     font-style: normal;
     font-display: swap;
 }
-/*
+
 @font-face {
     font-family: "invetero";
     src: url('../fonts/invetero/invetero-Regular.woff2') format('woff2'),
@@ -56,7 +56,7 @@
     font-display: swap;
 }
 
-
+/*
 @font-face {
     font-family: "ViceVersa-Thin";
     src: url('../fonts/ViceVersa/ViceVersa-Thin.woff2') format('woff2'),

@@ -101,12 +101,8 @@ body {
 }
 
 .fonts-li-tester {
-    font-size: inherit;
-    line-height: 120%;
-    overflow: visible;
-    min-width: calc(100% + 5em);
-    outline: none;
-    height: 200px;
+    font-size: 140px;
+  min-height: 300px;
     
 }
 
