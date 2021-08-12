@@ -11,6 +11,17 @@ $('.fonts-slider').each(function(){
 		$(this).parent().parent().next("div").css("font-size", this.value +"px");	
 	}});
 
+$('.fonts-slider-tracking').each(function(){	
+	this.oninput = function( ) {
+		$(this).parent().parent().next("div").css("line-height", this.value +"%");	
+	}});
+
+$('.fonts-slider-leading').each(function(){	
+	this.oninput = function( ) {
+		$(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
+	}});
+		
+
 document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
 
 	var weight = ((800/(document.getElementById("homepage-cover").offsetWidth))*e.x +100);
@@ -19,6 +30,9 @@ document.getElementById("homepage-cover").addEventListener('mousemove', function
 	$("#homepage-var-font").css("font-variation-settings", width)
 
 });
+
+
+
 
 
 

@@ -86,36 +86,37 @@ body {
 
 .fonts-listview {
     display: flex;
+    
     flex-direction: column; 
 }
 
 .fonts-listitem{ 
-    margin: 20px;  
+    margin: 20px;
+    
+    background-color: rgba(255, 255, 255, .1);  
 }
 
 .fonts-li-metadata {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-.fonts-li-metadata h3{
+    flex-flow: row wrap;
     padding: 16px;
-   margin-right: auto;
 }
 
-.fonts-li-metadata div {
-    width: 80%;
+.fonts-li-metadata h3, .fonts-slider-container{
+   width: 25%;
 }
+
+
 
 .fonts-slider {
     -webkit-appearance: none;
-    margin-left: auto;
     appearance: none;
     height: 8px;
     outline: none;
     background-color: red;
-    width: 20%;
+    
 }
 
 .fonts-slider::-webkit-slider-thumb {
@@ -138,10 +139,10 @@ body {
     font-size: 100px;
     padding: 16px;
     outline: none;
-   overflow: hidden;
-    white-space: nowrap;
-    word-wrap: break-word;
-  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
     
 }
 
@@ -473,9 +474,15 @@ footer {
 /*#endregion footer */
 
 @media (max-width: 1200px){
-   /*#region footer */
+    /* fonts.html */
+    .fonts-li-metadata h3, .fonts-slider-container{
+        width: 33.333333%;
+        margin-bottom: 20px;
+     }
 
-   .font-panel-item {
+
+   /*#region footer */
+.font-panel-item {
     width: 33.333333%;
     height: 300px;
     color: white;
@@ -500,6 +507,13 @@ footer {
     :root{
         --project-margin: 1%;
     }
+
+
+    .fonts-li-metadata h3, .fonts-slider-container{
+        width: 50%;
+        margin-bottom: 20px;
+     }
+
     .font-panel-item {
         width: 50%;
     }
@@ -526,7 +540,10 @@ footer {
 }
 
 @media (max-width: 768){
-    
+    .fonts-li-metadata h3, .fonts-slider-container{
+        width: 100%;
+        margin-bottom: 20px;
+     }
 
 }
 
