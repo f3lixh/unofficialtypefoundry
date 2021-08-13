@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'Teletext Type 1';
     src: url('../fonts/TeletextType1/TeletextType1-Regular.woff2') format('woff2'),
+    url('../fonts/TeletextType1/TeletextType1-Regular.otf') format('otf'),
         url('../fonts/TeletextType1/TeletextType1-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    text-rendering: optimizeSpeed;
+   
     
 }
 
@@ -54,6 +55,30 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karolin';
+    src: url('../fonts/Karolin/FelixKaro-Regular.eot');
+    src: url('../fonts/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Karolin/FelixKaro-Regular.woff') format('woff'),
+         url('../fonts/Karolin/FelixKaro-Regular.woff2') format('woff2'),
+         url('../fonts/Karolin/FelixKaro-Regular.ttf') format('truetype');
+     font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'CaptainLoggins Rocks';
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot');
+    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
+         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }
 
 /*
@@ -124,29 +149,7 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Karolin';
-    src: url('../fonts/Karolin/FelixKaro-Regular.eot');
-    src: url('../fonts/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Karolin/FelixKaro-Regular.woff') format('woff'),
-         url('../fonts/Karolin/FelixKaro-Regular.woff2') format('woff2'),
-         url('../fonts/Karolin/FelixKaro-Regular.ttf') format('truetype');
-     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 
-@font-face {
-    font-family: 'CaptainLoggins Rocks';
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot');
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 
 @font-face {
     font-family: 'CaptainLoggins Regular';

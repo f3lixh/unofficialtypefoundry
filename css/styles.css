@@ -88,12 +88,15 @@ body {
     display: flex;
     
     flex-direction: column; 
+    
 }
 
 .fonts-listitem{ 
-    margin: 20px;
-    
-    background-color: rgba(255, 255, 255, .1);  
+    margin: 20px 20px 0px 20px;
+    padding: 16px;
+/*     border: 2px solid white;
+    border-top: 0; */
+    /* background-color: rgba(255, 255, 255, .1); */
 }
 
 .fonts-li-metadata {
@@ -101,14 +104,32 @@ body {
     flex-wrap: wrap;
     align-items: center;
     flex-flow: row wrap;
-    padding: 16px;
+   margin-bottom: 16px;
 }
+
+.fonts-li-metadata h3 {
+    opacity: 1 !important;
+ }
+ 
+ .fonts-li-metadata > *, .fonts-hr{
+    opacity: 0;
+    transition: ease-in-out .3s;
+}
+ 
+
 
 .fonts-li-metadata h3, .fonts-slider-container{
-   width: 25%;
+   margin-right: 50px;
 }
 
 
+
+.fonts-li-metadata h3:before{
+    content: '· ';
+    color: red;
+    height: 5px;
+    width: 5px;
+ }
 
 .fonts-slider {
     -webkit-appearance: none;
@@ -116,7 +137,6 @@ body {
     height: 8px;
     outline: none;
     background-color: red;
-    
 }
 
 .fonts-slider::-webkit-slider-thumb {
@@ -130,23 +150,72 @@ body {
 .fonts-slider::-moz-range-thumb {
     border-radius: 0;
     border: 0;
-    background-color: red;
+    background-color: white;
     height: 18px;
     width: 18px;
   }
 
 .fonts-li-tester {
     font-size: 100px;
-    padding: 16px;
+    
     outline: none;
-  display: -webkit-box;
+    overflow: hidden;
+/*   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
+  -webkit-box-orient: vertical; */
+    word-wrap: break-word;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fonts-active-otf {
+    font-feature-settings: "liga" 0, "ss01" 1, "ss02" 1;
+}
+
+.fonts-feature-buttons{
+    display: flex;
+}
+.fonts-feature-toggle, .fonts-feature-readmore{
+    
+    padding: 16px 16px 16px 0px;
+    cursor: pointer;
+}
+.fonts-feature-readmore{ margin-left: auto;
+    padding: 16px 0 16px 16px;}
+.fonts-feature-toggle:hover{
+    color: red;
+}
+.fonts-hr{
+    border: 2px solid white;
     
 }
 
+.fonts-feature-container{
+    display: none;
+    
+    
+}
 
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease-in-out .3s;
+}
+.fonts-feaute-xxxx{
+    font-family: "TeleText Type 1";
+    font-size: var(--tt1-font-size);
+    color: white;
+    border-radius: 0;
+    border:none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: var(--basic-margin);
+    margin-bottom: var(--basic-margin);
+    cursor: pointer;
+    background-color: red;
+    text-transform: uppercase;
+}
 /*#endregion fonts.html */
 
 
@@ -475,10 +544,10 @@ footer {
 
 @media (max-width: 1200px){
     /* fonts.html */
-    .fonts-li-metadata h3, .fonts-slider-container{
-        width: 33.333333%;
+     .fonts-li-metadata h3, .fonts-slider-container{
+        /* width: 33.333333%; */
         margin-bottom: 20px;
-     }
+     } 
 
 
    /*#region footer */
@@ -509,14 +578,14 @@ footer {
     }
 
 
-    .fonts-li-metadata h3, .fonts-slider-container{
+   /*  .fonts-li-metadata h3, .fonts-slider-container{
         width: 50%;
         margin-bottom: 20px;
      }
 
     .font-panel-item {
         width: 50%;
-    }
+    } */
     
     /* projects.html */
     .font-panel-interact {
@@ -540,10 +609,10 @@ footer {
 }
 
 @media (max-width: 768){
-    .fonts-li-metadata h3, .fonts-slider-container{
+ /*    .fonts-li-metadata h3, .fonts-slider-container{
         width: 100%;
         margin-bottom: 20px;
-     }
+     } */
 
 }
 
