@@ -50,36 +50,7 @@ function changeFonts() {
 }
 function toggleFontFeature(elmnt) 
 {
-	/* console.log($(elmnt).parent().parent().children(".fonts-li-tester"))
-	$(elmnt).parent().parent().children(".fonts-li-tester").toggleClass(elmnt.value); */
-
-	/* var f = $(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings");
-	if(f.includes(elmnt.value)){
-		console.log("true:" + f);
-		var newString2 = f.replaceAll('"' + elmnt.value + '"',"");
-		
-		newString2 = newString2.replace(', ,', ", ");
-		console.log("pas" + newString2)
-		$(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings", newString2);
-	} else {
-		console.log("false:" + f);
-		var newString = f.concat(', "' + elmnt.value + '"')
-		console.log(newString)
-		$(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings", newString);
-	} */
-
-	/* 	console.log(f);
-	var store = [];
-	var features = f.split(', ');
-features.forEach(element => {
-	if(element.includes(' 0') || element.includes(' 1')) {
-		store.push(element.substr(0,6),"fuck")
-		console.log(store[0])
-	} else {
-		
-	}
-});
- */
+	
 	var f = $(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings");
  	/* console.log(f); */
 	var store = [];
@@ -126,6 +97,9 @@ $('.fonts-listitem').hover(function() {
 	$(this).children(".fonts-hr").toggleClass("hide");
 })
 	
+function toggleUppercase(elmnt) {
+	$(elmnt).parent().parent().parent().children(".fonts-li-tester").toggleClass("uppercase");
+}
 
 /* document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
 

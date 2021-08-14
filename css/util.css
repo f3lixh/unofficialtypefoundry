@@ -115,7 +115,10 @@ img {
 .hide {
     opacity: 1;
 }
-.liga {
+.uppercase {
+    text-transform: uppercase;
+}
+/* .liga {
     font-feature-settings: "liga" off;
 }
 .salt {
@@ -193,3 +196,4 @@ img {
 .ss20 {
     font-feature-settings: "ss20" 1;
 }
+ */
