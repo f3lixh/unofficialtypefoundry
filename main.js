@@ -18,7 +18,7 @@ $('.fonts-slider-size').each(function(){
 
 $('.fonts-slider-tracking').each(function(){	
 	this.oninput = function( ) {
-		$(this).parent().parent().next("div").css("line-height", this.value +"%");	
+		$(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
 	}});
 
 /* $('.fonts-slider-leading').each(function(){	
