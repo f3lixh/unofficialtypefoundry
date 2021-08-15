@@ -39,6 +39,7 @@ function showFontFeatures(elmnt)
 	/* x.classList.toggle("fonts-features"); */
 	console.log($(elmnt).parent())
 	$(elmnt).parent().parent().children(".fonts-feature-container").toggleClass("box");
+	$(elmnt).toggleClass("fonts-arrow-down");
 }
 function changeFonts() {
 	//DEBUG

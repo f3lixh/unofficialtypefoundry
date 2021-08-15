@@ -79,8 +79,7 @@ body {
  |  __|    / _ \  | '_ \  | __| / __|
  | |      | (_) | | | | | | |_  \__ \
  |_|       \___/  |_| |_|  \__| |___/
-                                     
-                                     
+                                                                     
  */
 /*#region fonts.html */
 
@@ -104,6 +103,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     flex-flow: row wrap;
+   
    margin-bottom: 16px;
 }
 
@@ -121,8 +121,6 @@ body {
 .fonts-li-metadata h3, .fonts-slider-container{
    margin-right: 50px;
 }
-
-
 
 .fonts-li-metadata h3:before{
     content: '· ';
@@ -155,6 +153,22 @@ body {
     width: 18px;
   }
 
+.fonts-property-btn{
+    font-family: "TeleText Type 1";
+    font-size: var(--tt1-font-size);
+    color: white;
+    border-radius: 0;
+    border:none;
+    display: inline-block;
+    padding: 10px;
+    
+    cursor: pointer;
+    background-color: red;
+    text-transform: uppercase;
+}
+
+
+
 .fonts-li-tester {
     font-size: 100px;
     
@@ -181,6 +195,16 @@ body {
     padding: 16px 16px 16px 0px;
     cursor: pointer;
 }
+
+.fonts-feature-toggle::after {
+    content: "↓";
+}
+
+.fonts-arrow-down::after{
+    
+    content: "↑";
+}
+
 .fonts-feature-readmore{ margin-left: auto;
     padding: 16px 0 16px 16px;}
 .fonts-feature-toggle:hover{
@@ -193,8 +217,6 @@ body {
 
 .fonts-feature-container{
     display: none;
-    
-    
 }
 
 .box {
@@ -202,6 +224,7 @@ body {
     flex-wrap: wrap;
     transition: ease-in-out .3s;
 }
+
 .fonts-feaute-xxxx{
     font-family: "TeleText Type 1";
     font-size: var(--tt1-font-size);
