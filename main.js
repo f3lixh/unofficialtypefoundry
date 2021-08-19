@@ -9,16 +9,19 @@ deBugCopyFontPanel();
 deBugCopyFontPanel();
 changeFonts();
 
+
+/* $(".ton").parents(".con").find(".son").toggleClass("bg-red"); */
+
 /* Silders */
 
 $('.fonts-slider-size').each(function(){	
 	this.oninput = function( ) {
-		$(this).parent().parent().next("div").css("font-size", this.value +"px");	
+		$(this).parents(".fonts-listitem").find(".fonts-li-tester").css("font-size", this.value +"px");	
 	}});
 
 $('.fonts-slider-tracking').each(function(){	
 	this.oninput = function( ) {
-		$(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
+		$(this).parents(".fonts-listitem").find(".fonts-li-tester").css("letter-spacing", this.value +"px");	
 	}});
 
 /* $('.fonts-slider-leading').each(function(){	
@@ -38,7 +41,7 @@ function showFontFeatures(elmnt)
 {
 	/* x.classList.toggle("fonts-features"); */
 	console.log($(elmnt).parent())
-	$(elmnt).parent().parent().children(".fonts-feature-container").toggleClass("box");
+	$(elmnt).parents(".fonts-listitem").find(".fonts-feature-container").toggleClass("box");
 	$(elmnt).toggleClass("fonts-arrow-down");
 }
 function changeFonts() {
@@ -52,7 +55,7 @@ function changeFonts() {
 function toggleFontFeature(elmnt) 
 {
 	
-	var f = $(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings");
+	var f = $(elmnt).parents(".fonts-listitem").find(".fonts-active-otf").css("font-feature-settings");
  	/* console.log(f); */
 	var store = [];
 	var features = f.split(', ');
@@ -73,10 +76,10 @@ function toggleFontFeature(elmnt)
 	} else {
 		if(store[changeIndex].includes(" 0")){
 			store[changeIndex] = store[changeIndex].replace(" 0", " 1")
-			$(elmnt).css("color", "blue")
+			$(elmnt).toggleClass("fonts-feature-active");
 		} else {
 			store[changeIndex] = store[changeIndex].replace(" 1", " 0")
-			$(elmnt).css("color", "black")
+			$(elmnt).toggleClass("fonts-feature-active");
 		}
 
 	}
@@ -85,7 +88,7 @@ function toggleFontFeature(elmnt)
 	}) */
 
 	
-	$(elmnt).parent().parent().children(".fonts-active-otf").css("font-feature-settings", store.join(", "))
+	$(elmnt).parents(".fonts-listitem").find(".fonts-active-otf").css("font-feature-settings", store.join(", "))
 
 
 
@@ -99,7 +102,7 @@ $('.fonts-listitem').hover(function() {
 })
 	
 function toggleUppercase(elmnt) {
-	$(elmnt).parent().parent().parent().children(".fonts-li-tester").toggleClass("uppercase");
+	$(elmnt).parents(".fonts-listitem").find(".fonts-li-tester").toggleClass("uppercase");
 }
 
 /* document.getElementById("homepage-cover").addEventListener('mousemove', function(e) {
