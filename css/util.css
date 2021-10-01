@@ -1,122 +1,115 @@
 :root {
-    --cyan: #00FFFF;
-    --blue: #0000FF;
-    --red: #FF0000;
-    --green: #00FF00;
-    --yellow: #FFFF00;
-    --pink: #FF00FF;
-    --white: #FFF;
-    --black: #000;
+  --cyan: #00ffff;
+  --blue: #0000ff;
+  --red: #ff0000;
+  --green: #00ff00;
+  --yellow: #ffff00;
+  --pink: #ff00ff;
+  --white: #fff;
+  --black: #000;
 }
 .text-cyan {
-    color: var(--cyan);
+  color: var(--cyan);
 }
 .text-blue {
-    color: var(--blue);
+  color: var(--blue);
 }
 .text-red {
-    color: var(--red);
+  color: var(--red);
 }
 .text-green {
-    color: var(--green);
+  color: var(--green);
 }
 .text-yellow {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 .text-pink {
-    color: var(--pink);
+  color: var(--pink);
 }
 .text-white {
-    color: var(--white);
+  color: var(--white);
 }
 .text-black {
-    color: var(--black);
+  color: var(--black);
 }
 .bg-cyan {
-    background-color: var(--cyan);
+  background-color: var(--cyan);
 }
 .bg-blue {
-    background-color: var(--blue);
+  background-color: var(--blue);
 }
 .bg-red {
-    background-color: var(--red);
+  background-color: var(--red);
 }
 .bg-green {
-    background-color: var(--green);
+  background-color: var(--green);
 }
 .bg-yellow {
-    background-color: var(--yellow);
+  background-color: var(--yellow);
 }
 .bg-pink {
-    background-color: var(--pink);
+  background-color: var(--pink);
 }
 .bg-white {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 .bg-black {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 .p-20 {
-    padding: 20px;
+  padding: 20px;
 }
 .p-10 {
-    padding: 10px;
+  padding: 10px;
 }
 .my-20 {
-    margin: 0px 20px;
+  margin: 0px 20px;
 }
-.m-20{
-    margin: 20px;
+.m-20 {
+  margin: 20px;
 }
-.flex{
-	display: flex;
+.flex {
+  display: flex;
 }
 .non-select {
-    user-select: none;
-    -moz-user-select: none;
-            -ms-user-select: none;
-            -webkit-user-select: none;
-            
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 a {
-    text-decoration: none;
-
+  text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 .h2-header {
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
 }
 
-.top-nav{
-    margin-top: 50px;
+.top-nav {
+  margin-top: 50px;
 }
 img {
- 
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
-.typeface-newaustin {
-    font-family: "New Austin";
-}
-.typeface-invetero {
-    font-family: "invetero";
-}
-.typeface-secret {
-    font-family: "Secret-VF";
-}
 .hide {
-    opacity: 1;
+  opacity: 1;
 }
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 /* .liga {
     font-feature-settings: "liga" off;

@@ -14,7 +14,7 @@ changeFonts(); */
 
 /* Silders */
 
-$(".fonts-slider-size").each(function () {
+/* $(".fonts-slider-size").each(function () {
   this.oninput = function () {
     $(this)
       .parents(".fonts-listitem")
@@ -31,7 +31,7 @@ $(".fonts-slider-tracking").each(function () {
       .css("letter-spacing", this.value + "px");
   };
 });
-
+ */
 /* $('.fonts-slider-leading').each(function(){	
 	this.oninput = function( ) {
 		$(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
@@ -117,7 +117,7 @@ function toggleUppercase(elmnt) {
     .toggleClass("uppercase");
 }
 
-document
+/* document
   .getElementById("homepage-cover")
   .addEventListener("mousemove", function (e) {
     var weight =
@@ -129,8 +129,8 @@ document
     $("#homepage-var-font").css("font-weight", weight);
     $("#homepage-var-font").css("font-variation-settings", width);
   });
-
-$(document).ready(function () {
+ */
+/* $(document).ready(function () {
   $(".fontPreview").hover(function () {
     var tempColorID = Math.floor(Math.random() * 5);
     switch (tempColorID) {
@@ -168,7 +168,7 @@ $(".secret").hover(
     );
   }
 );
-
+ */
 function checkIndex() {
   var temp = document.getElementById("index").value + "";
   if (temp.length === 3) {

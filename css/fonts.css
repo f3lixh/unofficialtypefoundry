@@ -1,109 +1,134 @@
 @font-face {
-    font-family: 'Teletext Type 1';
-    src: url('../typefaces/TeletextType1/TeletextType1-Regular.woff2') format('woff2'),
-    url('../typefaces/TeletextType1/TeletextType1-Regular.otf') format('otf'),
-        url('../typefaces/TeletextType1/TeletextType1-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-   
-    
+  font-family: "Teletext Type 1";
+  src: url("../typefaces/TeletextType1/TeletextType1-Regular.woff2")
+      format("woff2"),
+    url("../typefaces/TeletextType1/TeletextType1-Regular.otf") format("otf"),
+    url("../typefaces/TeletextType1/TeletextType1-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Teletext Type 3';
-    src: url('../typefaces/TeletextType3/TeletextType3-Regular.woff2') format('woff2'),
-        url('../typefaces/TeletextType3/TeletextType3-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    text-rendering: optimizeSpeed;
-    
-}
-
-
-/* Webfont: TeleTextType2-Regular */@font-face {
-    font-family: 'TeleText Type 2';
-    src: url('../typefaces/TeletextType2/TeleTextType2-Regular.woff2') format('woff2'), /* Modern Browsers */
-         url('../typefaces/TeletextType2/TeleTextType2-Regular.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-    text-rendering: optimizeLegibility;
+  font-family: "Teletext Type 3";
+  src: url("../typefaces/TeletextType3/TeletextType3-Regular.woff2")
+      format("woff2"),
+    url("../typefaces/TeletextType3/TeletextType3-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeSpeed;
 }
 
 @font-face {
-    font-family: "Secret-VF";
-    src: url('../typefaces/Odiosis/Secret-VF.ttf') format('truetype');
-    font-weight: 100 1000;
-}
-
-
-@font-face {
-    font-family: "ApexVar";
-    src: url('../typefaces/ApexVar/Apex.ttf') format('truetype');
-    font-weight: 100 900;
-}
-
-
-@font-face {
-    font-family: "New Austin";
-    src: url('../typefaces/NewAustin/New-Austin-Grunge.woff2') format('woff2'),
-        url('../typefaces/NewAustin/New-Austin-Grunge.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "TeleText Type 2";
+  src: url("../typefaces/TeletextType2/TeleTextType2-Regular.woff2")
+      format("woff2"),
+    /* Modern Browsers */
+      url("../typefaces/TeletextType2/TeleTextType2-Regular.otf")
+      format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: "invetero";
-    src: url('../typefaces/invetero/invetero-Regular.woff2') format('woff2'),
-        url('../typefaces/invetero/invetero-Regular.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Secret-VF";
+  src: url("../typefaces/Odiosis/Secret-VF.ttf") format("truetype");
+  font-weight: 100 1000;
 }
 
 @font-face {
-    font-family: 'Karolin';
-    src: url('../typefaces/Karolin/FelixKaro-Regular.eot');
-    src: url('../typefaces/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Karolin/FelixKaro-Regular.woff') format('woff'),
-         url('../typefaces/Karolin/FelixKaro-Regular.woff2') format('woff2'),
-         url('../typefaces/Karolin/FelixKaro-Regular.ttf') format('truetype');
-     font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "ApexVar";
+  src: url("../typefaces/ApexVar/Apex.ttf") format("truetype");
+  font-weight: 100 900;
 }
 
 @font-face {
-    font-family: 'CaptainLoggins Rocks';
-    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot');
-    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
-         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
-         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "New Austin";
+  src: url("../typefaces/NewAustin/New-Austin-Grunge.woff2") format("woff2"),
+    url("../typefaces/NewAustin/New-Austin-Grunge.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Bootshaus";
-    src: url('../typefaces/Bootshaus/Bootshaus-Regular.woff2') format('woff2'),
-        url('../typefaces/Bootshaus/Bootshaus-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "invetero";
+  src: url("../typefaces/invetero/invetero-Regular.woff2") format("woff2"),
+    url("../typefaces/invetero/invetero-Regular.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Frontier Pursuits";
-    src: url('../typefaces/FrontierPursuits/Frontier.woff2') format('woff2'),
-        url('../typefaces/FrontierPursuits/Frontier.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Karolin";
+  src: url("../typefaces/Karolin/FelixKaro-Regular.eot");
+  src: url("../typefaces/Karolin/FelixKaro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Karolin/FelixKaro-Regular.woff") format("woff"),
+    url("../typefaces/Karolin/FelixKaro-Regular.woff2") format("woff2"),
+    url("../typefaces/Karolin/FelixKaro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Rock Radio";
+  src: url("../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot");
+  src: url("../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff") format("woff"),
+    url("../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff2")
+      format("woff2"),
+    url("../typefaces/CaptainLoggins/Captain-Loggins-Rocks.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Bootshaus";
+  src: url("../typefaces/Bootshaus/Bootshaus-Regular.woff2") format("woff2"),
+    url("../typefaces/Bootshaus/Bootshaus-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Frontier Pursuits";
+  src: url("../typefaces/FrontierPursuits/Frontier.woff2") format("woff2"),
+    url("../typefaces/FrontierPursuits/Frontier.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candybox";
+  src: url("../typefaces/Candybox/Candybox-Regular.woff2") format("woff2"),
+    url("../typefaces/Candybox/Candybox-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bennys";
+  src: url("../typefaces/Benny/Benny-Regular.eot");
+  src: url("../typefaces/Benny/Benny-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Benny/Benny-Regular.woff") format("woff"),
+    url("../typefaces/Benny/Benny-Regular.woff2") format("woff2"),
+    url("../typefaces/Benny/Benny-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -147,14 +172,6 @@
 }
 
 
-@font-face {
-    font-family: "Candybox";
-    src: url('../typefaces/Candybox/Candybox-Regular.woff2') format('woff2'),
-        url('../typefaces/Candybox/Candybox-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 
@@ -184,17 +201,7 @@
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Benny Regular';
-    src: url('../typefaces/Benny/Benny-Regular.eot');
-    src: url('../typefaces/Benny/Benny-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Benny/Benny-Regular.woff') format('woff'),
-         url('../typefaces/Benny/Benny-Regular.woff2') format('woff2'),
-         url('../typefaces/Benny/Benny-Regular.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
+
 
 @font-face {
     font-family: 'Benny Outlaw';
@@ -244,17 +251,7 @@
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Gouranga Pixel';
-    src: url('../typefaces/Gouranga/Gouranga-Pixel.eot');
-    src: url('../typefaces/Gouranga/Gouranga-Pixel.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Gouranga/Gouranga-Pixel.woff') format('woff'),
-         url('../typefaces/Gouranga/Gouranga-Pixel.woff2') format('woff2'),
-         url('../typefaces/Gouranga/Gouranga-Pixel.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
+
 
 @font-face {
     font-family: 'Gouranga Line';
@@ -304,17 +301,6 @@
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Declasse';
-    src: url('../typefaces/Declasse/Declasse-Regular.eot');
-    src: url('../typefaces/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Declasse/Declasse-Regular.woff') format('woff'),
-         url('../typefaces/Declasse/Declasse-Regular.woff2') format('woff2'),
-         url('../typefaces/Declasse/Declasse-Regular.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 
 @font-face {
     font-family: 'Fractured 3D';
@@ -352,17 +338,6 @@
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Fractured Regular';
-    src: url('../typefaces/Fractured/Fractured-Regular.eot');
-    src: url('../typefaces/Fractured/Fractured-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Fractured/Fractured-Regular.woff') format('woff'),
-         url('../typefaces/Fractured/Fractured-Regular.woff2') format('woff2'),
-         url('../typefaces/Fractured/Fractured-Regular.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 
 @font-face {
     font-family: 'Fractured Stencil';
@@ -375,30 +350,103 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
+*/
 
 @font-face {
-    font-family: 'Ubermacht';
-    src: url('../typefaces/Ubermacht/Ubermacht-Regular.eot');
-    src: url('../typefaces/Ubermacht/Ubermacht-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Ubermacht/Ubermacht-Regular.woff') format('woff'),
-         url('../typefaces/Ubermacht/Ubermacht-Regular.woff2') format('woff2'),
-         url('../typefaces/Ubermacht/Ubermacht-Regular.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "Gouranga";
+  src: url("../typefaces/Gouranga/Gouranga-Pixel.eot");
+  src: url("../typefaces/Gouranga/Gouranga-Pixel.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Gouranga/Gouranga-Pixel.woff") format("woff"),
+    url("../typefaces/Gouranga/Gouranga-Pixel.woff2") format("woff2"),
+    url("../typefaces/Gouranga/Gouranga-Pixel.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 @font-face {
-    font-family: 'Declasse';
-    src: url('../typefaces/Declasse/Declasse-Regular.eot');
-    src: url('../typefaces/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../typefaces/Declasse/Declasse-Regular.woff') format('woff'),
-         url('../typefaces/Declasse/Declasse-Regular.woff2') format('woff2'),
-         url('../typefaces/Declasse/Declasse-Regular.ttf') format('truetype');
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "Ubermacht";
+  src: url("../typefaces/Ubermacht/Ubermacht-Regular.eot");
+  src: url("../typefaces/Ubermacht/Ubermacht-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Ubermacht/Ubermacht-Regular.woff") format("woff"),
+    url("../typefaces/Ubermacht/Ubermacht-Regular.woff2") format("woff2"),
+    url("../typefaces/Ubermacht/Ubermacht-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
- */
+@font-face {
+  font-family: "Fractured";
+  src: url("../typefaces/Fractured/Fractured-Regular.eot");
+  src: url("../typefaces/Fractured/Fractured-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Fractured/Fractured-Regular.woff") format("woff"),
+    url("../typefaces/Fractured/Fractured-Regular.woff2") format("woff2"),
+    url("../typefaces/Fractured/Fractured-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Declasse";
+  src: url("../typefaces/Declasse/Declasse-Regular.eot");
+  src: url("../typefaces/Declasse/Declasse-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../typefaces/Declasse/Declasse-Regular.woff") format("woff"),
+    url("../typefaces/Declasse/Declasse-Regular.woff2") format("woff2"),
+    url("../typefaces/Declasse/Declasse-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+.new-austin {
+  font-family: "New Austin";
+}
+.invetero {
+  font-family: "invetero";
+}
+.secret {
+  font-family: "Secret-VF";
+}
+.bootshaus {
+  font-family: "Bootshaus";
+}
+.frontier-pursuits {
+  font-family: "Frontier Pursuits";
+}
+
+.ubermacht {
+  font-family: "Ubermacht";
+}
+.declasse {
+  font-family: "Declasse";
+}
+
+.fractured {
+  font-family: "Fractured";
+}
+
+.gouranga {
+  font-family: "Gouranga";
+}
+
+.candybox {
+  font-family: "Candybox";
+}
+
+.rock-radio {
+  font-family: "Rock Radio";
+}
+
+.apex {
+  font-family: "ApexVar";
+}
+
+.bennys {
+  font-family: "Bennys";
+}

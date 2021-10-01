@@ -1,65 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/util.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/util.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" href="img/logo_icon.png">
+    <link rel="icon" href="img/logo_icon.png" />
     <title>UTF Fonts</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="nav-container">
-        <ul class="nav-ul bg-white">
-            <li class="nav-listitem"><a class="text-red" href="index.html">UTF/100</a></li>
-            <li class="nav-listitem"><a class="text-black" href="">Fonts</a></li>
-            <li class="nav-listitem"><a class="text-black" href="custom.html">Custom</a></li>
-            <li class="nav-listitem"><a class="text-black" href="projects.html">Projects</a></li>
-            <li class="nav-listitem nav-date">
-                <p class="text-blue non-select"  id="dateDisplay"></p>
-            </li>
-            <li class="nav-listitem nav-time">
-                <p class="text-blue non-select" id="timeDisplay"></p>
-            </li>
-            <li class="nav-hamburger"><a class="text-black">#</a></li>
-        </ul>
-
+      <ul class="nav-ul bg-white">
+        <li class="nav-listitem">
+          <a class="text-red" href="index.html">UTF/100</a>
+        </li>
+        <li class="nav-listitem">
+          <a class="text-black" href="fonts.html">Fonts</a>
+        </li>
+        <li class="nav-listitem">
+          <a class="text-black" href="custom.html">Custom</a>
+        </li>
+        <li class="nav-listitem">
+          <a class="text-black" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-listitem">
+          <p class="text-blue non-select" href="" id="dateDisplay"></p>
+        </li>
+        <li class="nav-listitem">
+          <p class="text-blue non-select" href="" id="timeDisplay"></p>
+        </li>
+      </ul>
     </nav>
 
-    <main style="margin-top: var(--navbar-height);">
-
-
-
-        <section class="fonts-listview" id="fonts-section">
-
-            <article class="fonts-listitem">
-
+    <main style="margin-top: var(--navbar-height)">
+      <section class="fonts-listview" id="fonts-section">
+        <!--   <article class="fonts-listitem">
                 <div class="fonts-li-metadata">
                     <h3>New Austin</h3>
                     <div class="fonts-slider-container">
                         <label for="newaustin-slider">Size </label>
                         <input name="newaustin-slider" class="fonts-slider fonts-slider-size" type="range" min="16"
-                            max="160" value="100">
+                            max="160" value="100" />
                     </div>
                     <div class="fonts-slider-container">
                         <label for="newaustin-slider">Spacing </label>
                         <input name="newaustin-slider" class="fonts-slider fonts-slider-tracking" step="1" type="range"
-                            min="-10" max="80" value="0">
+                            min="-10" max="80" value="0" />
                     </div>
                     <div class="fonts-slider-container">
-                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT">
+                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT" />
                     </div>
-
                 </div>
 
                 <div class="fonts-li-tester fonts-active-otf typeface-newaustin" spellcheck="false"
                     contenteditable="true">
-                    New Austin is a typeface from the old west. Based on UI elements from Red Dead Redemption II.
+                    New Austin is a typeface from the old west. Based on UI elements
+                    from Red Dead Redemption II.
                 </div>
 
                 <div class="fonts-feature-buttons">
@@ -71,47 +70,44 @@
                     </a>
                 </div>
                 <div class="fonts-feature-container">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="calt">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="salt">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss01">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss02">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss03">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss04">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss05">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss06">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss07">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss08">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="frac">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sups">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sinf">
-
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="calt" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="salt" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss01" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss02" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss03" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss04" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss05" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss06" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss07" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss08" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="frac" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sups" />
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sinf" />
                 </div>
-               
             </article>
             <article class="fonts-listitem">
-
                 <div class="fonts-li-metadata">
                     <h3>invetero</h3>
                     <div class="fonts-slider-container">
                         <label for="newaustin-slider">Size </label>
                         <input name="newaustin-slider" class="fonts-slider fonts-slider-size" type="range" min="16"
-                            max="160" value="100">
+                            max="160" value="100" />
                     </div>
                     <div class="fonts-slider-container">
                         <label for="invetero-slider">Spacing </label>
                         <input name="invetero-slider" class="fonts-slider fonts-slider-tracking" step="1" type="range"
-                            min="-10" max="80" value="0">
+                            min="-10" max="80" value="0" />
                     </div>
                     <div class="fonts-slider-container">
-                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT">
+                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT" />
                     </div>
-
                 </div>
 
                 <div class="fonts-li-tester fonts-active-otf typeface-invetero" spellcheck="false"
                     contenteditable="true">
-                    New Austin is a typeface from the old west. Based on UI elements from Red Dead Redemption II.
+                    New Austin is a typeface from the old west. Based on UI elements
+                    from Red Dead Redemption II.
                 </div>
 
                 <div class="fonts-feature-buttons">
@@ -123,64 +119,94 @@
                     </a>
                 </div>
                 <div class="fonts-feature-container">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga">
+                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga" />
                 </div>
-                
-            </article>
-
-
-
-        </section>
-
+            </article> -->
+      </section>
     </main>
 
     <footer>
+      <div class="seperator">
+        <div class="bg-cyan"></div>
+        <div class="bg-red"></div>
+        <div class="bg-pink"></div>
+        <div class="bg-yellow"></div>
+        <div class="bg-green"></div>
+      </div>
 
-        <div class="seperator">
-            <div class="bg-cyan"></div>
-            <div class="bg-red"></div>
-            <div class="bg-pink"></div>
-            <div class="bg-yellow"></div>
-            <div class="bg-green"></div>
+      <div class="footer-container">
+        <div>
+          <ul class="footer-ul">
+            <li>
+              <a href="#"><span>Fonts</span><span>201</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Projects</span><span>301</span></a>
+            </li>
+            <li>
+              <a href="#"><span>About</span><span>401</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Custom</span><span>501</span></a>
+            </li>
+          </ul>
         </div>
-
-        <div class="footer-container">
-
-
-            <div>
-                <ul class="footer-ul">
-                    <li><a href="#"><span>Fonts</span><span>201</span></a></li>
-                    <li><a href="#"><span>Projects</span><span>301</span></a></li>
-                    <li><a href="#"><span>About</span><span>401</span></a></li>
-                    <li><a href="#"><span>Custom</span><span>501</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="footer-ul">
-                    <li><a href="#"><span>Imprint</span><span>601</span></a></li>
-                    <li><a href="#"><span>Contact</span><span>602</span></a></li>
-                    <li><a href="#"><span>Cookies</span><span>603</span></a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="footer-ul">
-                    <li><a href="#"><span>License</span><span>602</span></a></li>
-                    <li><a href="#"><span>Information</span><span>402</span></a></li>
-                    <li><a href="#"><span>Social</span><span>901</span></a></li>
-                </ul>
-            </div>
+        <div>
+          <ul class="footer-ul">
+            <li>
+              <a href="#"><span>Imprint</span><span>601</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Contact</span><span>602</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Cookies</span><span>603</span></a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-links flex">
-            <a href="https://twitter.com/hubfex" target="_blank" class="footer-twitter"></a>
-            <a href="https://twitter.com/home" target="_blank" class="footer-instagram"></a>
-            <a href="https://www.behance.net/felixsfoundry" target="_blank" class="footer-behance"></a>
-            <a href="https://twitter.com/home" target="_blank" class="footer-dribbble"></a>
+        <div>
+          <ul class="footer-ul">
+            <li>
+              <a href="#"><span>License</span><span>602</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Information</span><span>402</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Social</span><span>901</span></a>
+            </li>
+          </ul>
         </div>
-        <p class="footer-copyright non-select">&#169; 2021 unofficial type foundry</p>
+      </div>
+      <div class="footer-links flex">
+        <a
+          href="https://twitter.com/hubfex"
+          target="_blank"
+          class="footer-twitter"
+        ></a>
+        <a
+          href="https://twitter.com/home"
+          target="_blank"
+          class="footer-instagram"
+        ></a>
+        <a
+          href="https://www.behance.net/felixsfoundry"
+          target="_blank"
+          class="footer-behance"
+        ></a>
+        <a
+          href="https://twitter.com/home"
+          target="_blank"
+          class="footer-dribbble"
+        ></a>
+      </div>
+      <p class="footer-copyright non-select">
+        &#169; 2021 unofficial type foundry
+      </p>
     </footer>
+  </body>
 
-</body>
-
-<script src="main.js"></script>
-
+  <script src="main.js"></script>
+  <script src="/src/js/navbar.js"></script>
+  <script src="/src/js/fonts.js"></script>
 </html>
