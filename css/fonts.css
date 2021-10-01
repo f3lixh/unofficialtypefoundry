@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Teletext Type 1';
-    src: url('../fonts/TeletextType1/TeletextType1-Regular.woff2') format('woff2'),
-    url('../fonts/TeletextType1/TeletextType1-Regular.otf') format('otf'),
-        url('../fonts/TeletextType1/TeletextType1-Regular.woff') format('woff');
+    src: url('../typefaces/TeletextType1/TeletextType1-Regular.woff2') format('woff2'),
+    url('../typefaces/TeletextType1/TeletextType1-Regular.otf') format('otf'),
+        url('../typefaces/TeletextType1/TeletextType1-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'Teletext Type 3';
-    src: url('../fonts/TeletextType3/TeletextType3-Regular.woff2') format('woff2'),
-        url('../fonts/TeletextType3/TeletextType3-Regular.woff') format('woff');
+    src: url('../typefaces/TeletextType3/TeletextType3-Regular.woff2') format('woff2'),
+        url('../typefaces/TeletextType3/TeletextType3-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -24,8 +24,8 @@
 
 /* Webfont: TeleTextType2-Regular */@font-face {
     font-family: 'TeleText Type 2';
-    src: url('../fonts/TeletextType2/TeleTextType2-Regular.woff2') format('woff2'), /* Modern Browsers */
-         url('../fonts/TeletextType2/TeleTextType2-Regular.otf') format('opentype'); /* Safari, Android, iOS */
+    src: url('../typefaces/TeletextType2/TeleTextType2-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('../typefaces/TeletextType2/TeleTextType2-Regular.otf') format('opentype'); /* Safari, Android, iOS */
              font-style: normal;
     font-weight: normal;
     font-display: swap;
@@ -34,15 +34,22 @@
 
 @font-face {
     font-family: "Secret-VF";
-    src: url('../fonts/Odiosis/Secret-VF.ttf') format('truetype');
+    src: url('../typefaces/Odiosis/Secret-VF.ttf') format('truetype');
     font-weight: 100 1000;
 }
 
 
 @font-face {
+    font-family: "ApexVar";
+    src: url('../typefaces/ApexVar/Apex.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+
+@font-face {
     font-family: "New Austin";
-    src: url('../fonts/NewAustin/New-Austin-Grunge.woff2') format('woff2'),
-        url('../fonts/NewAustin/New-Austin-Grunge.woff') format('woff');
+    src: url('../typefaces/NewAustin/New-Austin-Grunge.woff2') format('woff2'),
+        url('../typefaces/NewAustin/New-Austin-Grunge.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -50,8 +57,8 @@
 
 @font-face {
     font-family: "invetero";
-    src: url('../fonts/invetero/invetero-Regular.woff2') format('woff2'),
-        url('../fonts/invetero/invetero-Regular.woff2') format('woff');
+    src: url('../typefaces/invetero/invetero-Regular.woff2') format('woff2'),
+        url('../typefaces/invetero/invetero-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -59,11 +66,11 @@
 
 @font-face {
     font-family: 'Karolin';
-    src: url('../fonts/Karolin/FelixKaro-Regular.eot');
-    src: url('../fonts/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Karolin/FelixKaro-Regular.woff') format('woff'),
-         url('../fonts/Karolin/FelixKaro-Regular.woff2') format('woff2'),
-         url('../fonts/Karolin/FelixKaro-Regular.ttf') format('truetype');
+    src: url('../typefaces/Karolin/FelixKaro-Regular.eot');
+    src: url('../typefaces/Karolin/FelixKaro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Karolin/FelixKaro-Regular.woff') format('woff'),
+         url('../typefaces/Karolin/FelixKaro-Regular.woff2') format('woff2'),
+         url('../typefaces/Karolin/FelixKaro-Regular.ttf') format('truetype');
      font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -71,21 +78,39 @@
 
 @font-face {
     font-family: 'CaptainLoggins Rocks';
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot');
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
+    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot');
+    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff') format('woff'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.woff2') format('woff2'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Rocks.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: "Bootshaus";
+    src: url('../typefaces/Bootshaus/Bootshaus-Regular.woff2') format('woff2'),
+        url('../typefaces/Bootshaus/Bootshaus-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Frontier Pursuits";
+    src: url('../typefaces/FrontierPursuits/Frontier.woff2') format('woff2'),
+        url('../typefaces/FrontierPursuits/Frontier.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /*
 @font-face {
     font-family: "ViceVersa-Thin";
-    src: url('../fonts/ViceVersa/ViceVersa-Thin.woff2') format('woff2'),
-        url('../fonts/ViceVersa/ViceVersa-Thin.woff') format('woff');
+    src: url('../typefaces/ViceVersa/ViceVersa-Thin.woff2') format('woff2'),
+        url('../typefaces/ViceVersa/ViceVersa-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -94,8 +119,8 @@
 @font-face {
     font-family: "ViceVersa-Black";
     src:
-        url('../fonts/ViceVersa/ViceVersa-Black.woff') format('woff'),
-        url('../fonts/ViceVersa/ViceVersa-Black.woff2') format('woff2');
+        url('../typefaces/ViceVersa/ViceVersa-Black.woff') format('woff'),
+        url('../typefaces/ViceVersa/ViceVersa-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -104,8 +129,8 @@
 @font-face {
     font-family: "ViceVersa-Medium";
     src:
-        url('../fonts/ViceVersa/ViceVersa-Medium.woff') format('woff'),
-        url('../fonts/ViceVersa/ViceVersa-Medium.woff2') format('woff2');
+        url('../typefaces/ViceVersa/ViceVersa-Medium.woff') format('woff'),
+        url('../typefaces/ViceVersa/ViceVersa-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -114,8 +139,8 @@
 @font-face {
     font-family: "ViceVersa-Regular";
     src:
-    url('../fonts/ViceVersa/ViceVersa-Regular.woff') format('woff'),
-        url('../fonts/ViceVersa/ViceVersa-Regular.woff2') format('woff2');
+    url('../typefaces/ViceVersa/ViceVersa-Regular.woff') format('woff'),
+        url('../typefaces/ViceVersa/ViceVersa-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -124,40 +149,24 @@
 
 @font-face {
     font-family: "Candybox";
-    src: url('../fonts/Candybox/Candybox-Regular.woff2') format('woff2'),
-        url('../fonts/Candybox/Candybox-Regular.woff') format('woff');
+    src: url('../typefaces/Candybox/Candybox-Regular.woff2') format('woff2'),
+        url('../typefaces/Candybox/Candybox-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Bootshaus";
-    src: url('../fonts/Bootshaus/Bootshaus-Regular.woff2') format('woff2'),
-        url('../fonts/Bootshaus/Bootshaus-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: "Frontier Pursuits";
-    src: url('../fonts/FrontierPursuits/Frontier.woff2') format('woff2'),
-        url('../fonts/FrontierPursuits/Frontier.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 
 @font-face {
     font-family: 'CaptainLoggins Regular';
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Regular.eot');
-    src: url('../fonts/CaptainLoggins/Captain-Loggins-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.woff') format('woff'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.woff2') format('woff2'),
-         url('../fonts/CaptainLoggins/Captain-Loggins-Regular.ttf') format('truetype');
+    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Regular.eot');
+    src: url('../typefaces/CaptainLoggins/Captain-Loggins-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Regular.woff') format('woff'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Regular.woff2') format('woff2'),
+         url('../typefaces/CaptainLoggins/Captain-Loggins-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -165,11 +174,11 @@
 
 @font-face {
     font-family: 'Benny Smooth';
-    src: url('../fonts/Benny/Benny-Smooth.eot');
-    src: url('../fonts/Benny/Benny-Smooth.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-Smooth.woff') format('woff'),
-         url('../fonts/Benny/Benny-Smooth.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-Smooth.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-Smooth.eot');
+    src: url('../typefaces/Benny/Benny-Smooth.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-Smooth.woff') format('woff'),
+         url('../typefaces/Benny/Benny-Smooth.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-Smooth.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -177,11 +186,11 @@
 
 @font-face {
     font-family: 'Benny Regular';
-    src: url('../fonts/Benny/Benny-Regular.eot');
-    src: url('../fonts/Benny/Benny-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-Regular.woff') format('woff'),
-         url('../fonts/Benny/Benny-Regular.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-Regular.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-Regular.eot');
+    src: url('../typefaces/Benny/Benny-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-Regular.woff') format('woff'),
+         url('../typefaces/Benny/Benny-Regular.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -189,11 +198,11 @@
 
 @font-face {
     font-family: 'Benny Outlaw';
-    src: url('../fonts/Benny/Benny-Outlaw.eot');
-    src: url('../fonts/Benny/Benny-Outlaw.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-Outlaw.woff') format('woff'),
-         url('../fonts/Benny/Benny-Outlaw.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-Outlaw.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-Outlaw.eot');
+    src: url('../typefaces/Benny/Benny-Outlaw.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-Outlaw.woff') format('woff'),
+         url('../typefaces/Benny/Benny-Outlaw.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-Outlaw.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -201,11 +210,11 @@
 
 @font-face {
     font-family: 'Benny Western';
-    src: url('../fonts/Benny/Benny-Western.eot');
-    src: url('../fonts/Benny/Benny-Western.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-Western.woff') format('woff'),
-         url('../fonts/Benny/Benny-Western.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-Western.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-Western.eot');
+    src: url('../typefaces/Benny/Benny-Western.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-Western.woff') format('woff'),
+         url('../typefaces/Benny/Benny-Western.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-Western.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -213,11 +222,11 @@
 
 @font-face {
     font-family: 'Benny College';
-    src: url('../fonts/Benny/Benny-College.eot');
-    src: url('../fonts/Benny/Benny-College.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-College.woff') format('woff'),
-         url('../fonts/Benny/Benny-College.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-College.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-College.eot');
+    src: url('../typefaces/Benny/Benny-College.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-College.woff') format('woff'),
+         url('../typefaces/Benny/Benny-College.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-College.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -225,11 +234,11 @@
 
 @font-face {
     font-family: 'Benny Grunge';
-    src: url('../fonts/Benny/Benny-Grunge.eot');
-    src: url('../fonts/Benny/Benny-Grunge.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Benny/Benny-Grunge.woff') format('woff'),
-         url('../fonts/Benny/Benny-Grunge.woff2') format('woff2'),
-         url('../fonts/Benny/Benny-Grunge.ttf') format('truetype');
+    src: url('../typefaces/Benny/Benny-Grunge.eot');
+    src: url('../typefaces/Benny/Benny-Grunge.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Benny/Benny-Grunge.woff') format('woff'),
+         url('../typefaces/Benny/Benny-Grunge.woff2') format('woff2'),
+         url('../typefaces/Benny/Benny-Grunge.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -237,11 +246,11 @@
 
 @font-face {
     font-family: 'Gouranga Pixel';
-    src: url('../fonts/Gouranga/Gouranga-Pixel.eot');
-    src: url('../fonts/Gouranga/Gouranga-Pixel.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gouranga/Gouranga-Pixel.woff') format('woff'),
-         url('../fonts/Gouranga/Gouranga-Pixel.woff2') format('woff2'),
-         url('../fonts/Gouranga/Gouranga-Pixel.ttf') format('truetype');
+    src: url('../typefaces/Gouranga/Gouranga-Pixel.eot');
+    src: url('../typefaces/Gouranga/Gouranga-Pixel.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Gouranga/Gouranga-Pixel.woff') format('woff'),
+         url('../typefaces/Gouranga/Gouranga-Pixel.woff2') format('woff2'),
+         url('../typefaces/Gouranga/Gouranga-Pixel.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -249,11 +258,11 @@
 
 @font-face {
     font-family: 'Gouranga Line';
-    src: url('../fonts/Gouranga/Gouranga-Line.eot');
-    src: url('../fonts/Gouranga/Gouranga-Line.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gouranga/Gouranga-Line.woff') format('woff'),
-         url('../fonts/Gouranga/Gouranga-Line.woff2') format('woff2'),
-         url('../fonts/Gouranga/Gouranga-Line.ttf') format('truetype');
+    src: url('../typefaces/Gouranga/Gouranga-Line.eot');
+    src: url('../typefaces/Gouranga/Gouranga-Line.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Gouranga/Gouranga-Line.woff') format('woff'),
+         url('../typefaces/Gouranga/Gouranga-Line.woff2') format('woff2'),
+         url('../typefaces/Gouranga/Gouranga-Line.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -261,11 +270,11 @@
 
 @font-face {
     font-family: 'Gouranga Shadow';
-    src: url('../fonts/Gouranga/Gouranga-Shadow.eot');
-    src: url('../fonts/Gouranga/Gouranga-Shadow.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gouranga/Gouranga-Shadow.woff') format('woff'),
-         url('../fonts/Gouranga/Gouranga-Shadow.woff2') format('woff2'),
-         url('../fonts/Gouranga/Gouranga-Shadow.ttf') format('truetype');
+    src: url('../typefaces/Gouranga/Gouranga-Shadow.eot');
+    src: url('../typefaces/Gouranga/Gouranga-Shadow.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Gouranga/Gouranga-Shadow.woff') format('woff'),
+         url('../typefaces/Gouranga/Gouranga-Shadow.woff2') format('woff2'),
+         url('../typefaces/Gouranga/Gouranga-Shadow.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -273,11 +282,11 @@
 
 @font-face {
     font-family: 'Gouranga Outline';
-    src: url('../fonts/Gouranga/Gouranga-Outline.eot');
-    src: url('../fonts/Gouranga/Gouranga-Outline.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Gouranga/Gouranga-Outline.woff') format('woff'),
-         url('../fonts/Gouranga/Gouranga-Outline.woff2') format('woff2'),
-         url('../fonts/Gouranga/Gouranga-Outline.ttf') format('truetype');
+    src: url('../typefaces/Gouranga/Gouranga-Outline.eot');
+    src: url('../typefaces/Gouranga/Gouranga-Outline.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Gouranga/Gouranga-Outline.woff') format('woff'),
+         url('../typefaces/Gouranga/Gouranga-Outline.woff2') format('woff2'),
+         url('../typefaces/Gouranga/Gouranga-Outline.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -285,11 +294,11 @@
 
 @font-face {
     font-family: 'Apex';
-    src: url('../fonts/ApexNeue/ApexLegends-Regular.eot');
-    src: url('../fonts/ApexNeue/ApexLegends-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ApexNeue/ApexLegends-Regular.woff') format('woff'),
-         url('../fonts/ApexNeue/ApexLegends-Regular.woff2') format('woff2'),
-         url('../fonts/ApexNeue/ApexLegends-Regular.ttf') format('truetype');
+    src: url('../typefaces/ApexNeue/ApexLegends-Regular.eot');
+    src: url('../typefaces/ApexNeue/ApexLegends-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/ApexNeue/ApexLegends-Regular.woff') format('woff'),
+         url('../typefaces/ApexNeue/ApexLegends-Regular.woff2') format('woff2'),
+         url('../typefaces/ApexNeue/ApexLegends-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -297,11 +306,11 @@
 
 @font-face {
     font-family: 'Declasse';
-    src: url('../fonts/Declasse/Declasse-Regular.eot');
-    src: url('../fonts/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Declasse/Declasse-Regular.woff') format('woff'),
-         url('../fonts/Declasse/Declasse-Regular.woff2') format('woff2'),
-         url('../fonts/Declasse/Declasse-Regular.ttf') format('truetype');
+    src: url('../typefaces/Declasse/Declasse-Regular.eot');
+    src: url('../typefaces/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Declasse/Declasse-Regular.woff') format('woff'),
+         url('../typefaces/Declasse/Declasse-Regular.woff2') format('woff2'),
+         url('../typefaces/Declasse/Declasse-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -309,11 +318,11 @@
 
 @font-face {
     font-family: 'Fractured 3D';
-    src: url('../fonts/Fractured/Fractured-3D.eot');
-    src: url('../fonts/Fractured/Fractured-3D.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fractured/Fractured-3D.woff') format('woff'),
-         url('../fonts/Fractured/Fractured-3D.woff2') format('woff2'),
-         url('../fonts/Fractured/Fractured-3D.ttf') format('truetype');
+    src: url('../typefaces/Fractured/Fractured-3D.eot');
+    src: url('../typefaces/Fractured/Fractured-3D.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Fractured/Fractured-3D.woff') format('woff'),
+         url('../typefaces/Fractured/Fractured-3D.woff2') format('woff2'),
+         url('../typefaces/Fractured/Fractured-3D.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -321,11 +330,11 @@
 
 @font-face {
     font-family: 'Fractured Army';
-    src: url('../fonts/Fractured/Fractured-Army.eot');
-    src: url('../fonts/Fractured/Fractured-Army.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fractured/Fractured-Army.woff') format('woff'),
-         url('../fonts/Fractured/Fractured-Army.woff2') format('woff2'),
-         url('../fonts/Fractured/Fractured-Army.ttf') format('truetype');
+    src: url('../typefaces/Fractured/Fractured-Army.eot');
+    src: url('../typefaces/Fractured/Fractured-Army.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Fractured/Fractured-Army.woff') format('woff'),
+         url('../typefaces/Fractured/Fractured-Army.woff2') format('woff2'),
+         url('../typefaces/Fractured/Fractured-Army.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -333,11 +342,11 @@
 
 @font-face {
     font-family: 'Fractured Grunge';
-    src: url('../fonts/Fractured/Fractured-Grunge.eot');
-    src: url('../fonts/Fractured/Fractured-Grunge.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fractured/Fractured-Grunge.woff') format('woff'),
-         url('../fonts/Fractured/Fractured-Grunge.woff2') format('woff2'),
-         url('../fonts/Fractured/Fractured-Grunge.ttf') format('truetype');
+    src: url('../typefaces/Fractured/Fractured-Grunge.eot');
+    src: url('../typefaces/Fractured/Fractured-Grunge.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Fractured/Fractured-Grunge.woff') format('woff'),
+         url('../typefaces/Fractured/Fractured-Grunge.woff2') format('woff2'),
+         url('../typefaces/Fractured/Fractured-Grunge.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -345,11 +354,11 @@
 
 @font-face {
     font-family: 'Fractured Regular';
-    src: url('../fonts/Fractured/Fractured-Regular.eot');
-    src: url('../fonts/Fractured/Fractured-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fractured/Fractured-Regular.woff') format('woff'),
-         url('../fonts/Fractured/Fractured-Regular.woff2') format('woff2'),
-         url('../fonts/Fractured/Fractured-Regular.ttf') format('truetype');
+    src: url('../typefaces/Fractured/Fractured-Regular.eot');
+    src: url('../typefaces/Fractured/Fractured-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Fractured/Fractured-Regular.woff') format('woff'),
+         url('../typefaces/Fractured/Fractured-Regular.woff2') format('woff2'),
+         url('../typefaces/Fractured/Fractured-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -357,11 +366,11 @@
 
 @font-face {
     font-family: 'Fractured Stencil';
-    src: url('../fonts/Fractured/Fractured-Stencil.eot');
-    src: url('../fonts/Fractured/Fractured-Stencil.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Fractured/Fractured-Stencil.woff') format('woff'),
-         url('../fonts/Fractured/Fractured-Stencil.woff2') format('woff2'),
-         url('../fonts/Fractured/Fractured-Stencil.ttf') format('truetype');
+    src: url('../typefaces/Fractured/Fractured-Stencil.eot');
+    src: url('../typefaces/Fractured/Fractured-Stencil.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Fractured/Fractured-Stencil.woff') format('woff'),
+         url('../typefaces/Fractured/Fractured-Stencil.woff2') format('woff2'),
+         url('../typefaces/Fractured/Fractured-Stencil.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -370,11 +379,11 @@
 
 @font-face {
     font-family: 'Ubermacht';
-    src: url('../fonts/Ubermacht/Ubermacht-Regular.eot');
-    src: url('../fonts/Ubermacht/Ubermacht-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Ubermacht/Ubermacht-Regular.woff') format('woff'),
-         url('../fonts/Ubermacht/Ubermacht-Regular.woff2') format('woff2'),
-         url('../fonts/Ubermacht/Ubermacht-Regular.ttf') format('truetype');
+    src: url('../typefaces/Ubermacht/Ubermacht-Regular.eot');
+    src: url('../typefaces/Ubermacht/Ubermacht-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Ubermacht/Ubermacht-Regular.woff') format('woff'),
+         url('../typefaces/Ubermacht/Ubermacht-Regular.woff2') format('woff2'),
+         url('../typefaces/Ubermacht/Ubermacht-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -382,11 +391,11 @@
 
 @font-face {
     font-family: 'Declasse';
-    src: url('../fonts/Declasse/Declasse-Regular.eot');
-    src: url('../fonts/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Declasse/Declasse-Regular.woff') format('woff'),
-         url('../fonts/Declasse/Declasse-Regular.woff2') format('woff2'),
-         url('../fonts/Declasse/Declasse-Regular.ttf') format('truetype');
+    src: url('../typefaces/Declasse/Declasse-Regular.eot');
+    src: url('../typefaces/Declasse/Declasse-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../typefaces/Declasse/Declasse-Regular.woff') format('woff'),
+         url('../typefaces/Declasse/Declasse-Regular.woff2') format('woff2'),
+         url('../typefaces/Declasse/Declasse-Regular.ttf') format('truetype');
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;

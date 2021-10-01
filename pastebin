@@ -1,0 +1,314 @@
+        <!-- 
+        <a class="font-panel-item" href="1">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/apex.svg"
+              alt="1"
+            />
+          </div>
+
+          <div class="font-panel-data">
+            <span>APEX</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="2">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/invetero.svg"
+              alt="2"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>invetero</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/gouranga.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Gouranga</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="1">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/benny.svg"
+              alt="1"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Benny's</span>
+            <span>548</span>
+          </div>
+        </a>
+        <a class="font-panel-item" href="2">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/frontierpursuits.svg"
+              alt="2"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Frontier</span>
+            <span>548</span>
+          </div>
+        </a>
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/freisingersans.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Freisinger Sans</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="1">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/viceversa.svg"
+              alt="1"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Vice Versa</span>
+            <span>548</span>
+          </div>
+        </a>
+        <a class="font-panel-item" href="2">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/streetnames.svg"
+              alt="2"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Streetname</span>
+            <span>548</span>
+          </div>
+        </a>
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/sanlorca.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>San Lorca</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/bootshaus.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Bootshaus</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/newaustin.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>New Austin</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/ubermacht.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Ubermacht</span>
+            <span>980</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              id="candybox"
+              src="img/font_thumbnails/candybox.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Bootshaus</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/declasse.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>New Austin</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/karolin.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Ubermacht</span>
+            <span>980</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/inveteroclassic.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Bootshaus</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/viva.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>New Austin</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/rockradio.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Ubermacht</span>
+            <span>980</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/HeadType 2.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Bootshaus</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/coolbeans.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>New Austin</span>
+            <span>548</span>
+          </div>
+        </a>
+
+        <a class="font-panel-item" href="3">
+          <div class="font-panel-div">
+            <img
+              loading="lazy"
+              class="font-panel-img"
+              src="img/font_thumbnails/fracured.svg"
+              alt="3"
+            />
+          </div>
+          <div class="font-panel-data">
+            <span>Ubermacht</span>
+            <span>980</span>
+          </div>
+        </a> -->
+      

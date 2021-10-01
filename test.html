@@ -4,49 +4,228 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/stylesheet.css" rel="stylesheet">
-  <link href="css/fonts.css" rel="stylesheet">
-  <link href="css/util.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="lib/jquery.fittext.js"></script>
   <link rel="icon" src="img/logo_icon.png">
   <title>unofficial type foundry</title>
 </head>
+<style>
+  @font-face {
+    font-family: "ApexMono";
+    src: url('../fonts/ApexMono/ApexMono.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "Apexvar";
+    src: url('../typefaces/ApexVar/Apex.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "ApexItalic";
+    src: url('../typefaces/ApexVar/ApexItalic.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+  @font-face {
+    font-family: "ApexMain";
+    src: url('../fonts/ApexV2/ApexLegends-Regular-VF.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+
+
+  @font-face {
+    font-family: "Oswald";
+    src: url('../unofficialtypefoundry/typefaces/_Roboto/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 150px;
+  }
+
+  div {
+    color: #262633;
+    height: 1080px;
+    background-color: #eef514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+
+    font-family: "ApexMain";
+    font-weight: 100;
+  }
+  .black {
+    font-weight: 900;
+    transition: ease-in-out .2s;
+    font-variation-settings: 'ital' 0;
+  }
+  span {
+    margin: 0px 10px ;
+    font-weight: 100;
+    font-variation-settings: 'ital' 0;
+    transition: ease-in-out .2s;
+  }
+  .italic{
+    font-variation-settings: 'ital' 1;
+    
+  }
+
+  #var {
+    
+    font-size: 280px;
+    height: 500px;
+
+    
+  }
+
+  #wght {
+    font-weight: 100;
+    transition: 1.5s ease-in-out
+  }
+
+  #ita {
+    font-variation-settings: 'ital' 0;
+    transition: 1.5s ease-in-out
+  }
+
+  #and {
+    font-weight: 100;
+    font-variation-settings: 'ital' 0;
+    transition: 1.5s ease-in-out
+  }
+
+
+
+  #var:hover > #wght{
+    font-weight: 900;
+   
+  }
+
+  #var:hover > #ita{
+    font-variation-settings: 'ital' 1;
+    
+  }
+
+  #var:hover > #and{
+    font-variation-settings: 'ital' 1;
+    font-weight: 900;
+    
+  }
+
+  div:hover > .all {
+    font-weight: 900;
+  }
+
+
+  .all {
+    font-weight: 100;
+    font-variation-settings: 'ital' 0;
+    font-feature-settings: "onum" 1;
+    transition: 1.5s ease-in-out;
+    text-align: center;
+    font-size: 85px;
+    letter-spacing: 10px;
+   text-transform: lowercase;
+  }
+  
+  
+
+</style>
 
 <body>
-  <nav class="nav-container">
-    <ul class="user-interact">
-      <a href="#" class="text-red nav-logo">P/100</a>
-      <a href="#" class="nav-burger" onclick="changeBurgerCharacter()" id="nav-button">&#9776;</a>
-    </ul>
-    <ul class="nav-list set-left">
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-yellow bg-red">Fonts</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-blue bg-green">Projects</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-red bg-yellow">Custom</a></li>
-      <li class="nav-list-item"><a href="" class="nav-list-btn text-green bg-blue">About</a></li>
-    </ul>
-    <ul class="nav-list set-right">
-      <li class="nav-list-item"><a href="" id="dateDisplay"></a></li>
-      <li class="nav-list-item"><a href="" id="timeDisplay"></a></li>
-    </ul>
+  <div>
+    
+  <!--   <p style="margin-left: 0px;" id="apex">lowercase</p> -->
+ <!--  <p id="var"><span id="wght">weight</span><span id="and">&</span><span id="ita">italic</span></p> -->
+ <p class="all">abcdefghijklm<br>nopqrstuvwxyz</p>
 
-  </nav>
+  </div>
+  <script src="lib/jquery.lettering-0.6.1.min.js"></script>
+  
+  <script>
+    $('.all').lettering();
+    
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
 
-  <footer class="test-footer">
+    async function demo() {
+      var time = 100;
+      await sleep(time);
+      
 
-        <ul class="flex">
-            <li>Imprint</li>
-            <li>Contact</li>
-            <li>Privat Policy</li>
-            <li>Datenschutz</li>
-            <li>Cookies</li>
-        </ul>
+      while (true) {
 
-  </footer>
+        var index = 1;
+        for(i = 0; i < $("span").length; i++)
+        {
+          var e = ".char" + (index + i);
+
+          console.log(e)
+
+          $(e).toggleClass('black');
+          await sleep(time);
+        }
+
  
+        }
 
-  <script src="main.js"></script>
 
+       
+      }
+
+      async function test2() {
+      var time = 50;
+      await sleep(time);
+      
+
+      while (true) {
+
+        var index = 1;
+        for(i = 0; i < $("span").length; i++)
+        {
+          var e = ".char" + (index + i);
+
+          console.log(e)
+
+          $(e).toggleClass('italic');
+          await sleep(time);
+        }
+
+ 
+        }
+
+
+       
+      }
+
+      async function varlower() {
+        var time = 1;
+
+        for(i = 100; i <= 900; i++)
+        {
+          $('#var').css("font-weight", i)
+          await sleep(time)
+        }
+
+
+      }
+
+    
+
+
+       varlower() 
+       test2()
+    demo(); 
+
+  </script>
 </body>
 
 </html>
