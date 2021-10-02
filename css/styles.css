@@ -1,8 +1,8 @@
 :root {
   --tt1-font-size: 16px;
-  --project-margin: 2%;
+  --project-margin: 20px;
   --navbar-height: 56px;
-  --hr-margin: 0.5%;
+  --hr-margin: 5px;
   --basic-margin: 20px;
   --fonts-preview-size: 6rem;
   --homepage-var-font-width: 0;
@@ -47,7 +47,9 @@ body {
  |_| \_|  \__,_|   \_/   |_.__/   \__,_| |_|   
                                                
 */
-
+.nav-mobile {
+  display: none;
+}
 .nav-container {
   display: flex;
   width: 100%;
@@ -55,6 +57,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 99;
+  font-size: 18px;
 }
 .nav-ul {
   width: 100%;
@@ -64,8 +67,8 @@ body {
   padding: 0px 50px;
   justify-content: space-between;
   text-transform: uppercase;
-  font-size: 18px;
 }
+
 .nav-cross,
 .nav-hamburger {
   display: none;
@@ -171,7 +174,6 @@ body {
 
 .fonts-listview {
   display: flex;
-
   flex-direction: column;
 }
 
@@ -251,7 +253,7 @@ body {
 
 .fonts-li-tester {
   font-size: var(--fonts-preview-size);
-
+  transition: ease-in-out 0.1s;
   outline: none;
   overflow: hidden;
   /*   display: -webkit-box;
@@ -611,7 +613,7 @@ footer {
 
   /*#region navbar */
 
-  .nav-time {
+  #nav-li-time {
     display: none;
   }
 
@@ -649,22 +651,9 @@ footer {
     --fonts-preview-size: 4rem;
   }
 
-  /*#region navbar */
-
-  .nav-date {
+  #nav-li-date {
     display: none;
   }
-
-  /*#endregion navbar */
-
-  /*  .fonts-li-metadata h3, .fonts-slider-container{
-        width: 50%;
-        margin-bottom: 20px;
-     }
-
-    .font-panel-item {
-        width: 50%;
-    } */
 
   /* projects.html */
   .font-panel-interact {
@@ -687,22 +676,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /*    .fonts-li-metadata h3, .fonts-slider-container{
-        width: 100%;
-        margin-bottom: 20px;
-     } */
-
-  /*#region navbar */
-
-  .nav-ul > li:not(:first-child) {
-    display: none;
+  .nav-container {
+    width: 100vw;
   }
-
-  .nav-hamburger {
-    display: list-item !important;
+  #nav-li-date,
+  #nav-li-time {
+    display: flex;
   }
-
-  /*#endregion navbar */
+  .nav-ul {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .nav-listitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--navbar-height);
+  }
 }
 
 @media (max-width: 540px) {

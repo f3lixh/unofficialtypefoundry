@@ -14,28 +14,12 @@ changeFonts(); */
 
 /* Silders */
 
-/* $(".fonts-slider-size").each(function () {
-  this.oninput = function () {
-    $(this)
-      .parents(".fonts-listitem")
-      .find(".fonts-li-tester")
-      .css("font-size", this.value + "px");
-  };
-});
-
-$(".fonts-slider-tracking").each(function () {
-  this.oninput = function () {
-    $(this)
-      .parents(".fonts-listitem")
-      .find(".fonts-li-tester")
-      .css("letter-spacing", this.value + "px");
-  };
-});
+/*
  */
 /* $('.fonts-slider-leading').each(function(){	
-	this.oninput = function( ) {
-		$(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
-	}}); */
+  this.oninput = function( ) {
+    $(this).parent().parent().next("div").css("letter-spacing", this.value +"px");	
+  }}); */
 //DEBUG
 function deBugCopyFontPanel() {
   var itm = document.getElementsByClassName("fonts-listitem")[0];
@@ -44,78 +28,11 @@ function deBugCopyFontPanel() {
   document.getElementById("fonts-section").appendChild(cln);
 }
 
-function showFontFeatures(elmnt) {
-  /* x.classList.toggle("fonts-features"); */
-  console.log($(elmnt).parent());
-  $(elmnt)
-    .parents(".fonts-listitem")
-    .find(".fonts-feature-container")
-    .toggleClass("box");
-  $(elmnt).toggleClass("fonts-arrow-down");
-}
-function changeFonts() {
-  //DEBUG
-  var i = document.getElementsByClassName("typeface-newaustin");
-  i[1].style.fontFamily = "invetero";
-  i[2].style.fontFamily = "Secret-VF";
-  i[3].style.fontFamily = "Karolin";
-  i[4].style.fontFamily = "CaptainLoggins Rocks";
-  i[5].style.fontFamily = "Frontier Pursuits";
-  i[6].style.fontFamily = "Bootshaus";
-}
-function toggleFontFeature(elmnt) {
-  var f = $(elmnt)
-    .parents(".fonts-listitem")
-    .find(".fonts-active-otf")
-    .css("font-feature-settings");
-  /* console.log(f); */
-  var store = [];
-  var features = f.split(", ");
-  features.forEach((element) => {
-    if (element.length > 6) {
-      //With Integer
-      store.push(element);
-    } else {
-      element = element + " 1";
-      store.push(element);
-    }
-  });
-
-  var changeIndex = store.findIndex((element) => element.includes(elmnt.value));
-
-  if (changeIndex == -1) {
-    store.push('"' + elmnt.value + '" 1');
-  } else {
-    if (store[changeIndex].includes(" 0")) {
-      store[changeIndex] = store[changeIndex].replace(" 0", " 1");
-      $(elmnt).toggleClass("fonts-feature-active");
-    } else {
-      store[changeIndex] = store[changeIndex].replace(" 1", " 0");
-      $(elmnt).toggleClass("fonts-feature-active");
-    }
-  }
-  /* store.forEach(element => {
-		console.log(element)
-	}) */
-
-  $(elmnt)
-    .parents(".fonts-listitem")
-    .find(".fonts-active-otf")
-    .css("font-feature-settings", store.join(", "));
-}
-
 /* $('.fonts-listitem').hover(function() {
 	
-	$(this).children(".fonts-li-metadata").children().toggleClass("hide");
-	$(this).children(".fonts-hr").toggleClass("hide");
+  $(this).children(".fonts-li-metadata").children().toggleClass("hide");
+  $(this).children(".fonts-hr").toggleClass("hide");
 }) */
-
-function toggleUppercase(elmnt) {
-  $(elmnt)
-    .parents(".fonts-listitem")
-    .find(".fonts-li-tester")
-    .toggleClass("uppercase");
-}
 
 /* document
   .getElementById("homepage-cover")
@@ -204,5 +121,49 @@ function changeBurgerCharacter() {
       break;
     default:
       $("#nav-button").text("\u2612");
+  }
+}
+
+/* setInterval(seedPageIndex, 100);
+function seedPageIndex() {
+  $("#nav-index").text(Math.floor(Math.random() * (999 - 100 + 1) + 100));
+} */
+shufflePageIndex();
+
+function shufflePageIndex() {
+  var oldPageIndex = Math.floor(Math.random() * (901 - 101 + 1) + 101);
+  var newPageIndex = Math.floor(Math.random() * (901 - 101 + 1) + 101);
+
+  var difference = Math.abs(oldPageIndex - newPageIndex);
+
+  var pageSteps = [];
+
+  for (var i = 0; i < Math.floor(Math.random() * (30 - 6 + 1) + 6); i++) {
+    pageSteps.push(
+      Math.floor(
+        Math.random() * (newPageIndex - oldPageIndex + 1) + oldPageIndex
+      )
+    );
+  }
+
+  var tempLength = pageSteps.length;
+
+  if (oldPageIndex < newPageIndex) {
+    pageSteps.sort();
+  } else {
+    pageSteps.sort();
+    pageSteps.reverse();
+  }
+
+  var interval = setInterval(test, 200);
+
+  function test() {
+    if (pageSteps.length != 0) {
+      $("#nav-index").text(pageSteps[0]);
+      pageSteps.shift();
+    } else {
+      clearInterval(interval);
+      $("#nav-index").text(newPageIndex);
+    }
   }
 }

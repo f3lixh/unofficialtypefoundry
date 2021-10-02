@@ -12,10 +12,12 @@
   </head>
 
   <body>
-    <nav class="nav-container">
-      <ul class="nav-ul bg-white">
+    <nav class="nav-container bg-white">
+      <ul class="nav-ul">
         <li class="nav-listitem">
-          <a class="text-red" href="index.html">UTF/100</a>
+          <a class="text-red" href="index.html"
+            >UTF/<span id="nav-index">101</span></a
+          >
         </li>
         <li class="nav-listitem">
           <a class="text-black" href="fonts.html">Fonts</a>
@@ -26,103 +28,17 @@
         <li class="nav-listitem">
           <a class="text-black" href="projects.html">Projects</a>
         </li>
-        <li class="nav-listitem">
+        <li class="nav-listitem" id="nav-li-date">
           <p class="text-blue non-select" href="" id="dateDisplay"></p>
         </li>
-        <li class="nav-listitem">
+        <li class="nav-listitem" id="nav-li-time">
           <p class="text-blue non-select" href="" id="timeDisplay"></p>
         </li>
       </ul>
     </nav>
 
     <main style="margin-top: var(--navbar-height)">
-      <section class="fonts-listview" id="fonts-section">
-        <!--   <article class="fonts-listitem">
-                <div class="fonts-li-metadata">
-                    <h3>New Austin</h3>
-                    <div class="fonts-slider-container">
-                        <label for="newaustin-slider">Size </label>
-                        <input name="newaustin-slider" class="fonts-slider fonts-slider-size" type="range" min="16"
-                            max="160" value="100" />
-                    </div>
-                    <div class="fonts-slider-container">
-                        <label for="newaustin-slider">Spacing </label>
-                        <input name="newaustin-slider" class="fonts-slider fonts-slider-tracking" step="1" type="range"
-                            min="-10" max="80" value="0" />
-                    </div>
-                    <div class="fonts-slider-container">
-                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT" />
-                    </div>
-                </div>
-
-                <div class="fonts-li-tester fonts-active-otf typeface-newaustin" spellcheck="false"
-                    contenteditable="true">
-                    New Austin is a typeface from the old west. Based on UI elements
-                    from Red Dead Redemption II.
-                </div>
-
-                <div class="fonts-feature-buttons">
-                    <div class="fonts-feature-toggle non-select" onclick="showFontFeatures(this)">
-                        OpenType Features
-                    </div>
-                    <a class="fonts-feature-readmore non-select" href="font/newaustin.html">
-                        Read More
-                    </a>
-                </div>
-                <div class="fonts-feature-container">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="calt" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="salt" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss01" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss02" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss03" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss04" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss05" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss06" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss07" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss08" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="frac" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sups" />
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sinf" />
-                </div>
-            </article>
-            <article class="fonts-listitem">
-                <div class="fonts-li-metadata">
-                    <h3>invetero</h3>
-                    <div class="fonts-slider-container">
-                        <label for="newaustin-slider">Size </label>
-                        <input name="newaustin-slider" class="fonts-slider fonts-slider-size" type="range" min="16"
-                            max="160" value="100" />
-                    </div>
-                    <div class="fonts-slider-container">
-                        <label for="invetero-slider">Spacing </label>
-                        <input name="invetero-slider" class="fonts-slider fonts-slider-tracking" step="1" type="range"
-                            min="-10" max="80" value="0" />
-                    </div>
-                    <div class="fonts-slider-container">
-                        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT" />
-                    </div>
-                </div>
-
-                <div class="fonts-li-tester fonts-active-otf typeface-invetero" spellcheck="false"
-                    contenteditable="true">
-                    New Austin is a typeface from the old west. Based on UI elements
-                    from Red Dead Redemption II.
-                </div>
-
-                <div class="fonts-feature-buttons">
-                    <div class="fonts-feature-toggle non-select" onclick="showFontFeatures(this)">
-                        OpenType Features
-                    </div>
-                    <a class="fonts-feature-readmore non-select" href="font/invetero.html">
-                        Read More
-                    </a>
-                </div>
-                <div class="fonts-feature-container">
-                    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga" />
-                </div>
-            </article> -->
-      </section>
+      <section class="fonts-listview" id="fonts-section"></section>
     </main>
 
     <footer>

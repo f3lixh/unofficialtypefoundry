@@ -1,11 +1,5 @@
 const fonts = [];
 
-async function getFontDataAsync(url) {
-  let response = await fetch(url);
-  let data = await response.json();
-  return data;
-}
-
 getFontDataAsync("./src/data/fonts.json").then(function (data) {
   $(data.fonts).each(function (index, value) {
     if (value.isProject === false) {
@@ -24,7 +18,15 @@ getFontDataAsync("./src/data/fonts.json").then(function (data) {
     };
     fonts.push(fontTemp);
   });
+  changeFontSize();
+  changeSpacing();
 });
+
+async function getFontDataAsync(url) {
+  let response = await fetch(url);
+  let data = await response.json();
+  return data;
+}
 
 function buildBlogPanel(data) {
   const fontWrapper = document.createElement("article");
@@ -52,6 +54,7 @@ function buildBlogPanel(data) {
   fontSliderInput.min = 16;
   fontSliderInput.max = 160;
   fontSliderInput.value = 100;
+  fontSliderInput.setAttribute("onchange", "changeFontSize()");
   fontSliderInput.classList.add("fonts-slider");
   fontSliderInput.classList.add("fonts-slider-size");
   fontSlider.append(fontSliderInput);
@@ -74,6 +77,7 @@ function buildBlogPanel(data) {
   fontSliderInput2.max = 80;
   fontSliderInput2.value = 0;
   fontSliderInput2.step = 1;
+  fontSliderInput2.setAttribute("onchange", "changeSpacing()");
   fontSliderInput2.classList.add("fonts-slider");
   fontSliderInput2.classList.add("fonts-slider-tracking");
   fontSlider2.append(fontSliderInput2);
@@ -106,6 +110,42 @@ function buildBlogPanel(data) {
   fontText.contentEditable = true;
 
   fontWrapper.append(fontText);
+
+  //
+
+  if (data.features.length > 0) {
+    const fontSettings = document.createElement("div");
+    fontSettings.classList.add("fonts-feature-buttons");
+
+    const fontButtonLabel = document.createElement("div");
+    fontButtonLabel.classList.add("fonts-feature-toggle", "non-select");
+    fontButtonLabel.setAttribute("onclick", "showFontFeatures(this)");
+    fontButtonLabel.innerText = "OpenType Features";
+    fontSettings.append(fontButtonLabel);
+
+    const fontPageRoute = document.createElement("a");
+    fontPageRoute.classList.add("fonts-feature-readmore", "non-select");
+    fontPageRoute.innerText = "Read More";
+    fontPageRoute.href = "fonts/" + data.slug + ".html";
+    fontSettings.append(fontPageRoute);
+
+    fontWrapper.append(fontSettings);
+
+    //
+
+    const fontOTF = document.createElement("div");
+    fontOTF.classList.add("fonts-feature-container");
+    data.features.forEach((f) => {
+      const tempInputButton = document.createElement("input");
+      tempInputButton.type = "button";
+      tempInputButton.setAttribute("onclick", "toggleFontFeature(this)");
+      tempInputButton.classList.add("fonts-feature-btn");
+      tempInputButton.value = f;
+      fontOTF.append(tempInputButton);
+    });
+
+    fontWrapper.append(fontOTF);
+  }
 
   $("#fonts-section").append(fontWrapper);
   ////////////////////////////////////////////////////////
@@ -154,53 +194,80 @@ function buildBlogPanel(data) {
   $("#fp-blogpost-container").append(aWrapper); */
 }
 
-/* <article class="fonts-listitem">
-<div class="fonts-li-metadata">
-    <h3>New Austin</h3>
-    <div class="fonts-slider-container">
-        <label for="newaustin-slider">Size </label>
-        <input name="newaustin-slider" class="fonts-slider fonts-slider-size" type="range" min="16"
-            max="160" value="100" />
-    </div>
-    <div class="fonts-slider-container">
-        <label for="newaustin-slider">Spacing </label>
-        <input name="newaustin-slider" class="fonts-slider fonts-slider-tracking" step="1" type="range"
-            min="-10" max="80" value="0" />
-    </div>
-    <div class="fonts-slider-container">
-        <input type="button" class="fonts-property-btn" onclick="toggleUppercase(this)" value="TT" />
-    </div>
-</div>
+function changeFontSize() {
+  $(".fonts-slider-size").each(function () {
+    this.oninput = function () {
+      $(this)
+        .parents(".fonts-listitem")
+        .find(".fonts-li-tester")
+        .css("font-size", this.value + "px");
+    };
+  });
+}
 
-<div class="fonts-li-tester fonts-active-otf typeface-newaustin" spellcheck="false"
-    contenteditable="true">
-    New Austin is a typeface from the old west. Based on UI elements
-    from Red Dead Redemption II.
-</div>
+function changeSpacing() {
+  $(".fonts-slider-tracking").each(function () {
+    this.oninput = function () {
+      $(this)
+        .parents(".fonts-listitem")
+        .find(".fonts-li-tester")
+        .css("letter-spacing", this.value + "px");
+    };
+  });
+}
 
-<div class="fonts-feature-buttons">
-    <div class="fonts-feature-toggle non-select" onclick="showFontFeatures(this)">
-        OpenType Features
-    </div>
-    <a class="fonts-feature-readmore non-select" href="font/newaustin.html">
-        Read More
-    </a>
-</div>
-<div class="fonts-feature-container">
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="liga" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="calt" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="salt" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss01" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss02" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss03" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss04" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss05" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss06" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss07" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="ss08" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="frac" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sups" />
-    <input type="button" onclick="toggleFontFeature(this)" class="fonts-feature-btn" value="sinf" />
-</div>
-</article>
- */
+function showFontFeatures(elmnt) {
+  $(elmnt)
+    .parents(".fonts-listitem")
+    .find(".fonts-feature-container")
+    .toggleClass("box");
+  $(elmnt).toggleClass("fonts-arrow-down");
+}
+
+function toggleFontFeature(elmnt) {
+  var f = $(elmnt)
+    .parents(".fonts-listitem")
+    .find(".fonts-active-otf")
+    .css("font-feature-settings");
+  /* console.log(f); */
+  var store = [];
+  var features = f.split(", ");
+  features.forEach((element) => {
+    if (element.length > 6) {
+      //With Integer
+      store.push(element);
+    } else {
+      element = element + " 1";
+      store.push(element);
+    }
+  });
+
+  var changeIndex = store.findIndex((element) => element.includes(elmnt.value));
+
+  if (changeIndex == -1) {
+    store.push('"' + elmnt.value + '" 1');
+  } else {
+    if (store[changeIndex].includes(" 0")) {
+      store[changeIndex] = store[changeIndex].replace(" 0", " 1");
+      $(elmnt).toggleClass("fonts-feature-active");
+    } else {
+      store[changeIndex] = store[changeIndex].replace(" 1", " 0");
+      $(elmnt).toggleClass("fonts-feature-active");
+    }
+  }
+  /* store.forEach(element => {
+          console.log(element)
+      }) */
+
+  $(elmnt)
+    .parents(".fonts-listitem")
+    .find(".fonts-active-otf")
+    .css("font-feature-settings", store.join(", "));
+}
+
+function toggleUppercase(elmnt) {
+  $(elmnt)
+    .parents(".fonts-listitem")
+    .find(".fonts-li-tester")
+    .toggleClass("uppercase");
+}
