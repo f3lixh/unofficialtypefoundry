@@ -146,19 +146,20 @@ body {
   transition: ease-in-out 0.2s;
 }
 
-.font-panel-img {
+.fp-blog-img {
   height: 70%;
   width: 70%;
-}
-.font-panel-data {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .fp-blog-info {
   width: 100%;
 }
+/* 
+.fp-blog-data {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+} */
 
 /*
   ______                   _         
@@ -525,6 +526,17 @@ hr {
   letter-spacing: normal;
 }
 
+/*
+
+  ______                   _                 
+ |  ____|                 | |                
+ | |__      ___     ___   | |_    ___   _ __ 
+ |  __|    / _ \   / _ \  | __|  / _ \ | '__|
+ | |      | (_) | | (_) | | |_  |  __/ | |   
+ |_|       \___/   \___/   \__|  \___| |_|   
+                                             
+*/
+
 /*#region footer */
 
 footer {
@@ -617,6 +629,10 @@ footer {
     display: none;
   }
 
+  .fp-blogpost-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /*#endregion navbar */
 
   /* fonts.html */
@@ -653,6 +669,10 @@ footer {
 
   #nav-li-date {
     display: none;
+  }
+
+  .fp-blogpost-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* projects.html */
@@ -709,15 +729,18 @@ footer {
     background-color: white;
     letter-spacing: 1vw;
   }
+  .fp-blogpost-container {
+    grid-template-columns: 1fr;
+  }
 
-  .font-panel-item {
-    width: 100%;
-    height: 200px;
+  .fp-blogpost {
+    height: 400px;
   }
-  .font-panel-div {
-    height: 150px;
-    width: 95%;
+
+  .fp-blogpost-thumbnail {
+    height: 340px;
   }
+
   body {
     font-size: 16px;
   }

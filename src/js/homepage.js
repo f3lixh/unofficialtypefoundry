@@ -137,7 +137,7 @@ function buildBlogPanel(data) {
 
   const image = document.createElement("img");
   image.src = "img/font_thumbnails/" + data.slug + ".svg";
-  image.classList.add("font-panel-img");
+  image.classList.add("fp-blog-img");
   image.alt = data.name;
 
   imageWrapper.append(image);
