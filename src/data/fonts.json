@@ -6,7 +6,14 @@
       "text": "Vertex pok mustache blue bottle squid marfa 3 wolf moon vinyl activated charcoal aesthetic tilde twee polaroid whatever la croix. Vegan pour-over cray, put a bird on it 8-bit try-hard hashtag. Pitchfork leggings fanny pack small batch. Literally schlitz intelligentsia pabst.",
       "fontIndex": 201,
       "isProject": false,
-      "features": [],
+      "features": [
+        "frac",
+        "ss01",
+        "ss02",
+        "salt",
+        "sups",
+        "sinf"
+      ],
       "date": "2020-08-04T00:00:00.000Z",
       "tags": [
         "variable",
@@ -265,6 +272,22 @@
       "tags": [
         "headline",
         "sans-serif",
+        "display",
+        "game"
+      ]
+    },
+    {
+      "name": "Vector",
+      "slug": "vector",
+      "text": "Microdosing succulents bitters asymmetrical. Craft beer chartreuse vegan, viral art party narwhal kale chips skateboard knausgaard wayfarers shoreditch tote bag selvage. Poutine hashtag tousled everyday carry palo santo jianbing.",
+      "fontIndex": 402,
+      "isProject": true,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "sci-fi",
+        "octagonal",
         "display",
         "game"
       ]
