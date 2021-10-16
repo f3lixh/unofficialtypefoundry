@@ -43,6 +43,10 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+.header {
+  margin-top: var(--navbar-height);
+}
+
 /*
   _   _                   _                    
  | \ | |                 | |                   
@@ -471,6 +475,13 @@ hr {
                                       
 */
 
+.font-index-header {
+}
+
+.font-index-header-img {
+  padding: 20px;
+}
+
 .font-index {
   display: grid;
   gap: 50px; /* muss auf Mobil = 0 */
@@ -755,6 +766,14 @@ footer {
     margin-bottom: 30px;
   }
   /*#endregion footer */
+
+  .font-index {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .font-index-item {
+    height: 70px;
+  }
 }
 
 @media (max-width: 768px) {

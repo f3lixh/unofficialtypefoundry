@@ -36,13 +36,11 @@ function buildFontIndex() {
       initial.classList.add("font-index-initial", "middle-text");
       initial.innerHTML = font.name.charAt(0).toUpperCase();
 
-      if (balance < 0) {
+      if (balance <= 0) {
         $(".font-index-second").append(initial);
       } else {
         $(".font-index-first").append(initial);
       }
-
-      /* $(".font-index-first").append(initial); */
       tempInitial = font.name.charAt(0);
     }
 
@@ -52,7 +50,7 @@ function buildFontIndex() {
 
     const fontName = document.createElement("div");
     fontName.classList.add("font-index-name");
-    fontName.innerHTML = font.name;
+    fontName.innerHTML = font.name + (font.isProject ? " (Project)" : "");
     fontItem.append(fontName);
 
     const fontIndex = document.createElement("div");
@@ -60,7 +58,7 @@ function buildFontIndex() {
     fontIndex.innerHTML = font.fontIndex;
     fontItem.append(fontIndex);
 
-    if (balance < 0) {
+    if (balance <= 0) {
       $(".font-index-second").append(fontItem);
     } else {
       $(".font-index-first").append(fontItem);
