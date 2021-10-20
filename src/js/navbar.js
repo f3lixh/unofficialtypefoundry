@@ -43,3 +43,24 @@ function showDate() {
   document.getElementById("dateDisplay").innerHTML =
     monthName(month) + " " + day + "th " + year;
 }
+
+/* const showNavbar = () => {
+  const burger = document.querySelector(".nav-hamburger");
+  const navbar = document.querySelector(".nav-ul");
+
+  burger.addEventListener("click", () => {
+    navbar.classList.toggle("nav-active");
+  });
+};
+
+showNavbar();
+ */
+
+function toggleNavigation() {
+  console.log("as");
+  $(".nav-ul").toggleClass("nav-active");
+}
+
+$(".nav-button").click(() => {
+  $(".nav-ul").toggleClass("nav-active");
+});

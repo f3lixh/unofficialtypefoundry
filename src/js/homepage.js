@@ -9,7 +9,7 @@ async function getFontDataAsync(url) {
 getFontDataAsync("./src/data/fonts.json").then(function (data) {
   $(data.fonts).each(function (index, value) {
     if (value.isProject === false) {
-      buildBlogPanel(value);
+      buildBlogPosts(value);
     }
   });
   $(data.fonts).each(function (index, value) {
@@ -127,7 +127,9 @@ $.ajax({
   },
 });*/
 
-function buildBlogPanel(data) {
+function buildBlogPosts(data) {
+  /* Erstellt die Font Posts */
+
   const aWrapper = document.createElement("a");
   aWrapper.classList.add("fp-blogpost");
   aWrapper.href = "fonts/" + data.slug + ".html";
@@ -147,11 +149,12 @@ function buildBlogPanel(data) {
   ulWrapper.classList.add("fp-blog-info");
 
   const infoWrapper = document.createElement("ul");
-  infoWrapper.classList.add("footer-ul");
+  /* infoWrapper.classList.add("footer-ul"); */
 
   const itemWrapper = document.createElement("li");
 
   const itemLink = document.createElement("a");
+  itemLink.classList.add("dotted-container");
 
   const span1 = document.createElement("span");
   const span1Info = (document.createTextNode = data.fontIndex);
@@ -173,19 +176,15 @@ function buildBlogPanel(data) {
   $("#fp-blogpost-container").append(aWrapper);
 }
 
-/*
-<a class="font-panel-item" href="1">
-  <div class="font-panel-div">
-    <img
-      loading="lazy"
-      class="font-panel-img"
-      src="img/font_thumbnails/apex.svg"
-      alt="1"
-    />
-  </div>
-
-  <div class="font-panel-data">
-    <span>APEX</span>
-    <span>548</span>
-  </div>
-</a> */
+document
+  .getElementById("homepage-cover")
+  .addEventListener("mousemove", function (e) {
+    var weight =
+      (800 / document.getElementById("homepage-cover").offsetWidth) * e.x + 100;
+    var width =
+      "'wdth' " +
+      ((55 / document.getElementById("homepage-cover").offsetHeight) * e.y +
+        70);
+    $("#homepage-var-font").css("font-weight", weight);
+    $("#homepage-var-font").css("font-variation-settings", width);
+  });

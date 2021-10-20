@@ -33,7 +33,7 @@ function buildFontIndex() {
     if (tempInitial != font.name.charAt(0)) {
       /*  Creates the initial element */
       const initial = document.createElement("div");
-      initial.classList.add("font-index-initial", "middle-text");
+      initial.classList.add("font-index-initial", "middle-text", "non-select");
       initial.innerHTML = font.name.charAt(0).toUpperCase();
 
       if (balance <= 0) {

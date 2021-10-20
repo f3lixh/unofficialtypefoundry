@@ -34,6 +34,30 @@
 }
 
 @font-face {
+  font-family: "Teletext Type 4";
+  src: url("../typefaces/TeletextType4/TeletextType4-Regular.woff2")
+      format("woff2"),
+    url("../typefaces/TeleTextType4/TeleTextType4-Regular.otf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeSpeed;
+}
+
+@font-face {
+  font-family: "TeleText Type 5";
+  src: url("../typefaces/TeletextType5/TeleTextType5-Regular.woff2")
+      format("woff2"),
+    url("../typefaces/TeleTextType5/TeleTextType5-Regular.otf")
+      format("opentype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
   font-family: "Secret-VF";
   src: url("../typefaces/Odiosis/Secret-VF.ttf") format("truetype");
   font-weight: 100 1000;
