@@ -402,123 +402,6 @@ a {
 
 /*#endregion fonts.html */
 
-/* 
-
-  _____                     _                 _   
- |  __ \                   (_)               | |  
- | |__) |  _ __    ___      _    ___    ___  | |_ 
- |  ___/  | '__|  / _ \    | |  / _ \  / __| | __|
- | |      | |    | (_) |   | | |  __/ | (__  | |_ 
- |_|      |_|     \___/    | |  \___|  \___|  \__|
-                          _/ |                    
-                         |__/  
-
-*/
-
-/* Font Panel */
-
-h1 {
-  font-family: "TeleText Type 2";
-  color: blue;
-  font-size: 60px;
-  line-height: 140%;
-  text-align: center;
-  background-color: white;
-  letter-spacing: 1vw;
-}
-p {
-  /* text-align: justify; */
-  line-height: 150%;
-}
-.seperator {
-  display: flex;
-  margin: var(--project-margin) 0px;
-}
-.seperator div {
-  height: 8px;
-  width: 25%;
-}
-/*#region projects.html */
-/* Header */
-.projects div {
-  display: flex;
-  width: 100%;
-}
-hr {
-  margin: var(--hr-margin) 0px;
-  border: red 5px solid;
-}
-/* Project Panel */
-.font-project-panel {
-  margin-bottom: var(--hr-margin);
-  display: grid;
-  min-height: 280px;
-  grid-template-columns: 25% 55% 20%;
-  background-color: blue;
-}
-.font-project-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.font-project-img img {
-  height: 80%;
-  width: 80%;
-}
-.font-project-list {
-  padding: 20px;
-}
-.font-project-list ul li span {
-  left: 15px;
-  position: relative;
-  line-height: 120%;
-}
-.font-project-list ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-.font-project-list ul {
-  list-style-type: "*";
-  padding: 0px 20px;
-}
-.font-project-progress {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.font-project-progress div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 100px;
-}
-.font-panel-interact {
-  height: 50px;
-  margin-bottom: var(--project-margin);
-  display: grid;
-  grid-template-columns: 79.5% 20%;
-  grid-gap: var(--hr-margin);
-}
-.font-panel-interact div:first-child {
-  height: 100%;
-}
-.font-panel-interact div:nth-child(2) {
-  text-align: center;
-  color: black;
-  background-color: white;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.font-panel-interact div:nth-child(2) a {
-  width: 100%;
-  color: blue;
-  background-color: white;
-}
-/*#endregion projects.html */
-
 /*
   _  _      ___    _  _   
  | || |    / _ \  | || |  
@@ -581,6 +464,19 @@ hr {
   padding: 20px 40px;
   font-size: 50px;
 }
+
+/* 
+
+  _____                     _                 _   
+ |  __ \                   (_)               | |  
+ | |__) |  _ __    ___      _    ___    ___  | |_ 
+ |  ___/  | '__|  / _ \    | |  / _ \  / __| | __|
+ | |      | |    | (_) |   | | |  __/ | (__  | |_ 
+ |_|      |_|     \___/    | |  \___|  \___|  \__|
+                          _/ |                    
+                         |__/  
+
+*/
 
 /* 
   _____               _               
@@ -652,62 +548,6 @@ hr {
  \_____|  \__,_| |___/  \__|  \___/  |_| |_| |_| 
  
 */
-
-/*#region custom.html */
-
-.custom {
-  margin: var(--project-margin) 0px;
-  /*  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--project-margin); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.custom-headline h1 {
-  background-color: yellow;
-  color: blue;
-  font-family: "New Austin";
-
-  letter-spacing: normal;
-}
-
-.custom-headline hr {
-  border-color: blue;
-  border-width: 10px;
-}
-
-.btn div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: yellow;
-  height: var(--navbar-height);
-}
-.custom-contact-btn {
-  color: blue;
-}
-
-.custom-icon-panel {
-  background-color: blue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: var(--project-margin);
-}
-.custom-icon-panel img {
-  height: 500px;
-  width: 600px;
-}
-
-/*#endregion custom.html */
-
-#overlay h1 {
-  background-color: transparent;
-  color: white;
-  letter-spacing: normal;
-}
 
 /*
 
@@ -792,6 +632,16 @@ hr {
   padding: 0px 20px;
 }
  */
+
+.seperator div {
+  height: 8px;
+  width: 20%;
+}
+.seperator {
+  margin: 50px 0px;
+  display: flex;
+}
+
 .text-bar {
   margin: 50px 0px;
 }

@@ -2,6 +2,14 @@ showDate();
 clock();
 setInterval(clock, 1000);
 
+/* console.log(localStorage.getItem("pageIndex"));
+
+window.onload = () => {
+  var getPageIndex = document.getElementById("nav-index").innerText;
+  console.log(getPageIndex + "s");
+  localStorage.setItem("pageIndex", getPageIndex);
+}; */
+
 function clock() {
   var time = new Date(),
     hours = time.getHours(),
@@ -64,3 +72,43 @@ function toggleNavigation() {
 $(".nav-button").click(() => {
   $(".nav-ul").toggleClass("nav-active");
 });
+
+shufflePageIndex();
+
+function shufflePageIndex() {
+  var oldPageIndex = parseInt(localStorage.getItem("pageIndex"));
+  var newPageIndex = parseInt(document.getElementById("nav-index").innerText);
+
+  var difference = Math.abs(oldPageIndex - newPageIndex);
+
+  var pageSteps = [];
+
+  for (var i = 0; i < Math.floor(Math.random() * (30 - 6 + 1) + 6); i++) {
+    pageSteps.push(
+      Math.floor(
+        Math.random() * (newPageIndex - oldPageIndex + 1) + oldPageIndex
+      )
+    );
+  }
+
+  var tempLength = pageSteps.length;
+
+  if (oldPageIndex < newPageIndex) {
+    pageSteps.sort();
+  } else {
+    pageSteps.sort();
+    pageSteps.reverse();
+  }
+
+  var interval = setInterval(test, 200);
+
+  function test() {
+    if (pageSteps.length != 0) {
+      $("#nav-index").text(pageSteps[0]);
+      pageSteps.shift();
+    } else {
+      clearInterval(interval);
+      $("#nav-index").text(newPageIndex);
+    }
+  }
+}
