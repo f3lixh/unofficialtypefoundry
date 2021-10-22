@@ -530,6 +530,9 @@ hr {
 .error {
   height: 100vh;
   display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .error-background {
@@ -557,11 +560,26 @@ hr {
 }
 
 .error-message {
-  background-color: black;
-  font-size: 50px;
-  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   position: relative;
-  margin: auto;
+}
+
+.error-message span:first-child {
+  font-family: "TeleText Type 2";
+  font-size: 120px;
+  margin-bottom: 0px;
+  padding: 20px 40px;
+  color: red;
+  background-color: black;
+}
+
+.error-message span:not(:first-child) {
+  background-color: black;
+  padding: 20px 40px;
+  font-size: 50px;
 }
 
 /* 
@@ -951,6 +969,42 @@ hr {
     cursor: pointer;
     display: block;
     margin-right: var(--navbar-link-margin);
+  }
+
+  .error-background {
+    display: flex;
+
+    flex-direction: row-reverse;
+    /* grid-auto-flow: dense; */
+    /* grid-auto-columns: dense; */
+    /*  grid-template: ".error-last-row .error-middle-row .error-first-row"; */
+  }
+
+  .error-first-row {
+    width: 75%;
+  }
+
+  .error-middle-row {
+    width: 10%;
+  }
+
+  .error-last-row {
+    width: 15%;
+  }
+
+  .error-first-row,
+  .error-middle-row,
+  .error-last-row {
+    height: 100%;
+    grid-template-columns: unset;
+  }
+  .error-message span:first-child {
+    font-size: 100px;
+  }
+
+  .error-message span:not(:first-child) {
+    padding: 20px 30px;
+    font-size: 30px;
   }
 }
 
