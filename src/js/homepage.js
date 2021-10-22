@@ -188,3 +188,34 @@ document
     $("#homepage-var-font").css("font-weight", weight);
     $("#homepage-var-font").css("font-variation-settings", width);
   });
+
+shuffleMedia();
+
+function shuffleMedia() {
+  const videoSource = document.createElement("source");
+  videoSource.type = "video/mp4";
+
+  var i = Math.floor(Math.random() * (4 - 1) + 1);
+
+  console.log(i);
+
+  switch (i) {
+    case 1:
+      videoSource.src = "src/videos/bg_1.mp4";
+      break;
+    case 2:
+      videoSource.src = "src/videos/bg_2.mp4";
+      break;
+    case 3:
+      videoSource.src = "src/videos/bg_3.mp4";
+      break;
+    case 4:
+      videoSource.src = "src/videos/bg_4.mp4";
+      break;
+    default:
+      videoSource.src = "src/videos/bg_1.mp4";
+      break;
+  }
+
+  $("#homepage-video").append(videoSource);
+}
