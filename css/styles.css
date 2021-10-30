@@ -511,7 +511,9 @@ a {
 }
 
 .projects-header {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  padding: 50px;
+  background-color: blue;
 }
 
 .projects-header img {
@@ -594,7 +596,7 @@ a {
 
 .projects-blog-meta {
   font-family: var(--page-font-2);
-  font-size: 2rem;
+  font-size: 32px;
   /* background-color: blue; */
   text-align: center;
   padding: 10px;
@@ -1006,6 +1008,14 @@ a {
   .project-separator {
     background-image: none;
     justify-content: center;
+  }
+
+  .project-separator span {
+    font-size: 24px;
+  }
+
+  .projects-blog-meta {
+    font-size: 16px;
   }
 
   .project-separator span:last-child {
