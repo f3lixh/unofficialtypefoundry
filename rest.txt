@@ -106,3 +106,174 @@ input[type=number] {
     </div>
   </nav>
 -->
+
+
+      <section class="projects">
+        <!--         <article>
+          <div class="projects-blog">
+            <div class="projects-blog-img">
+              <img
+                src="img/font_thumbnails/san-lorca.svg"
+                alt="Vice Versa"
+                class="shadow"
+              />
+            </div>
+            <div class="project-blog-info">
+              <div class="project-blog-info-panel shadow">
+                <ul>
+                  <li>
+                    Ipsam neque blanditiis magnam ratione, obcaecati libero
+                    molestias commodi sit odio porro animi laboriosam, accusamus
+                    harum quas qui aliquid et quisquam enim provident inventore
+                    velit nam!
+                  </li>
+                  <li>
+                    Fugiat saepe dolorum dolores voluptatibus eveniet temporibus
+                    placeat earum rerum quam neque officiis doloribus, ex fugit
+                    tempora dolore ratione maxime magnam voluptatem recusandae
+                    quaerat delectus praesentium quasi cum harum!
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article> -->
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img src="img/font_thumbnails/invetero.svg" alt="San Lorca" />
+          </div>
+          <div class="project-blog-info">
+            <h2>invetero</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              facere minima. Libero quod sit doloribus, labore similique totam.
+              Temporibus deleniti eius incidunt dicta dolore repellendus
+              recusandae qui consequatur corrupti nesciunt omnis, illo labore.
+              Fugit delectus minus facere reprehenderit consectetur quo
+              recusandae dolorum ab incidunt autem aliquid libero voluptatum
+              beatae repellat excepturi dicta, sint temporibus.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img
+              src="img/font_thumbnails/inveteroclassic.svg"
+              alt="San Lorca"
+            />
+          </div>
+          <div class="project-blog-info">
+            <h2>invetero classic</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              facere minima. Libero quod sit doloribus, labore similique totam.
+              Temporibus deleniti eius incidunt dicta dolore repellendus
+              recusandae qui consequatur corrupti nesciunt omnis, illo labore.
+              Fugit delectus minus facere reprehenderit consectetur quo
+              recusandae dolorum ab incidunt autem aliquid libero voluptatum
+              beatae repellat excepturi dicta, sint temporibus.
+            </p>
+          </div>
+          <div class="project-blog-tags">
+            <span>italic</span>
+            <span>technique</span>
+            <span>gta</span>
+            <span>game</span>
+            <span>opentype</span>
+            <span>square</span>
+          </div>
+        </article>
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img src="img/font_thumbnails/rock-radio.svg" alt="San Lorca" />
+          </div>
+          <div class="project-blog-info">
+            <h2>Rock Radio</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+              facere minima. Libero quod sit doloribus, labore similique totam.
+              Temporibus deleniti eius incidunt dicta dolore repellendus
+              recusandae qui consequatur corrupti nesciunt omnis, illo labore.
+              Fugit delectus minus facere reprehenderit consectetur quo
+              recusandae dolorum ab incidunt autem aliquid libero voluptatum
+              beatae repellat excepturi dicta, sint temporibus.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img
+              src="img/font_thumbnails/freisinger-sans.svg"
+              alt="San Lorca"
+            />
+          </div>
+          <div class="project-blog-info">
+            <h2>Freisinger Sans</h2>
+            <br />
+            <p>
+              I'm baby chillwave enamel pin humblebrag, edison bulb synth
+              raclette butcher copper mug readymade pug flannel lumbersexual
+              locavore. Raw denim four loko kinfolk, selvage meh ennui taxidermy
+              shaman shabby chic jean shorts enamel pin selfies mustache swag.
+              Irony lomo PBR&B vice bitters. Offal letterpress blog chambray
+              migas. Keffiyeh glossier enamel pin hella. Hella tilde cray
+              pitchfork tote bag trust fund ennui viral banh mi.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img src="img/font_thumbnails/cool-beans.svg" alt="San Lorca" />
+          </div>
+          <div class="project-blog-info">
+            <h2>Cool Beans</h2>
+            <br />
+            <p>
+              Authentic brooklyn literally stumptown four dollar toast mixtape
+              jianbing cardigan green juice crucifix put a bird on it. Echo park
+              church-key dreamcatcher ramps letterpress marfa, raw denim fixie
+              DIY. Deep v master cleanse microdosing edison bulb truffaut
+              hashtag vice kogi mixtape copper mug. Hammock banjo retro street
+              art iPhone jean shorts bespoke hell of yr squid trust fund
+              sriracha. Swag ugh palo santo slow-carb ethical.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-blog">
+          <div class="project-blog-img">
+            <img src="img/font_thumbnails/san-lorca.svg" alt="San Lorca" />
+          </div>
+          <div class="project-blog-info">
+            <h2>San Lorca</h2>
+            <br />
+            <p>
+              Lumbersexual enamel pin hoodie, jianbing blue bottle +1 gastropub
+              wolf chia hammock. Cold-pressed tousled affogato aesthetic direct
+              trade. Truffaut bushwick raclette, hoodie pug lomo chartreuse
+              church-key before they sold out cliche yr pickled tousled photo
+              booth. Leggings paleo organic whatever sartorial, art party quinoa
+              trust fund four loko you probably haven't heard of them. Organic
+              live-edge cred locavore neutra taiyaki. Flannel cray occupy
+              kickstarter, hoodie shoreditch selvage vinyl brooklyn.
+            </p>
+          </div>
+        </article>
+
+        <section class="routes">
+          <div class="route-btn bg-cyan">
+            <span>301 &#60;&#60;&#60; Page Index</span>
+          </div>
+          <div class="route-btn bg-green">
+            <span>Zu den Fonts &#62;&#62;&#62; 201</span>
+          </div>
+        </section>
+      </section>

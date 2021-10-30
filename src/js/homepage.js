@@ -195,7 +195,7 @@ function shuffleMedia() {
   const videoSource = document.createElement("source");
   videoSource.type = "video/mp4";
 
-  var i = Math.floor(Math.random() * (4 - 1) + 1);
+  var i = Math.floor(Math.random() * (4 - 1 + 1) + 1);
 
   console.log(i);
 

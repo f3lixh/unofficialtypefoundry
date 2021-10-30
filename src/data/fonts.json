@@ -5,7 +5,10 @@
       "slug": "apex",
       "text": "Vertex pok mustache blue bottle squid marfa 3 wolf moon vinyl activated charcoal aesthetic tilde twee polaroid whatever la croix. Vegan pour-over cray, put a bird on it 8-bit try-hard hashtag. Pitchfork leggings fanny pack small batch. Literally schlitz intelligentsia pabst.",
       "fontIndex": 201,
+      "isVariable": true,
       "isProject": false,
+      "glyphsCount": 506,
+      "styles": 18,
       "features": [
         "frac",
         "ss01",
@@ -28,7 +31,10 @@
       "slug": "frontier-pursuits",
       "text": "Man braid before they sold out you probably haven't heard of them man bun cardigan. Butcher readymade dreamcatcher lomo small batch, try-hard food truck jianbing mustache activated charcoal migas austin.",
       "fontIndex": 214,
+      "isVariable": false,
       "isProject": false,
+      "glyphsCount": 493,
+      "styles": 2,
       "features": [
         "frac",
         "liga",
@@ -50,6 +56,9 @@
       "text": "Bitters seitan man braid squid meh health goth actually williamsburg kinfolk banh mi. Asymmetrical bitters cray beard.",
       "fontIndex": 278,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 309,
+      "styles": 1,
       "features": [
         "frac",
         "sups",
@@ -71,6 +80,9 @@
       "text": "Fashion axe vexillologist seitan tacos sustainable pour-over letterpress pitchfork green juice heirloom franzen forage drinking vinegar direct trade.",
       "fontIndex": 254,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 413,
+      "styles": 2,
       "features": [
         "frac",
         "liga",
@@ -100,6 +112,9 @@
       "text": "Blog taiyaki wolf, salvia ugh butcher tofu williamsburg copper mug. Literally gastropub everyday carry slow-carb crucifix sartorial activated charcoal forage polaroid beard.",
       "fontIndex": 267,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 336,
+      "styles": 5,
       "features": [
         "frac",
         "ss01",
@@ -120,6 +135,9 @@
       "text": "Paleo narwhal occupy, lomo coloring book schlitz williamsburg street art lo-fi biodiesel prism heirloom mixtape everyday carry tofu. Freegan meditation post-ironic.",
       "fontIndex": 274,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 173,
+      "styles": 1,
       "features": [],
       "date": "2020-07-06T00:00:00.000Z",
       "tags": [
@@ -136,6 +154,9 @@
       "text": "Whatever blue bottle tattooed neo. Thundercats brunch dreamcatcher iceland everyday carry waistcoat. Polaroid coloring book 90's vegan artisan.",
       "fontIndex": 276,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 575,
+      "styles": 1,
       "features": [
         "frac",
         "liga",
@@ -169,6 +190,9 @@
       "text": "Stumptown kinfolk trust fund, vexillologist enamel pin locavore adaptogen pug aesthetic air plant ramps iceland microdosing drinking vinegar.",
       "fontIndex": 205,
       "isProject": false,
+      "isVariable": true,
+      "glyphsCount": 540,
+      "styles": 2,
       "features": [
         "liga"
       ],
@@ -186,6 +210,9 @@
       "text": "Readymade glossier gentrify, woke air plant enamel pin you probably haven't heard of them venmo green juice brooklyn small batch kitsch chillwave cliche humblebrag.",
       "fontIndex": 207,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 239,
+      "styles": 3,
       "features": [],
       "date": "2020-08-06T00:00:00.000Z",
       "tags": [
@@ -203,6 +230,9 @@
       "text": "Vape flexitarian mlkshk hoodie everyday carry mumblecore, ugh blue bottle. Leggings taiyaki kitsch kinfolk sustainable raclette affogato quinoa narwhal photo booth brooklyn seitan DIY helvetica.",
       "fontIndex": 209,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 250,
+      "styles": 1,
       "features": [],
       "date": "2020-07-05T00:00:00.000Z",
       "tags": [
@@ -218,6 +248,9 @@
       "text": "Waistcoat letterpress heirloom yr, crucifix locavore marfa craft beer thundercats echo park gastropub street art green juice portland selfies.",
       "fontIndex": 229,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 293,
+      "styles": 2,
       "features": [
         "liga",
         "frac"
@@ -236,6 +269,9 @@
       "text": "Unicorn franzen master cleanse keffiyeh pabst organic. Mixtape vinyl pop-up, prism single-origin coffee humblebrag messenger bag shoreditch readymade banjo.",
       "fontIndex": 254,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 471,
+      "styles": 4,
       "features": [],
       "date": "2019-09-02T00:00:00.000Z",
       "tags": [
@@ -251,6 +287,9 @@
       "text": "Copper mug jianbing vape cliche master cleanse. Gastropub cornhole meditation vegan. Tofu kogi messenger bag, fashion axe gentrify bushwick tilde franzen pug copper mug direct trade vegan austin gochujang banh mi.",
       "fontIndex": 274,
       "isProject": false,
+      "isVariable": false,
+      "glyphsCount": 361,
+      "styles": 4,
       "features": [
         "frac"
       ],
@@ -268,6 +307,9 @@
       "text": "Retro sartorial crucifix post-ironic. Mixtape butcher man bun hashtag raw denim prism put a bird on it pabst kitsch portland street art leggings.",
       "fontIndex": 401,
       "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 121,
+      "styles": 1,
       "date": "2020-05-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -277,11 +319,14 @@
       ]
     },
     {
-      "name": "Vector",
-      "slug": "vector",
+      "name": "Vectora",
+      "slug": "vectora",
       "text": "Microdosing succulents bitters asymmetrical. Craft beer chartreuse vegan, viral art party narwhal kale chips skateboard knausgaard wayfarers shoreditch tote bag selvage. Poutine hashtag tousled everyday carry palo santo jianbing.",
       "fontIndex": 402,
       "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 79,
+      "styles": 1,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -290,6 +335,109 @@
         "octagonal",
         "display",
         "game"
+      ]
+    },
+    {
+      "name": "Cool Beans",
+      "slug": "cool-beans",
+      "text": " Selfies typewriter fashion axe, art party master cleanse venmo freegan you probably haven't heard of them keffiyeh plaid hashtag air plant seitan. Williamsburg live-edge gluten-free shoreditch lomo craft beer flexitarian roof party ramps drinking vinegar tilde +1 copper mug hashtag.",
+      "fontIndex": 403,
+      "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 94,
+      "styles": 1,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "display",
+        "game"
+      ]
+    },
+    {
+      "name": "Streetnames",
+      "slug": "streetnames",
+      "text": "Next level hot chicken jianbing meditation tousled ugh semiotics direct trade shaman. Paleo squid letterpress fashion axe live-edge, woke glossier. Beard next level chia, pok pok bespoke typewriter roof party.",
+      "fontIndex": 404,
+      "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 240,
+      "styles": 3,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "pixel",
+        "display",
+        "game"
+      ]
+    },
+    {
+      "name": "Trapez",
+      "slug": "trapez",
+      "text": "Jean shorts cronut gentrify master cleanse pabst pinterest cold-pressed lomo. Meggings forage VHS plaid ennui quinoa kale chips iPhone kogi cardigan meh squid fixie glossier 8-bit.",
+      "fontIndex": 405,
+      "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 77,
+      "styles": 1,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "triangle",
+        "display"
+      ]
+    },
+    {
+      "name": "Freisinger Sans",
+      "slug": "freisinger-sans",
+      "text": "Jean shorts cronut gentrify master cleanse pabst pinterest cold-pressed lomo. Meggings forage VHS plaid ennui quinoa kale chips iPhone kogi cardigan meh squid fixie glossier 8-bit.",
+      "fontIndex": 445,
+      "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 507,
+      "styles": 18,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "triangle",
+        "display"
+      ]
+    },
+    {
+      "name": "Karolin",
+      "slug": "karolin",
+      "text": "Jean shorts cronut gentrify master cleanse pabst pinterest cold-pressed lomo. Meggings forage VHS plaid ennui quinoa kale chips iPhone kogi cardigan meh squid fixie glossier 8-bit.",
+      "fontIndex": 447,
+      "isProject": true,
+      "isVariable": false,
+      "glyphsCount": 508,
+      "styles": 2,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "triangle",
+        "display"
+      ]
+    },
+    {
+      "name": "Vice Versa",
+      "slug": "vice-versa",
+      "text": "Jean shorts cronut gentrify master cleanse pabst pinterest cold-pressed lomo. Meggings forage VHS plaid ennui quinoa kale chips iPhone kogi cardigan meh squid fixie glossier 8-bit.",
+      "fontIndex": 478,
+      "isProject": true,
+      "isVariable": true,
+      "glyphsCount": 575,
+      "styles": 4,
+      "date": "2021-12-31T00:00:00.000Z",
+      "tags": [
+        "headline",
+        "sans-serif",
+        "triangle",
+        "display"
       ]
     }
   ]

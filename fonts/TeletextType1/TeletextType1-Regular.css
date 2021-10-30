@@ -1,9 +1,0 @@
-/* Webfont: TeletextType1-Regular */@font-face {
-    font-family: 'TeletextType1';
-    src: url('TeletextType1-Regular.woff2') format('woff2'), /* Modern Browsers */
-         url('TeletextType1-Regular.otf') format('opentype'); /* Safari, Android, iOS */
-             font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
