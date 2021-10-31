@@ -59,25 +59,37 @@
 .blue {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(200deg)
     saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(200deg)
+    saturate(7000000%) contrast(1);
 }
 .cyan {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(150deg)
+    saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(150deg)
     saturate(7000000%) contrast(1);
 }
 .yellow {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(20deg)
     saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(20deg)
+    saturate(7000000%) contrast(1);
 }
 .magenta {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(-500deg)
     saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%)
+    hue-rotate(-500deg) saturate(7000000%) contrast(1);
 }
 .red {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(0deg)
     saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(0deg)
+    saturate(7000000%) contrast(1);
 }
 .green {
   filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(100deg)
+    saturate(7000000%) contrast(1);
+  -webkit-filter: grayscale(200%) brightness(50%) sepia(100%) hue-rotate(100deg)
     saturate(7000000%) contrast(1);
 }
 .p-20 {
